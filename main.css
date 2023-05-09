@@ -1,0 +1,501 @@
+/* COMMON */
+body {
+  
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #FAFAFB;
+    font-family: 'SCDream2';
+ 
+}
+button .material-icons {
+  font-size: 24px;
+  margin-left: 5px;
+ padding-top: 10px;
+}
+.btn .material-icons {
+  font-size: 24px;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/* font */
+@font-face {
+  font-family: 'SCDream2';
+  font-weight: 300;
+  src:url(./font/SCDream2.otf) format(opentype);
+}
+
+@font-face {
+  font-family: 'SCDream3';
+  font-weight: 400;
+  src:url(./font/SCDream3.otf) format(opentype);}
+
+@font-face {
+  font-family: 'SCDream4';
+  font-weight: 500;
+  src:url(./font/SCDream4.otf) format(opentype);
+
+  
+}
+@font-face {
+  font-family: 'SCDream5';
+  font-weight: 600;
+  src:url(./font/SCDream5.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream6';
+  font-weight: 700;
+  src:url(./font/SCDream6.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream8';
+  font-weight: 800;
+  src:url(./font/SCDream8.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream9';
+  font-weight: 900;
+  src:url(./font/SCDream9.otf) format(opentype);
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'SCDream2';
+}
+.btn {
+
+
+    width: 180px;
+    height: 50px;
+    background-color:#F1F1F1;
+    color: #333;
+    border-radius: 10px;
+
+ 
+    border: 0.5px solid  #999;
+    font-size: 16px; /* 글자 크기 */
+    
+    cursor: pointer; /* 커서 모양 */
+    /* box-shadow: 1px 1px #aba7a7 ;    */
+    font-family:"SCDream3";
+   
+    
+   
+
+}
+
+  .btn:hover{
+    background-color: #fffe; 
+    color: #42B883;
+  }
+
+  button{
+
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #42B883;
+    color: #fff;
+    border: #F2F8FF;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family:"SCDream4";
+    padding-bottom: 11px;
+    text-align: center;
+    
+  }
+
+  button:hover{
+    background-color: #fff;
+    color: #42B883;
+    border: 0.5px solid #999;
+  }
+
+ 
+
+/* header */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    
+}
+
+header .inner {
+   height: 55px;
+   border: 1px solid #F2F0FF;
+
+  
+    background-color: #fff;
+}
+
+header .logo {
+   
+     top:0;
+     bottom: 0;
+     left: 20%;
+     margin: auto;
+  
+}
+
+header ul{
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    bottom: 0;
+    /* justify-content: center; */
+    align-items: center;
+    
+  
+}
+header ul a{
+    color: #333;
+    font-family: 'SCDream4';
+    }
+
+header ul a:hover{
+    color: #42B883;
+}
+
+header ul li{
+    margin: 40px;
+    cursor: pointer;
+
+}
+
+/* VISUAL */
+.visual{
+ /* position: relative; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  background-color: #fff;
+  /* height: 700px; */
+  height: 70vh;
+  text-align: center;
+}
+.visual .inner {
+ /* position:absolute;
+ top: 200px;
+ left: 50%;
+ margin-left:-250px; */
+
+
+}
+
+
+
+.visual .inner h1{
+  font-size: 70px;
+
+  background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:'SCDream8';
+    
+}
+  
+.visual .inner h4{
+  font-size: 40px;
+  font-weight: 800;
+  font-family:'SCDream6';
+
+  margin-top: 20px;
+
+}
+.visual .inner h5{
+  font-size: 18px ;
+  color: #999;
+
+  margin-top: 10px;
+  font-family:"SCDream4";
+}
+
+.solution{
+  height: 60px;
+  background-color: #fff;
+ 
+  text-align: center;
+  border: 0.5px solid #e4e7eb;
+ 
+
+}
+.solution p{
+  font-family:'SCDream2';
+  font-size: 14px;
+  margin-top: 15px;
+}
+.solution strong{
+  font-size: 20px;
+  color: #E74343;
+  
+  font-family:'SCDream5';
+}
+.problem .step1{
+
+  margin-top: 70px;
+  margin-left: 100px;
+ 
+}
+.problem .step2{
+
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.problem .step3{
+
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.problem{
+  position: relative;
+  height: 300px;
+  background-color: #fff;
+  border: 0.5px solid #e4e7eb;
+  display: flex;
+  justify-content:center;
+ 
+  
+}
+.problem h1{
+  
+  font-size: 20px;
+  font-family:'SCDream4';
+  text-align:left;
+
+
+}
+.problem p{
+  font-size: 15px;
+  font-family:'SCDream2';
+  margin-top: 40px;
+  text-align:left;
+  line-height: 1.6;
+}
+.problem strong{
+  
+  font-family:'SCDream3';
+}
+.Service{
+  height: 2300px;
+  position: relative;
+  background-color: #fff;
+  border: 0.5px solid #e4e7eb;
+}
+.Service h5{
+  margin-left: 100px;
+  margin-top: 155px;
+  font-size: 20px;
+  font-family:'SCDream2';
+
+}
+.Service h1{
+  margin-top: 5px;
+  margin-left: 100px;
+  font-size: 25px;
+  font-family:'SCDream2';
+
+}
+.Service strong{
+  font-family:'SCDream5';
+}
+
+.Service .image1{
+  position: absolute;
+  top: 500px;
+  margin-left:80px;
+}
+.Service .image1 h1{
+  font-size: 22px;
+  font-family:'SCDream5';
+
+}
+
+.Service .image3 h1{
+  font-size: 22px;
+  font-family:'SCDream5';
+
+
+}
+.ex{
+
+position: absolute;
+top: 200px;
+right:-550px;
+
+
+ 
+}
+
+.ex2{
+
+  position: absolute;
+  top: 100px;
+  left:-600px;
+  text-align: right;
+   
+  }
+
+.ex h1{
+  margin-top: 30px;
+  font-size: 18px;
+  font-family:'SCDream5';
+
+}
+.ex h2{
+  margin-top: 20px;
+  color: #42B883;
+  font-size: 18px;
+  font-family:'SCDream4';
+  margin-left: 100px;
+
+}
+.ex h3{
+  margin-top: 20px;
+
+  font-size: 18px;
+  font-family:'SCDream2';
+  margin-left: 100px;
+
+}
+.ex2 h1{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family:'SCDream5';
+
+}
+.ex2 h2{
+  margin-top: 20px;
+  color: #42B883;
+  font-size: 18px;
+  font-family:'SCDream4';
+  margin-left: 100px;
+
+}
+.ex2 h3{
+  margin-top: 20px;
+
+  font-size: 18px;
+  font-family:'SCDream2';
+  margin-left: 100px;
+
+}
+.Service .image2{
+  position: absolute;
+  top: 1110px;
+  right: 80px; 
+ 
+}
+.Service .image3{
+  position: absolute;
+  top: 1700px;
+  margin-left: 80px;
+}
+    
+
+    /* topButton */
+    #topButton {
+      display: none; 
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      z-index: 99; 
+      font-size: 16px; 
+      border: 0.5px solid #42B883; 
+      outline: none; 
+      background-color: #fff; 
+      color:#42B883; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 10px; 
+    }
+    
+    #topButton:hover {
+      background-color: #42B883;
+      color: #fff;
+    }
+    /* SWIPER */
+
+    .portforio{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+  /* .inner{
+    width: 1140px;
+    position: relative;
+    height: 500px;
+  } */
+  .aline{
+    display: flex;
+    align-items: center;
+  }
+  .content{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 00px; */
+    transition: 0.4s;
+    width: 33.333%;
+    filter: grayscale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content img{
+    transition: 0.5s;
+    width: 100%;
+    height: 300px;
+  }
+  .big{
+    filter: grayscale(0);
+  }
+  .big img{
+    /* flex: 1; */
+    height: 500px;
+    filter: grayscale(0);
+  }
+  .left,
+  .right{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .left{
+    left: 0;
+    margin-left: -50px;
+  }
+  .right{
+    right: 0;
+    margin-right: -50px;
+  }
