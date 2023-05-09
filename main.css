@@ -12,12 +12,12 @@ body {
 button .material-icons {
   font-size: 24px;
   margin-left: 5px;
- padding-top: 10px;
+
 }
 .btn .material-icons {
   font-size: 24px;
   margin-left: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 @font-face {
   font-family: 'Material Icons';
@@ -90,7 +90,8 @@ a {
 
  
     border: 0.5px solid  #999;
-    font-size: 16px; /* 글자 크기 */
+    font-size: 18px; /* 글자 크기 */
+   
     
     cursor: pointer; /* 커서 모양 */
     /* box-shadow: 1px 1px #aba7a7 ;    */
@@ -119,7 +120,7 @@ a {
     margin-left: 20px;
     cursor: pointer;
     font-family:"SCDream4";
-    padding-bottom: 11px;
+   
     text-align: center;
     
   }
