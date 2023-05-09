@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySwiper", {
     
 
     // const elementPosition = element.getBoundingClientRect().top;
-
+// ㅅㄷㄴㅅ
     const windowHeight = window.pageYOffset;
     
     
