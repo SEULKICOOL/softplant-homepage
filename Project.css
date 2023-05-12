@@ -1,0 +1,253 @@
+/* font */
+@font-face {
+    font-family: 'SCDream2';
+    font-weight: 300;
+    src:url(./font/SCDream2.otf) format(opentype);
+  }
+  
+  @font-face {
+    font-family: 'SCDream3';
+    font-weight: 400;
+    src:url(./font/SCDream3.otf) format(opentype);}
+  
+  @font-face {
+    font-family: 'SCDream4';
+    font-weight: 500;
+    src:url(./font/SCDream4.otf) format(opentype);
+  
+    
+  }
+  @font-face {
+    font-family: 'SCDream5';
+    font-weight: 600;
+    src:url(./font/SCDream5.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream6';
+    font-weight: 700;
+    src:url(./font/SCDream6.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream8';
+    font-weight: 800;
+    src:url(./font/SCDream8.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream9';
+    font-weight: 900;
+    src:url(./font/SCDream9.otf) format(opentype);
+  }
+
+ body{
+    background-color: #FAFAFB;
+    color:#333;
+ }
+ a{
+    text-decoration: none;
+    color: #333;
+ }
+  .top{
+
+  }
+  .top .inner{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    
+  }
+
+  .navigation{
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .inner h1{
+    font-size: 30px;
+    font-family: 'SCDream6';
+    margin-top: 30px;
+  
+   
+  }
+
+  .basic{
+
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+
+  }
+
+  .basic .inner{
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:  3px 3px rgb(206, 202, 202);
+    border: 1px solid #ede6e6;
+
+
+
+  }
+  
+
+  .basic h2{
+    font-size: 20px;
+    font-family: 'SCDream5';
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+
+  }
+  hr{
+   
+    border: 0.1px solid #d1c6c6;
+  }
+
+
+.basic h3{
+    font-size: 16px;
+    font-family: 'SCDream4';
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .inner input{
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin-top: 5px;
+    margin-left: 50px;
+  }
+
+::placeholder{
+    font-size: 12px;
+    color: #999;
+    font-family: 'SCDream2';
+    padding: 10px;
+    
+}
+
+.select input{
+    width:15px;
+    height:15px;
+    margin-top: 20px;
+ 
+
+}
+.condition input{
+    width: 15px;
+    height:15px;
+    margin-top: 20px;
+}
+.inner label {
+    font-size: 15px;
+    font-family: 'SCDream2';
+    vertical-align:text-top;
+}
+
+button{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 600px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+
+.next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 120px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'SCDream4';
+    text-decoration: none;
+    
+
+    
+}
+
+
+.btn:hover{
+    background-color: #FAFAFB;
+    
+
+   
+
+}
+
+select{
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid #999;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'SCDream2';
+}
+
+  
+@media (max-width:700px){
+  .navigation{
+   display: none;
+   
+  }
+
+
+  .basic .inner{
+    width: 100%;
+    height: 600px;
+}
+
+
+  .inner input{
+    width: 300px;
+    height: 40px;
+  }
+
+::placeholder{
+    font-size: 10px;
+
+    
+}
+
+.select input{
+    width:15px;
+    height:15px;
+    position: relative;
+  
+}
+.condition input{
+    width: 15px;
+    height:15px;
+}
+.inner label {
+    font-size: 16px;
+  
+
+  
+}
+
+button{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 600px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+
+}
