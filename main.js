@@ -42,21 +42,13 @@ var swiper = new Swiper(".mySwiper", {
 
   // Mobile
 
-  const menuIcon = document.getElementById('mobile')
+
+  const menuIcon = document.querySelector('.mobile-icon');
   const menu = document.querySelector('.mobile-menu');
 
-  function checkWindowSize() {
-    if (window.innerWidth <= 600) { 
-      menuIcon.style.display = 'block';
-      menu.style.display = 'none';
-    } else {
-      menuIcon.style.display = 'none';
-      menu.style.display = 'block';
-    }
-  }
   
   menuIcon.addEventListener('click', function() {
-    menu.classList.toggle('open');
+    menu.style.display = 'block';
   });
 
-console.log(menuIcon);
+
