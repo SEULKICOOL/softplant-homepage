@@ -1,3 +1,37 @@
+@media (max-width:600px){
+  .header ul{
+    display: none;
+
+  }
+
+header {
+    height: 55px;
+    border: 1px solid #F2F0FF;
+    background-color: #fff;
+ 
+}
+.visual{
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background-color: #fff;
+
+   height: 100vh;
+   text-align: center;
+ }
+ .visual .inner h1{
+  font-size: 50px;
+
+  background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family:'SCDream8';
+    
+}
+
+}
 /* COMMON */
 body {
   
@@ -135,6 +169,7 @@ a {
 
 /* header */
 
+
 header {
     background-color: #fff;
     width: 100%;
@@ -196,7 +231,7 @@ header ul li{
  align-items: center;
   background-color: #fff;
   /* height: 700px; */
-  height: 70vh;
+  height: 60vh;
   text-align: center;
 }
 .visual .inner {
@@ -273,13 +308,14 @@ header ul li{
   margin-top: 70px;
   margin-left: 100px;
 }
+
 .problem{
   position: relative;
   height: 300px;
   background-color: #fff;
   border: 0.5px solid #e4e7eb;
   display: flex;
-  justify-content:center;
+  justify-content: center;
  
   
 }
@@ -302,6 +338,9 @@ header ul li{
   
   font-family:'SCDream3';
 }
+.Service .inner{
+  justify-content: center;
+}
 .Service{
   height: 2300px;
   position: relative;
@@ -309,8 +348,8 @@ header ul li{
   border: 0.5px solid #e4e7eb;
 }
 .Service h5{
+  margin-top: 30px;
   margin-left: 100px;
-  margin-top: 155px;
   font-size: 20px;
   font-family:'SCDream2';
 
