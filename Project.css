@@ -351,6 +351,7 @@ textarea{
     .check input{
       width: 15px;
     
+    
     }
   #city{
     margin-left: 5px;
@@ -359,6 +360,7 @@ textarea{
 
    .next{
     justify-content: left;
+    margin-top: 20px;
    }
 
 }
