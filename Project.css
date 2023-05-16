@@ -181,12 +181,17 @@ button{
 
 .btn:hover{
     background-color: #FAFAFB;
-    
-
-   
+}
+button{
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  font-family: 'SCDream4';
 
 }
-
+button:hover{
+  background-color: #FAFAFB;
+}
 select{
     width: 110px;
     height: 30px;
@@ -197,7 +202,44 @@ select{
     font-family: 'SCDream2';
 }
 
+textarea{
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 600px;
+  height: 150px;
+  border:0.2px solid#c8c6c6;
+}
+
+
+.privacy-text{
+  width: 400px;
+  height: 200px;
+  border: 1px solid #999;
+}
+
+.privacy textarea{
+  width: 600px;
+  height: 30px;
+  /* margin-left: 50px; */
+}
+
+.check input{
+  width: 15px;
+
   
+}
+.check{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.check p{
+  font-family: 'SCDream2';
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+
 @media (max-width:700px){
 
   .navigation{
@@ -214,6 +256,7 @@ select{
 
   .inner h1{
     font-size: 25px;
+    margin-top: 20px;
   }
 
 
@@ -223,10 +266,9 @@ select{
     border: #FAFAFB;
     box-shadow: none;
     background-color: #FAFAFB;
-    /* justify-content: left;
-    text-align: left;
-  */
 }
+
+ 
 
   .inner input{
     width: 300px;
@@ -250,11 +292,13 @@ select{
     margin-left: 8px;
   }
 
+
   .select input{
       width:15px;
       height:15px;
       position: relative;
       margin-left: 8px;
+      margin-top: 8px;
     
   }
   .condition input{
@@ -280,4 +324,43 @@ select{
     margin-top: 40px;
     font-size: 12px;
 
+  }
+  button{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 40px;    
+  }
+
+  textarea{
+    width: 350px;
+    margin-left: 10px;
+  }
+  .privacy textarea{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+  }
+    .basic h2{
+    
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+
+    }
+    .check input{
+      width: 15px;
+    
+    }
+  #city{
+    margin-left: 5px;
+  }
+
+
+   .next{
+    justify-content: left;
+   }
+
 }
+
+ 

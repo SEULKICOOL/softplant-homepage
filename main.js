@@ -9,7 +9,7 @@ const contents = document.querySelectorAll(".swiper");
 let num = 0;
 var swiper = new Swiper(".mySwiper", { 
     loop : true,
-    slidesPerView: 1.5,
+    slidesPerView:getSlidesPerView(),
     spaceBetween: 100,
     centeredSlides: true,
     autoplay: {    
@@ -21,6 +21,14 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true
     }
 })
+
+function getSlidesPerView() {
+  const isMobile = window.innerWidth <= 800;
+  return isMobile ? 1 : 1.5;
+}
+
+getSlidesPerView();
+
 
 
 //Topbutton scroll Event
