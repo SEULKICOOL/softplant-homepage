@@ -49,10 +49,16 @@
   .top{
 
   }
+  .top .material-icons{
+    font-size: 30px;
+    
+  }
   .top .inner{
     justify-content: center;
     text-align: center;
-    margin-bottom: 30px;
+    align-items: center;
+    display:flex;
+  
     
   }
 
