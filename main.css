@@ -621,13 +621,13 @@ footer strong{
       height: 40px;
       margin-top: 5px;
     }
+  
+
     .btn{
-      width: 160px;
-    }
+
+        width: 160px;
+      }
     
-    .button{
-      width: 160px;
-    }
     
     .visual{
       height: 100vh;
