@@ -484,6 +484,21 @@ header ul li{
 .ex p:nth-child(4){
   margin-top: 30px;
 }
+.detail .ex-salt{
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 50px;
+  font-family:'SCDream3';
+  line-height: 1.1;
+  font-size: 15px;
+}
+
+.ex-salt p:nth-child(2){
+  margin-top: 45px;
+}
+.ex-salt p:nth-child(4){
+  margin-top: 30px;
+}
 
 .nemo-box-1 img{
   margin-left: 0;
@@ -494,20 +509,19 @@ header ul li{
   width: auto;
   height: 180px;
 }
-.line_h{
-  height: 170px;
-  border-left: 1px solid #999;
-  padding-right: 100px;
-  padding-left: 30px;
 
-}
 .nemo-box h5{
   font-size: 16px;
   margin-left: 100px;
   margin-top: 20px;
   font-family:'SCDream5';
 }
-
+.monitor{
+  width: 180px;
+  position: absolute;
+  right: 50px;
+  top: 160px;
+}
 
 .aline{
   display: flex;
@@ -729,25 +743,59 @@ footer strong{
       width: 100%;
       height:250px;
     }
-    .line_h{
+    .monitor{
       display: none;
     }
+  
+   
+    .ex-salt p:nth-child(2){
+      margin-top: 40px;
+    }
+    .ex-salt p:nth-child(4){
+      margin-top:45px;
+    }
+    .detail .ex-salt{
+      margin-top: 5px;
+    }
+    
 }
 
 
-@media (max-width:700px){
+@media (max-width:800px){
 
     header ul li{
       margin: 15px;
     }
+    .monitor{
+      display:none;
+    }
  }
    
 
- @media (max-width:800px){
+ @media (max-width:1000px){
 
     header ul li{
       margin: 15px;
  
     }
-
+  
+    .client{
+    
+      height: 1400px;
+    }
+  
   }
+
+
+ @media (max-width:1600px){
+
+ 
+      .monitor{
+        width: 150px;
+        position: absolute;
+        right: 50px;
+        top: 80px;
+      
+      }
+    }
+ 

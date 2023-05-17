@@ -60,3 +60,22 @@ getSlidesPerView();
   });
 
 
+ //MENU SCROLL EVENT
+  const service = document.querySelector(".").offsetTop;
+  const  portfolio= document.querySelector(".").offsetTop;
+  const Teams = document.querySelector(".").offsetTop;
+ 
+
+  nav.forEach((span, index)=>{
+    span.addEventListener("click",()=>{
+        if(index===0){
+            scrollTo({top:0,behavior:"smooth"});
+        }else if(index===1){
+            scrollTo({top:service,behavior:"smooth"});
+        }else if(index===2){
+            scrollTo({top:portfolio,behavior:"smooth"});
+        }else{
+            scrollTo({top:Teams,behavior:"smooth"});
+        }
+    });
+});
