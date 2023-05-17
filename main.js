@@ -59,6 +59,11 @@ getSlidesPerView();
     menu.style.display = 'block';
   });
 
+  const closeIcon = document.getElementById("mobile");
+
+  closeIcon.addEventListener('click',function() {
+    menu.style.display = 'none';
+  })
 
  //MENU SCROLL EVENT
   const service = document.querySelector(".").offsetTop;

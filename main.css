@@ -199,19 +199,35 @@ header ul li{
   font-size: 30px;
  
 }
+#mobile{
+  font-size: 30px;
+  position: absolute;
+  right:15px;
+  top: 5px;
+  cursor: pointer;
+}
 
 .mobile-menu{
   width: 100%;
   display: none;
-  height: 200px;
+  height: 250px;
   background-color:#fbfbfb;
+  border:0.1px solid #e1d9d9;
   z-index: 500;
   position: fixed;
-
+  animation:fade-in 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .mobile-menu ul{
  
- margin-top: 58px;
+ margin-top: 30px;
  font-size: 18px;
  font-family:'SCDream5';
  text-align: center;
@@ -219,14 +235,12 @@ header ul li{
 
 }
 .mobile-menu li{
-  margin : 25px;
+  margin : 35px;
   cursor: pointer;
  
 }
 
-.mobile-menu li:first-child{
-  padding-top: 30px;
-}
+
 
 .mobile-menu a{
  text-decoration: none;
