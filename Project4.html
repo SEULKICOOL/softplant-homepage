@@ -18,6 +18,31 @@
 
 </head>
 <body>
+    <header>
+        <div class="inner">
+          <a href="/"><img src="./swiperimage/logo.png"s alt="logo"></a>
+            <ul class="menu">
+              <li><a href ="">서비스</a></li>
+              <li><a href="#">포트폴리오</a></li>
+              <li><a href="#">팀원</a></li>
+              <li><a href="./Project1.html">프로젝트 의뢰</a></li>
+            </ul>
+       </div>
+            <div class="mobile-icon">
+            <div class="material-icons">menu</div>
+            </div>
+      </header>
+      <div class="mobile-menu">
+        <div class="material-icons"id="mobile">close</div>
+          <ul>
+              <li><a href="">서비스</a></li>
+              <li>포트폴리오</li>
+              <li>팀원</li>
+            <li><a href="./Project1.html">프로젝트 의뢰</a></li>
+          </ul>
+       </div>
+    
+
 
     <section class="top">
         <div class="inner">
@@ -244,20 +269,9 @@
             <button class="btn"> <a href="./Project2.html"> 이 전</a> </button>
             <button onclick="showConfirm()"> 제 출 </button>
     </div>
-  
+<!-- script -->
+<script src="./Project.js"></script>
 
-    <script>
-      
-      function showConfirm() {
-      var checkbox = document.getElementById("myCheckbox");
-      if (!checkbox.checked) {
-        alert("개인정보 취급방침에 동의 해야 합니다.");
-      } else if( confirm("제출하시겠습니까?")){
-        alert("전송되었습니다")
-      } else{}
-       
-      }
-
-    </script>
+ 
 </body>
 </html>

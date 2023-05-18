@@ -108,7 +108,7 @@ button .material-icons{
  .btn:hover{
 
  background-color: #fff;
- border: 0.5px solid hsl(0, 0%, 100%);
+ border: 0.5px solid #42B883;
 
  }
  .btn-main:hover{
@@ -674,8 +674,22 @@ footer strong{
     }
  
     .client{
-    height: 1300px;
+      height: 1300px;
+   
     }
+    .client h1{
+      margin-right: 0;
+      margin-left: 200px;
+      display: inline-block;
+      font-size: 22px;
+     
+    }
+    
+    .client .inner{
+      display: block;
+  
+    }
+
 
     /* SWIPER */
 
@@ -772,6 +786,10 @@ footer strong{
     }
     .nemo-box{
       display: none;
+    }
+    .client{
+      height: 700px;
+   
     }
   }
 

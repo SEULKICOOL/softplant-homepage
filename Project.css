@@ -46,17 +46,193 @@
     text-decoration: none;
     color: #333;
  }
+ /* HEADER */
+
+header{
+  width: 100%;
+  height: 55px;
+  background-color:#fff;
+  box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
+  position: fixed;
+  z-index: 8;
+  
+ 
+
+}
+header .inner{
+  width: 1200px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header img{
+  position: absolute;
+  left: 0;
+
+  
+} 
+
+header .inner ul{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+header ul li a{
+  font-size: 13px;
+  padding: 11px 40px;
+  display: block;
+  color: #333;
+  font-family:'SCDream4';
+}
+
+  header ul li a:hover{
+  color: #42B883;
+}
+
+/*Mobile */
+
+.mobile-icon .material-icons{
+  font-size: 30px;
+}
+
+.mobile-icon{
+  display:none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+ 
+}
+#mobile{
+  font-size: 30px;
+  position: absolute;
+  right:15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  width: 100%;
+  display: none;
+  height: 250px;
+  background-color:#fbfbfb;
+  border:0.1px solid #e1d9d9;
+  z-index: 500;
+  position: fixed;
+  animation:fade-in 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mobile-menu ul{
+ 
+ margin-top: 30px;
+ font-size: 18px;
+ font-family:'SCDream5';
+ text-align: center;
+
+
+}
+.mobile-menu li{
+  margin : 35px;
+  cursor: pointer;
+ 
+}
+
+
+
+.mobile-menu a{
+ text-decoration: none;
+ color: #333;
+}
+
+.mobile-menu a:hover{
+  color: #42d392;
+}
+
+/*Mobile */
+
+.mobile-icon .material-icons{
+  font-size: 30px;
+}
+
+.mobile-icon{
+  display:none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+ 
+}
+#mobile{
+  font-size: 30px;
+  position: absolute;
+  right:15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  width: 100%;
+  display: none;
+  height: 250px;
+  background-color:#fbfbfb;
+  border:0.1px solid #e1d9d9;
+  z-index: 500;
+  position: fixed;
+  animation:fade-in 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mobile-menu ul{
+ 
+ margin-top: 30px;
+ font-size: 18px;
+ font-family:'SCDream5';
+ text-align: center;
+
+
+}
+.mobile-menu li{
+  margin : 35px;
+  cursor: pointer;
+ 
+}
+
+
+
+.mobile-menu a{
+ text-decoration: none;
+ color: #333;
+}
+
+.mobile-menu a:hover{
+  color: #42d392;
+}
+
+/* TOP */
   .top{
 
   }
-  .top .material-icons{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-left: 10px;
-   
 
-    
-  }
   .top .inner{
     justify-content: center;
     text-align: center;
@@ -73,7 +249,7 @@
   .inner h1{
     font-size: 30px;
     font-family: 'SCDream6';
-    margin-top: 30px;
+    margin-top: 100px;
   
    
   }
@@ -86,10 +262,11 @@
 
 
   }
+  
 
   .basic .inner{
     width: 800px;
-    height: 600px;
+    height: 700px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow:  3px 3px rgb(206, 202, 202);
@@ -129,31 +306,32 @@
     border: 1px solid #999;
     margin-top: 5px;
     margin-left: 50px;
+    padding-left: 25px;
   }
 
 ::placeholder{
     font-size: 12px;
     color: #999;
     font-family: 'SCDream2';
-    padding: 10px;
-    
+ 
 }
 
 .select input{
     width:15px;
     height:15px;
     margin-top: 20px;
- 
+    padding-left: 25px;
 
 }
 .condition input{
     width: 15px;
     height:15px;
     margin-top: 20px;
+    padding-left: 25px;
 }
 .inner label {
     font-size: 15px;
-    font-family: 'SCDream2';
+    font-family: 'SCDream3';
     vertical-align:text-top;
 }
 
@@ -218,6 +396,7 @@ textarea{
   width: 600px;
   height: 150px;
   border:0.2px solid#c8c6c6;
+  padding: 15px;
 }
 
 
@@ -229,12 +408,13 @@ textarea{
 
 .privacy textarea{
   width: 600px;
-  height: 30px;
+  height: 100px;
   /* margin-left: 50px; */
 }
 
 .check input{
   width: 15px;
+  padding-left: 25px;
 
   
 }
@@ -251,6 +431,22 @@ textarea{
 
 
 @media (max-width:700px){
+  header ul{
+    display: none;
+
+  }
+  
+  .mobile-icon{
+    display: block;
+    
+  }
+
+
+  header img{
+    width: 180px;
+    height: 40px;
+    margin-top: 5px;
+  }
 
   .navigation{
    display: none;
@@ -265,7 +461,7 @@ textarea{
 
   .inner h1{
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 40px;
    
   }
