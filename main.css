@@ -4,14 +4,7 @@ a{
   text-decoration: none;
   color: #333;
 }
-body {
-  font-size: 20px;
-  color: #333;
-  font-weight: 400;
-  line-height: 1.4;
 
-  font-family: 'SCDream2';
-}
 
 @font-face {
   font-family: 'Material Icons';
@@ -66,16 +59,7 @@ body {
 }
 
 /* Button */
-.btn-box{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  margin:20px;
 
-
-  
-  
-}
 .btn {
 
     width: 180px;
@@ -124,7 +108,7 @@ button .material-icons{
  .btn:hover{
 
  background-color: #fff;
- border: 0.5px solid #cae7cb;
+ border: 0.5px solid hsl(0, 0%, 100%);
 
  }
  .btn-main:hover{
@@ -134,51 +118,50 @@ button .material-icons{
  }
 
 /* header */
-
-header {
-  background-color: #fff;
+header{
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 8;  
-}
-
-header .inner {
   height: 55px;
-  border: 1px solid #F2F0FF;
-  margin: 0 auto;
-  background-color: #fff;
-}
+  background-color:#fff;
+  box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
+  position: fixed;
+  z-index: 8;
   
-header .logo {
-  top:0;
-  bottom: 0;
-  left: 20%;
-  margin: auto;
-}
+ 
 
-header ul{
-  font-size: 15px;
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 10%;
-  bottom: 0;
+}
+header .inner{
+  width: 1200px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
   align-items: center;
 }
+header img{
+  position: absolute;
+  left: 0;
 
-header ul a{
+  
+} 
+
+header .inner ul{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+header ul li a{
+  font-size: 13px;
+  padding: 11px 40px;
+  display: block;
   color: #333;
-  font-family: 'SCDream4';
+  font-family:'SCDream4';
 }
 
-header ul a:hover{
+  header ul li a:hover{
   color: #42B883;
-}
-
-header ul li{
-  margin: 40px;
-  cursor: pointer;
 }
 
 /*Mobile */
@@ -251,28 +234,32 @@ header ul li{
 
 /* VISUAL */
 .visual{
- /* position: relative; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  /* height: 700px; */
-  height: 50vh;
-  text-align: center;
+ height: 580px;
+
 }
 
 .visual .inner {
-  /* position:absolute;
-  top: 200px;
-  left: 50%;
-  margin-left:-250px; */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display:flex;
+
+ 
 }
 
+.visual p{
+  /* top: 500px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 
 .visual .inner h1{
   font-size: 70px;
-
+  margin: 24px 0px 24px;
   background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
   background-clip: text;
   -webkit-background-clip: text;
@@ -282,20 +269,22 @@ header ul li{
 }
   
 .visual .inner h4{
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 800;
   font-family:'SCDream6';
   color: #333336;
-  margin-top: 20px;
+  margin: 24px 0px 24px;
 
 }
 .visual .inner h5{
+
   font-size: 18px ;
   color: #999;
-
+  margin: 24px 0 48px;
   margin-top: 10px;
   font-family:"SCDream4";
 }
+
 
 /* solution */
 
@@ -308,6 +297,7 @@ header ul li{
   justify-content: center;
   align-items: center;
   border: 0.5px solid #e4e7eb;
+
 }
 .know-how p{
   font-family:'SCDream2';
@@ -315,7 +305,7 @@ header ul li{
 }
 .know-how strong{
   font-size: 20px;
-  color: #E74343;
+  color: #f02265;
   font-family:'SCDream5';
 }
 
@@ -325,7 +315,7 @@ header ul li{
   background-color: #fff;
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .Service h1{
@@ -333,16 +323,19 @@ header ul li{
   font-size: 20px;
   font-family:'SCDream5';
   text-align:left;
+  color: #213547;
+  margin-bottom: 25px;
 
 
 }
 .Service p{
   font-size: 15px;
   font-family:'SCDream2';
-  margin-top: 40px;
+  margin-top: 15px;
   text-align:left;
   line-height: 1.6;
   margin-left: 50px;
+  color: #3c3c3cb3;
 }
 .Service strong{
   
@@ -352,42 +345,32 @@ header ul li{
 /* Client */
 
 .client{
-  height: 700px;
+  height: 500px;
   background-color: #fff;
-  text-align: center;
-  justify-content: center;
-  margin-top: 50px; 
-}
-.client .client-mesage{
-  font-size: 30px;
-  font-family:'SCDream6';
-  margin: 40px;
-}
-.img-box1{
-  width: 100%;
-  height: 230px;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: wrap;
-}
-.img-box2{
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: wrap;
-}
-.img-box3{
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: wrap;
+  margin-top: 20px; 
 }
 
+.client .inner{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+}
+.client .client-mesage{
+  
+  font-size: 22px;
+  font-family:'SCDream5';
+  text-align: center;
+  margin-right: 700px;
+  margin-bottom: 30px;
+
+}
+
+
 .client img{
-  margin: 10px;
+
+  margin: 4px;
 }
 
 /* topButton */
