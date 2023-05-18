@@ -1,4 +1,11 @@
 
+window.lastProjectName = '';
+window.lastField = '';
+window.lastNew = '';
+window.lastOld = '';
+window.lastReady = '';
+window.lastNo = '';
+window.testTxt ='testTxt';
 
 function showConfirm() {
   var checkbox = document.getElementById("myCheckbox");
@@ -9,12 +16,25 @@ function showConfirm() {
   } else{}
    
   }
-
-var basic = []
-function saveBasic(){
-    var basic = document.getElementById()***************
+function goSecondPage(){
+    lastProjectName = document.getElementById("projectName").value;
+    lastField = document.getElementById("field").value
+    lastNew = document.getElementById("new").value
+    lastOld = document.getElementById("old").value
+    lastReady = document.getElementById("ready").value
+    lastNo = document.getElementById("no").value
+    window.location.href = "./Project2.html"
 }
 
+function getValues(){  
+    window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+    window.localStorage.setItem("lastField",document.getElementById("field").value);
+    window.localStorage.setItem("lastNew",document.getElementById("new").value);
+    window.localStorage.setItem("lastOld",document.getElementById("old").value);
+    window.localStorage.setItem("lastReady",document.getElementById("ready").value);
+    window.localStorage.setItem("lastNo",document.getElementById("no").value);
+    window.location.href = "./Project2.html";
+}
 
   // Mobile
 

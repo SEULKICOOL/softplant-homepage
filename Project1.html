@@ -46,8 +46,6 @@
     <section class="top">
         <div class="inner">
             <h1>프로젝트 등록</h1>
-            <!-- <div class ="material-icons" title="홈페이지로 이동"><a href="/index.html">home</a></div> -->
-           
         </div>
         <div class="inner">
             <div class="navigation">
@@ -65,7 +63,7 @@
                         <h3>* 프로젝트 제목</h3>
                             <input type="text" id="projectName" placeholder="프로젝트 제목을 입력해 주세요 (ex.통합 DB구축, 건강 앱 개발)">
                         <h3>* 프로젝트 분야</h3>
-                            <input type="text" placeholder="프로젝트 분야를 선택해 주세요.">
+                            <input type="text" id ="field" placeholder="프로젝트 분야를 선택해 주세요.">
                         <div class="select">
                             <h3> * 프로젝트 진행 분류</h3>
                             <input type="radio" id="new" name="project" value="new">
@@ -80,21 +78,24 @@
                             <input type="radio" id="no" name="ready" value="no">
                             <label for="no">준비되어있지 않음</label>
                         </div>    
+                        
+            </div>
                      
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
     </section>
+
     <div class="next">
-        <div>
-        <button class="btn"> <a href="./Project2.html"> 다 음 </a>
-             </button>
-         </div>
+       <button class="btn" ><a href="#" onclick="getValues()">다음</a></button>
+
+
 
  <!-- script -->
 <script src="./Project.js"></script>
+<script>
+    console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
+    document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
+    document.getElementById("field").value = window.localStorage.getItem("lastField");
+    document.getElementById("new").value = window.localStorage.getItem("lastNew");
+
+</script>
 </body>
 </html>
