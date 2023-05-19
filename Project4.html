@@ -272,6 +272,13 @@
 <!-- script -->
 <script>
 console.log('프로젝트이름") :'+window.localStorage.getItem("lastcompany"));
+if(window.localStorage.getItem("lastbusiness") == "division"){
+    document.getElementById("buisness").checked = true;  
+}else if(window.localStorage.getItem("lastbusiness") == "solo"){
+    document.getElementById("solo").checked = true;  
+}else{
+};
+
 document.getElementById("company").value = window.localStorage.getItem("lastcompany");
 document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
 document.getElementById("position").value = window.localStorage.getItem("lastposition");
@@ -301,7 +308,7 @@ function goSecondPage4(){
 }
 
 function getValues4(){  
-    window.localStorage.setItem("lastbusiness",document.getElementById("buisness").value);
+    window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
     window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
     window.localStorage.setItem("lastcompany",document.getElementById("company").value);
     window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);

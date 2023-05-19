@@ -342,35 +342,37 @@ header ul li a{
   font-family:'SCDream3';
 }
 
+.client-mesage{
+  margin-top: 100px;
+  font-size: 22px;
+}
+
 /* Client */
 
 .client{
+ 
   height: 500px;
   background-color: #fff;
   margin-top: 20px; 
 }
 
 .client .inner{
+  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
 
 }
-.client .client-mesage{
-  
-  font-size: 22px;
-  font-family:'SCDream5';
-  text-align: center;
-  margin-right: 700px;
-  margin-bottom: 30px;
-
-}
 
 
 .client img{
-
-  margin: 4px;
+  width:290px;
+  margin: 0.1px 2px;
+  
+}
+.mesage-mobile{
+  display: none;
 }
 
 /* topButton */
@@ -410,7 +412,7 @@ header ul li a{
   /* width: 100%; */
   /* position: relative; */
   margin: 0 auto;
-  /* height: 500px; */
+
 }
  
 .inner-swiper h1{
@@ -515,7 +517,7 @@ header ul li a{
   width: 180px;
   position: absolute;
   right: 50px;
-  top: 160px;
+  top: 170px;
 }
 
 .aline{
@@ -549,7 +551,6 @@ header ul li a{
   width: 10px;
   height: 10px;
   border-radius: 20px;
-    /* border: 0.2px solid #999; */
   margin: 5px;
   background-color: #888a89;
   bottom: 20px;
@@ -689,7 +690,15 @@ footer strong{
       display: block;
   
     }
-
+    .client-mesage{
+      display: none;
+    }
+    .mesage-mobile{
+      display: block;
+      font-family:'SCDream5';
+      margin:20px;
+    }
+    
 
     /* SWIPER */
 
@@ -793,15 +802,10 @@ footer strong{
     }
   }
 
-  @media screen and (max-width:1700px){
 
-      .monitor{
-        width: 150px;
-        top: 120px;
-      }
-  }
   @media screen and (max-width:1500px){
     .monitor{
-      top: 90px;
+     width: 150px;
+      top: 120px;
 
   }}

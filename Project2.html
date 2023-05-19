@@ -113,6 +113,20 @@
 document.getElementById("pay").value = window.localStorage.getItem("lastpay");
 document.getElementById("date").value = window.localStorage.getItem("lastdate");
 document.getElementById("term").value = window.localStorage.getItem("lastterm");
+if(window.localStorage.getItem("lastonline") == "on"){
+    document.getElementById("online").checked = true;  
+}else if(window.localStorage.getItem("lastonline") == "off"){
+    document.getElementById("offline").checked = true;  
+};
+
+const selectedCityValue =window.localStorage.getItem("lastcity");
+const originCity = document.getElementById("city");
+const cityLen = originCity.options.length;
+for(let i = 0 ; i < cityLen ; i ++){
+    if(originCity.options[i].value == selectedCityValue){
+        originCity.options[i].selected = true;
+    }
+}
 
  window.lastpay = '';
  window.lastdate = '';
@@ -136,9 +150,10 @@ document.getElementById("term").value = window.localStorage.getItem("lastterm");
         window.localStorage.setItem("lastpay",document.getElementById("pay").value);
         window.localStorage.setItem("lastdate",document.getElementById("date").value);
         window.localStorage.setItem("lastterm",document.getElementById("term").value);
-        window.localStorage.setItem("lastonline",document.getElementById("online").value);
+        window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
         window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
-        window.localStorage.setItem("lastcity",document.getElementById("city").value);
+        const cityValue = document.getElementById("city");
+        window.localStorage.setItem("lastcity",cityValue.options[cityValue.selectedIndex].value);
         window.location.href = "./Project3.html";
     }
 

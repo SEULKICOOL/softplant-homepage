@@ -99,6 +99,19 @@
     <!-- script -->
     <script>
 console.log('프로젝트이름") :'+window.localStorage.getItem("lastdesc"));
+if(window.localStorage.getItem("lastit") == "ity"){
+    document.getElementById("it").checked = true;  
+}else if(window.localStorage.getItem("lastit") == "itno"){
+    document.getElementById("itNo").checked = true;  
+}else{
+};
+if(window.localStorage.getItem("lastwork") == "work"){
+    document.getElementById("work").checked = true;  
+}else if(window.localStorage.getItem("lastwork") == "workno"){
+    document.getElementById("workNo").checked = true;  
+}else{
+};
+
 document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
 
 
@@ -119,9 +132,9 @@ document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
     }
 
     function getValues3(){  
-        window.localStorage.setItem("lastit",document.getElementById("it").value);
+        window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);
         window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
-        window.localStorage.setItem("lastwork",document.getElementById("work").value);
+        window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);
         window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
         window.localStorage.setItem("lastdesc",document.getElementById("desc").value);
         window.location.href = "./Project4.html";
