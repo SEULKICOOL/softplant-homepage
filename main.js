@@ -1,7 +1,7 @@
 
 
 
-//portfolio swiper
+//Portfolio Swiper
 
 const contents = document.querySelectorAll(".swiper");
 let num = 0;
@@ -20,6 +20,7 @@ var swiper = new Swiper(".mySwiper", {
     }
 })
 
+//Mobile Size Swiper
 function getSlidesPerView() {
   const isMobile = window.innerWidth <= 800;
   return isMobile ? 1 : 1.5;

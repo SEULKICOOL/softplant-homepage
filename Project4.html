@@ -271,77 +271,77 @@
     </div>
 <!-- script -->
 <script>
-console.log('프로젝트이름") :'+window.localStorage.getItem("lastcompany"));
-if(window.localStorage.getItem("lastbusiness") == "division"){
-    document.getElementById("buisness").checked = true;  
-}else if(window.localStorage.getItem("lastbusiness") == "solo"){
-    document.getElementById("solo").checked = true;  
-}else{
-};
+    console.log('프로젝트이름") :'+window.localStorage.getItem("lastcompany"));
+    if(window.localStorage.getItem("lastbusiness") == "division"){
+        document.getElementById("buisness").checked = true;  
+    }else if(window.localStorage.getItem("lastbusiness") == "solo"){
+        document.getElementById("solo").checked = true;  
+    }else{
+    };
 
-document.getElementById("company").value = window.localStorage.getItem("lastcompany");
-document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
-document.getElementById("position").value = window.localStorage.getItem("lastposition");
-document.getElementById("phone").value = window.localStorage.getItem("lastphone");
-document.getElementById("email").value = window.localStorage.getItem("lastemail");
-
-
-
-window.lastbusiness = '';
-window.lastsolo = '';
-window.lastcompany = '';
-window.lastyourname = '';
-window.lastposition = '';
-window.lastphone = '';
-window.lastemail ='';
+    document.getElementById("company").value = window.localStorage.getItem("lastcompany");
+    document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
+    document.getElementById("position").value = window.localStorage.getItem("lastposition");
+    document.getElementById("phone").value = window.localStorage.getItem("lastphone");
+    document.getElementById("email").value = window.localStorage.getItem("lastemail");
 
 
-function goSecondPage4(){
-    lastbusiness = document.getElementById("buisness").value;
-    lastsolo = document.getElementById("solo").value
-    lastcompany = document.getElementById("company").value
-    lastyourname = document.getElementById("yourname").value
-    lastposition = document.getElementById("position").value
-    lastphone = document.getElementById("phone").value
-    lastemail = document.getElementById("email").value
-    
-}
 
-function getValues4(){  
-    window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
-    window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
-    window.localStorage.setItem("lastcompany",document.getElementById("company").value);
-    window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
-    window.localStorage.setItem("lastposition",document.getElementById("position").value);
-    window.localStorage.setItem("lastphone",document.getElementById("phone").value);
-    window.localStorage.setItem("lastemail",document.getElementById("email").value);
-    var checkbox = document.getElementById("myCheckbox");
-        if (!checkbox.checked) {
-          alert("개인정보 취급방침에 동의 해야 합니다.");
-        } else if( confirm("제출하시겠습니까?")){
-          alert("전송되었습니다")
-          window.location.href = "/"
-        } else{}
+    window.lastbusiness = '';
+    window.lastsolo = '';
+    window.lastcompany = '';
+    window.lastyourname = '';
+    window.lastposition = '';
+    window.lastphone = '';
+    window.lastemail ='';
+
+
+    function goSecondPage4(){
+        lastbusiness = document.getElementById("buisness").value;
+        lastsolo = document.getElementById("solo").value
+        lastcompany = document.getElementById("company").value
+        lastyourname = document.getElementById("yourname").value
+        lastposition = document.getElementById("position").value
+        lastphone = document.getElementById("phone").value
+        lastemail = document.getElementById("email").value
         
-        }
-   
+    }
 
-  // Mobile
+    function getValues4(){  
+        window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
+        window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
+        window.localStorage.setItem("lastcompany",document.getElementById("company").value);
+        window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
+        window.localStorage.setItem("lastposition",document.getElementById("position").value);
+        window.localStorage.setItem("lastphone",document.getElementById("phone").value);
+        window.localStorage.setItem("lastemail",document.getElementById("email").value);
+        var checkbox = document.getElementById("myCheckbox");
+            if (!checkbox.checked) {
+            alert("개인정보 취급방침에 동의 해야 합니다.");
+            } else if( confirm("제출하시겠습니까?")){
+            alert("전송되었습니다")
+            window.location.href = "/"
+            } else{}
+            
+            }
+    
+
+    // Mobile
 
 
-  const menuIcon = document.querySelector('.mobile-icon');
-  const menu = document.querySelector('.mobile-menu');
+    const menuIcon = document.querySelector('.mobile-icon');
+    const menu = document.querySelector('.mobile-menu');
 
-  
-  menuIcon.addEventListener('click', function() {
-    menu.style.display = 'block';
-  });
+    
+    menuIcon.addEventListener('click', function() {
+        menu.style.display = 'block';
+    });
 
-  const closeIcon = document.getElementById("mobile");
+    const closeIcon = document.getElementById("mobile");
 
-  closeIcon.addEventListener('click',function() {
-    menu.style.display = 'none';
-  })
+    closeIcon.addEventListener('click',function() {
+        menu.style.display = 'none';
+    })
   
 </script>
 

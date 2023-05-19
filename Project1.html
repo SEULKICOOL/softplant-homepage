@@ -91,71 +91,72 @@
  <!-- script -->
 
 <script>
-console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
-document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
-document.getElementById("field").value = window.localStorage.getItem("lastField");
+    
+    console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
+    document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
+    document.getElementById("field").value = window.localStorage.getItem("lastField");
 
-if(window.localStorage.getItem("lastNew") == "new"){
-    document.getElementById("new").checked = true;  
-}else if(window.localStorage.getItem("lastNew") == "old"){
-    document.getElementById("old").checked = true;  
-}else{
-};
+    if(window.localStorage.getItem("lastNew") == "new"){
+        document.getElementById("new").checked = true;  
+    }else if(window.localStorage.getItem("lastNew") == "old"){
+        document.getElementById("old").checked = true;  
+    }else{
+    };
 
-if(window.localStorage.getItem("lastReady") == "ready"){
-    document.getElementById("ready").checked = true;  
-}else if(window.localStorage.getItem("lastReady") == "no"){
-    document.getElementById("no").checked = true;  
-}else{
-};
-
-
-window.lastProjectName = '';
-window.lastField = '';
-window.lastNew = '';
-window.lastOld = '';
-window.lastReady = '';
-window.lastNo = '';
-window.testTxt ='testTxt';
+    if(window.localStorage.getItem("lastReady") == "ready"){
+        document.getElementById("ready").checked = true;  
+    }else if(window.localStorage.getItem("lastReady") == "no"){
+        document.getElementById("no").checked = true;  
+    }else{
+    };
 
 
-function goSecondPage(){
-    lastProjectName = document.getElementById("projectName").value;
-    lastField = document.getElementById("field").value;
-    lastNew = document.getElementById("new").value;
-    lastOld = document.getElementById("old").value;
-    lastReady = document.getElementById("ready").value;
-    lastNo = document.getElementById("no").value;
-    window.location.href = "./Project2.html";
-}
-
-function getValues(){  
-    window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
-    window.localStorage.setItem("lastField",document.getElementById("field").value);
-    window.localStorage.setItem("lastNew",document.querySelector('input[name="project"]:checked').value);
-    window.localStorage.setItem("lastOld",document.getElementById("old").value);
-    window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
-    window.localStorage.setItem("lastNo",document.getElementById("no").value);
-
-    window.location.href = "./Project2.html";
-}
-  // Mobile
+    window.lastProjectName = '';
+    window.lastField = '';
+    window.lastNew = '';
+    window.lastOld = '';
+    window.lastReady = '';
+    window.lastNo = '';
+    window.testTxt ='testTxt';
 
 
-  const menuIcon = document.querySelector('.mobile-icon');
-  const menu = document.querySelector('.mobile-menu');
+    function goSecondPage(){
+        lastProjectName = document.getElementById("projectName").value;
+        lastField = document.getElementById("field").value;
+        lastNew = document.getElementById("new").value;
+        lastOld = document.getElementById("old").value;
+        lastReady = document.getElementById("ready").value;
+        lastNo = document.getElementById("no").value;
+        window.location.href = "./Project2.html";
+    }
 
-  
-  menuIcon.addEventListener('click', function() {
-    menu.style.display = 'block';
-  });
+    function getValues(){  
+        window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+        window.localStorage.setItem("lastField",document.getElementById("field").value);
+        window.localStorage.setItem("lastNew",document.querySelector('input[name="project"]:checked').value);
+        window.localStorage.setItem("lastOld",document.getElementById("old").value);
+        window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
+        window.localStorage.setItem("lastNo",document.getElementById("no").value);
 
-  const closeIcon = document.getElementById("mobile");
+        window.location.href = "./Project2.html";
+    }
+    // Mobile
 
-  closeIcon.addEventListener('click',function() {
-    menu.style.display = 'none';
-  })
-  
+
+    const menuIcon = document.querySelector('.mobile-icon');
+    const menu = document.querySelector('.mobile-menu');
+
+    
+    menuIcon.addEventListener('click', function() {
+        menu.style.display = 'block';
+    });
+
+    const closeIcon = document.getElementById("mobile");
+
+    closeIcon.addEventListener('click',function() {
+        menu.style.display = 'none';
+    })
+    
 
 </script>
 </body>

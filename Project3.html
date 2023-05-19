@@ -97,66 +97,67 @@
         </div>
 
     <!-- script -->
-    <script>
-console.log('프로젝트이름") :'+window.localStorage.getItem("lastdesc"));
-if(window.localStorage.getItem("lastit") == "ity"){
-    document.getElementById("it").checked = true;  
-}else if(window.localStorage.getItem("lastit") == "itno"){
-    document.getElementById("itNo").checked = true;  
-}else{
-};
-if(window.localStorage.getItem("lastwork") == "work"){
-    document.getElementById("work").checked = true;  
-}else if(window.localStorage.getItem("lastwork") == "workno"){
-    document.getElementById("workNo").checked = true;  
-}else{
-};
+<script>
 
-document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
+    console.log('프로젝트이름") :'+window.localStorage.getItem("lastdesc"));
+    if(window.localStorage.getItem("lastit") == "ity"){
+        document.getElementById("it").checked = true;  
+    }else if(window.localStorage.getItem("lastit") == "itno"){
+        document.getElementById("itNo").checked = true;  
+    }else{
+    };
+    if(window.localStorage.getItem("lastwork") == "work"){
+        document.getElementById("work").checked = true;  
+    }else if(window.localStorage.getItem("lastwork") == "workno"){
+        document.getElementById("workNo").checked = true;  
+    }else{
+    };
 
-
- window.lastit = '';
- window.lastitno = '';
- window.lastwork = '';
- window.lastworkno = '';
- window.lastdesc = '';
- window.testTxt ='testTxt';
-
-    function goSecondPage3(){
-        lastit = document.getElementById("it").value;
-        lastitno = document.getElementById("itNo").value
-        lastwork = document.getElementById("work").value
-        lastworkno = document.getElementById("workNo").value
-        lastdesc = document.getElementById("desc").value
-        window.location.href = "./Project4.html"
-    }
-
-    function getValues3(){  
-        window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);
-        window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
-        window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);
-        window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
-        window.localStorage.setItem("lastdesc",document.getElementById("desc").value);
-        window.location.href = "./Project4.html";
-    }
-
-      // Mobile
+    document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
 
 
-  const menuIcon = document.querySelector('.mobile-icon');
-  const menu = document.querySelector('.mobile-menu');
+    window.lastit = '';
+    window.lastitno = '';
+    window.lastwork = '';
+    window.lastworkno = '';
+    window.lastdesc = '';
+    window.testTxt ='testTxt';
 
-  
-  menuIcon.addEventListener('click', function() {
-    menu.style.display = 'block';
-  });
+        function goSecondPage3(){
+            lastit = document.getElementById("it").value;
+            lastitno = document.getElementById("itNo").value
+            lastwork = document.getElementById("work").value
+            lastworkno = document.getElementById("workNo").value
+            lastdesc = document.getElementById("desc").value
+            window.location.href = "./Project4.html"
+        }
 
-  const closeIcon = document.getElementById("mobile");
+        function getValues3(){  
+            window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);
+            window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
+            window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);
+            window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
+            window.localStorage.setItem("lastdesc",document.getElementById("desc").value);
+            window.location.href = "./Project4.html";
+        }
 
-  closeIcon.addEventListener('click',function() {
-    menu.style.display = 'none';
-  })
-  
-    </script>
+    // Mobile
+
+
+    const menuIcon = document.querySelector('.mobile-icon');
+    const menu = document.querySelector('.mobile-menu');
+
+    
+    menuIcon.addEventListener('click', function() {
+        menu.style.display = 'block';
+    });
+
+    const closeIcon = document.getElementById("mobile");
+
+    closeIcon.addEventListener('click',function() {
+        menu.style.display = 'none';
+    })
+
+</script>
 </body>
 </html>

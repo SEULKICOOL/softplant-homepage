@@ -110,69 +110,74 @@
 
     <script>
        
-document.getElementById("pay").value = window.localStorage.getItem("lastpay");
-document.getElementById("date").value = window.localStorage.getItem("lastdate");
-document.getElementById("term").value = window.localStorage.getItem("lastterm");
-if(window.localStorage.getItem("lastonline") == "on"){
-    document.getElementById("online").checked = true;  
-}else if(window.localStorage.getItem("lastonline") == "off"){
-    document.getElementById("offline").checked = true;  
-};
+        document.getElementById("pay").value = window.localStorage.getItem("lastpay");
+        document.getElementById("date").value = window.localStorage.getItem("lastdate");
+        document.getElementById("term").value = window.localStorage.getItem("lastterm");
+        if(window.localStorage.getItem("lastonline") == "on"){
+            document.getElementById("online").checked = true;  
+        }else if(window.localStorage.getItem("lastonline") == "off"){
+            document.getElementById("offline").checked = true;  
+        };
 
-const selectedCityValue =window.localStorage.getItem("lastcity");
-const originCity = document.getElementById("city");
-const cityLen = originCity.options.length;
-for(let i = 0 ; i < cityLen ; i ++){
-    if(originCity.options[i].value == selectedCityValue){
-        originCity.options[i].selected = true;
-    }
-}
+        // 시티 값 세팅하기
 
- window.lastpay = '';
- window.lastdate = '';
- window.lastterm = '';
- window.lastonline = '';
- window.lastoffline = '';
- window.lastcity = '';
- window.testTxt ='testTxt';
+        const selectedCityValue =window.localStorage.getItem("lastcity");
+        const originCity = document.getElementById("city");
+        const cityLen = originCity.options.length;
 
-    function goSecondPage2(){
-        lastpay = document.getElementById("pay").value;
-        lastdate = document.getElementById("date").value
-        lastterm = document.getElementById("term").value
-        lastonline = document.getElementById("online").value
-        lastoffline = document.getElementById("offline").value
-        lastcity = document.getElementById("city").value
-        window.location.href = "./Project3.html"
-    }
+        for(let i = 0 ; i < cityLen ; i ++){
+            if(originCity.options[i].value == selectedCityValue){
+                originCity.options[i].selected = true;
+            }
+        }
 
-    function getValues2(){  
-        window.localStorage.setItem("lastpay",document.getElementById("pay").value);
-        window.localStorage.setItem("lastdate",document.getElementById("date").value);
-        window.localStorage.setItem("lastterm",document.getElementById("term").value);
-        window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
-        window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
-        const cityValue = document.getElementById("city");
-        window.localStorage.setItem("lastcity",cityValue.options[cityValue.selectedIndex].value);
-        window.location.href = "./Project3.html";
-    }
+        
 
-      // Mobile
+        window.lastpay = '';
+        window.lastdate = '';
+        window.lastterm = '';
+        window.lastonline = '';
+        window.lastoffline = '';
+        window.lastcity = '';
+        window.testTxt ='testTxt';
+
+            function goSecondPage2(){
+                lastpay = document.getElementById("pay").value;
+                lastdate = document.getElementById("date").value
+                lastterm = document.getElementById("term").value
+                lastonline = document.getElementById("online").value
+                lastoffline = document.getElementById("offline").value
+                lastcity = document.getElementById("city").value
+                window.location.href = "./Project3.html"
+            }
+
+            function getValues2(){  
+                window.localStorage.setItem("lastpay",document.getElementById("pay").value);
+                window.localStorage.setItem("lastdate",document.getElementById("date").value);
+                window.localStorage.setItem("lastterm",document.getElementById("term").value);
+                window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
+                window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
+                const cityValue = document.getElementById("city");
+                window.localStorage.setItem("lastcity",cityValue.options[cityValue.selectedIndex].value);
+                window.location.href = "./Project3.html";
+            }
+
+        // Mobile
 
 
-  const menuIcon = document.querySelector('.mobile-icon');
-  const menu = document.querySelector('.mobile-menu');
+        const menuIcon = document.querySelector('.mobile-icon');
+        const menu = document.querySelector('.mobile-menu');
 
-  
-  menuIcon.addEventListener('click', function() {
-    menu.style.display = 'block';
-  });
+        
+        menuIcon.addEventListener('click', function() {
+            menu.style.display = 'block';
+        });
 
-  const closeIcon = document.getElementById("mobile");
+        const closeIcon = document.getElementById("mobile");
 
-  closeIcon.addEventListener('click',function() {
-    menu.style.display = 'none';
-  })
+        closeIcon.addEventListener('click',function() {
+            menu.style.display = 'none';
+        })
   
     </script>
 
