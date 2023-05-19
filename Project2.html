@@ -63,16 +63,16 @@
                     <h2>예산 및 일정</h2>
                     <span></span>
                         <h3>* 프로젝트 예산</h3>
-                            <input type="text" placeholder="부가가치세 10% 포함가격 or 미확정">
+                            <input type="text" id="pay" placeholder="부가가치세 10% 포함가격 or 미확정"/>
                         <h3>* 예상 시작일</h3>
-                            <input type="text" placeholder="예상 날짜를 입력해 주세요( 최대한 빠르게 등 )">
+                            <input type="text" id="date" placeholder="예상 날짜를 입력해 주세요  (ex.2023.05.23 or 최대한 빠르게 )">
                         <h3>* 프로젝트 진행 기간</h3>
-                            <input type="text" placeholder="ex. 3개월">
+                            <input type="text" id="term" placeholder="ex. 3개월">
                         <div class="select">
                             <h3> * 프로젝트 진행 분류</h3>
-                            <input type="radio" id="on" name="online" value="on">
+                            <input type="radio" id="online" name="online" value="on">
                             <label for="online">온라인(전화, 화상회의 등)</label>
-                            <input type="radio" id="off" name="online" value="off">
+                            <input type="radio" id="offline" name="online" value="off">
                             <label for="online">오프라인 (방문회의)</label>
                           
                         </div>    
@@ -102,12 +102,64 @@
                  </div>
         </section>
         <div class="next">
-            <button class="btn"> <a href="./Project1.html"> 이 전</a> </button>
-            <button class="btn"> <a href="./Project3.html">다 음</a> </button>
+            <button class="btn" ><a href="./Project1.html" >이전</a></button>
+            <button class="btn" ><a href="#" onclick="getValues2()">다음</a></button>
           
          </div>
     <!-- script -->
-    <script src="./Project.js"></script>
-    <script>console.log('page2 lastProjectName : '+window.testTxt);</script>
+
+    <script>
+       
+document.getElementById("pay").value = window.localStorage.getItem("lastpay");
+document.getElementById("date").value = window.localStorage.getItem("lastdate");
+document.getElementById("term").value = window.localStorage.getItem("lastterm");
+
+ window.lastpay = '';
+ window.lastdate = '';
+ window.lastterm = '';
+ window.lastonline = '';
+ window.lastoffline = '';
+ window.lastcity = '';
+ window.testTxt ='testTxt';
+
+    function goSecondPage2(){
+        lastpay = document.getElementById("pay").value;
+        lastdate = document.getElementById("date").value
+        lastterm = document.getElementById("term").value
+        lastonline = document.getElementById("online").value
+        lastoffline = document.getElementById("offline").value
+        lastcity = document.getElementById("city").value
+        window.location.href = "./Project3.html"
+    }
+
+    function getValues2(){  
+        window.localStorage.setItem("lastpay",document.getElementById("pay").value);
+        window.localStorage.setItem("lastdate",document.getElementById("date").value);
+        window.localStorage.setItem("lastterm",document.getElementById("term").value);
+        window.localStorage.setItem("lastonline",document.getElementById("online").value);
+        window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
+        window.localStorage.setItem("lastcity",document.getElementById("city").value);
+        window.location.href = "./Project3.html";
+    }
+
+      // Mobile
+
+
+  const menuIcon = document.querySelector('.mobile-icon');
+  const menu = document.querySelector('.mobile-menu');
+
+  
+  menuIcon.addEventListener('click', function() {
+    menu.style.display = 'block';
+  });
+
+  const closeIcon = document.getElementById("mobile");
+
+  closeIcon.addEventListener('click',function() {
+    menu.style.display = 'none';
+  })
+  
+    </script>
+
 </body>
 </html>

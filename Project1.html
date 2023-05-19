@@ -84,17 +84,63 @@
     </section>
 
     <div class="next">
-       <button class="btn" ><a href="#" onclick="getValues()">다음</a></button>
+       <button class="btn" ><a href="#" onclick="getValues();">다음</a></button>
 
 
 
  <!-- script -->
-<script src="./Project.js"></script>
+
 <script>
-    console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
-    document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
-    document.getElementById("field").value = window.localStorage.getItem("lastField");
-    document.getElementById("new").value = window.localStorage.getItem("lastNew");
+console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
+document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
+document.getElementById("field").value = window.localStorage.getItem("lastField");
+
+
+window.lastProjectName = '';
+window.lastField = '';
+window.lastNew = '';
+window.lastOld = '';
+window.lastReady = '';
+window.lastNo = '';
+window.testTxt ='testTxt';
+
+
+function goSecondPage(){
+    lastProjectName = document.getElementById("projectName").value;
+    lastField = document.getElementById("field").value
+    lastNew = document.getElementById("new").value
+    lastOld = document.getElementById("old").value
+    lastReady = document.getElementById("ready").value
+    lastNo = document.getElementById("no").value
+    window.location.href = "./Project2.html"
+}
+
+function getValues(){  
+    window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+    window.localStorage.setItem("lastField",document.getElementById("field").value);
+    window.localStorage.setItem("lastNew",document.getElementById("new").value);
+    window.localStorage.setItem("lastOld",document.getElementById("old").value);
+    window.localStorage.setItem("lastReady",document.getElementById("ready").value);
+    window.localStorage.setItem("lastNo",document.getElementById("no").value);
+    window.location.href = "./Project2.html";
+}
+  // Mobile
+
+
+  const menuIcon = document.querySelector('.mobile-icon');
+  const menu = document.querySelector('.mobile-menu');
+
+  
+  menuIcon.addEventListener('click', function() {
+    menu.style.display = 'block';
+  });
+
+  const closeIcon = document.getElementById("mobile");
+
+  closeIcon.addEventListener('click',function() {
+    menu.style.display = 'none';
+  })
+  
 
 </script>
 </body>

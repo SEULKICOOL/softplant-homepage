@@ -74,11 +74,11 @@
                     
                         <div class="callInfo">
                             <h3>* 연락정보</h3>
-                            <input type="text" placeholder=" * 회사명">
-                            <input type="text" placeholder=" * 담당자이름">
-                            <input type="text" placeholder="직책">
-                            <input type="text" placeholder=" * 담당자 휴대폰 번호">
-                            <input type="text" placeholder="담당자 이메일 주소">
+                            <input type="text" id="company" placeholder=" * 회사명">
+                            <input type="text" id="yourname" placeholder=" * 담당자이름">
+                            <input type="text" id="position" placeholder="직책">
+                            <input type="text" id="phone" placeholder=" * 담당자 휴대폰 번호">
+                            <input type="text" id="email" placeholder="담당자 이메일 주소">
                         </div>
                         <div class="privacy">
                             <h3> * 개인정보 취급방침 </h3>
@@ -267,10 +267,76 @@
     </section>
     <div class="next">
             <button class="btn"> <a href="./Project2.html"> 이 전</a> </button>
-            <button onclick="showConfirm()"> 제 출 </button>
+            <button onclick="getValues4()"> 제 출 </button>
     </div>
 <!-- script -->
-<script src="./Project.js"></script>
+<script>
+console.log('프로젝트이름") :'+window.localStorage.getItem("lastcompany"));
+document.getElementById("company").value = window.localStorage.getItem("lastcompany");
+document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
+document.getElementById("position").value = window.localStorage.getItem("lastposition");
+document.getElementById("phone").value = window.localStorage.getItem("lastphone");
+document.getElementById("email").value = window.localStorage.getItem("lastemail");
+
+
+
+window.lastbusiness = '';
+window.lastsolo = '';
+window.lastcompany = '';
+window.lastyourname = '';
+window.lastposition = '';
+window.lastphone = '';
+window.lastemail ='';
+
+
+function goSecondPage4(){
+    lastbusiness = document.getElementById("buisness").value;
+    lastsolo = document.getElementById("solo").value
+    lastcompany = document.getElementById("company").value
+    lastyourname = document.getElementById("yourname").value
+    lastposition = document.getElementById("position").value
+    lastphone = document.getElementById("phone").value
+    lastemail = document.getElementById("email").value
+    
+}
+
+function getValues4(){  
+    window.localStorage.setItem("lastbusiness",document.getElementById("buisness").value);
+    window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
+    window.localStorage.setItem("lastcompany",document.getElementById("company").value);
+    window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
+    window.localStorage.setItem("lastposition",document.getElementById("position").value);
+    window.localStorage.setItem("lastphone",document.getElementById("phone").value);
+    window.localStorage.setItem("lastemail",document.getElementById("email").value);
+    var checkbox = document.getElementById("myCheckbox");
+        if (!checkbox.checked) {
+          alert("개인정보 취급방침에 동의 해야 합니다.");
+        } else if( confirm("제출하시겠습니까?")){
+          alert("전송되었습니다")
+          window.location.href = "/"
+        } else{}
+        
+        }
+   
+
+  // Mobile
+
+
+  const menuIcon = document.querySelector('.mobile-icon');
+  const menu = document.querySelector('.mobile-menu');
+
+  
+  menuIcon.addEventListener('click', function() {
+    menu.style.display = 'block';
+  });
+
+  const closeIcon = document.getElementById("mobile");
+
+  closeIcon.addEventListener('click',function() {
+    menu.style.display = 'none';
+  })
+  
+</script>
 
  
 </body>
