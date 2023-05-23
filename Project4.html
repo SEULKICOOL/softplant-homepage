@@ -426,10 +426,9 @@
             console.log('start getForm')
             var formData = getFormData(form);
 
-            console.log('end getForm')
+            
             var data = formData.data;
-            console.log('formData:'+ JSON.stringify(formData) );
-            console.log('data:'+ JSON.stringify(data) );
+          
             if (formData.honeypot) {
                 return false;
             }
@@ -444,7 +443,7 @@
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     form.reset();
-                    console.log('3')
+                
                     window.localStorage.clear();
                     alert("제출되었습니다. 확인 후 연락드리겠습니다.");
                     window.location.href = "/"
@@ -455,7 +454,7 @@
                 return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
             }).join('&');
 
-            console.log('encoded:'+encoded)
+           
             xhr.send(encoded);
         }
 
