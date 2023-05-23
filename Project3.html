@@ -92,8 +92,8 @@
     </section>
     <div class="next">
        
-         <button class="btn"> <a href="./Project2.html"> 이 전</a> </button>
-            <button class="btn" ><a href="#" onclick="getValues3()">다음</a></button>
+         <button class="btn" onclick="BeforeButton2()"> 이 전  </button>
+            <button class="btn" onclick="getValues3()"> 다 음</a></button>
         </div>
 
     <!-- script -->
@@ -116,31 +116,33 @@
     document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
 
 
-    window.lastit = '';
-    window.lastitno = '';
-    window.lastwork = '';
-    window.lastworkno = '';
-    window.lastdesc = '';
-    window.testTxt ='testTxt';
+    // window.lastit = '';
+    // window.lastitno = '';
+    // window.lastwork = '';
+    // window.lastworkno = '';
+    // window.lastdesc = '';
+    // window.testTxt ='testTxt';
 
-        function goSecondPage3(){
-            lastit = document.getElementById("it").value;
-            lastitno = document.getElementById("itNo").value
-            lastwork = document.getElementById("work").value
-            lastworkno = document.getElementById("workNo").value
-            lastdesc = document.getElementById("desc").value
-            window.location.href = "./Project4.html"
-        }
+    //     function goSecondPage3(){ d
+    //         lastit = document.getElementById("it").value;
+    //         lastitno = document.getElementById("itNo").value
+    //         lastwork = document.getElementById("work").value
+    //         lastworkno = document.getElementById("workNo").value
+    //         lastdesc = document.getElementById("desc").value
+    //         window.location.href = "./Project4.html"
+    //     }
 
         function getValues3(){  
             window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);
-            window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
+            // window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
             window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);
-            window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
+            // window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
             window.localStorage.setItem("lastdesc",document.getElementById("desc").value);
             window.location.href = "./Project4.html";
         }
-
+        function BeforeButton2(){
+                window.location.href = "./Project2.html";
+            }
     // Mobile
 
 
