@@ -63,7 +63,7 @@
                     <h2>예산 및 일정</h2>
                     <span></span>
                         <h3>* 프로젝트 예산</h3>
-                            <input type="text" id="pay" placeholder="부가가치세 10% 포함가격 or 미확정"/>
+                            <input type="text" id="pay" placeholder="부가가치세 10% 포함가격 or 미확정" onkeyup="inputNumberFormat(this)"/>
                         <h3>* 예상 시작일</h3>
                             <input type="text" id="date" placeholder="예상 날짜를 입력해 주세요  (ex.2023.05.23 or 최대한 빠르게 )">
                         <h3>* 프로젝트 진행 기간</h3>
@@ -109,6 +109,20 @@
     <!-- script -->
 
     <script>
+        //예산 금액 숫자에 콤마 찍어주는 함수
+        function inputNumberFormat(obj) {
+            obj.value = comma(uncomma(obj.value));
+        }
+        function comma(str) {
+            str = String(str);
+            return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+        }
+        function uncomma(str) {
+            str = String(str);
+            return str.replace(/[^\d]+/g, '');
+        };
+
+
        
         document.getElementById("pay").value = window.localStorage.getItem("lastpay");
         document.getElementById("date").value = window.localStorage.getItem("lastdate");

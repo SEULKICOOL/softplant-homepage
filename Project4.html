@@ -254,7 +254,7 @@
     </section>
     <div class="next">
             <button class="btn"> <a href="./Project2.html"> 이 전</a> </button>
-            <form id="emailForm" class="gform" method="POST" data-email="softplant99@gmail.com" onclick="getValues4();"
+            <form id="emailForm" class="gform" method="POST" data-email="softplant99@gmail.com" 
             action="https://script.google.com/macros/s/AKfycbyHwtkCQxjUxyBQCdydAx9KVWn41hPpCYyTSMO2WNOF2iDjq38hJhQ8GLQVAtiiLVk3/exec
             " ><p>제 출</p>
                 <input type="text" id="ProjectName" name="ProjectName"/>
@@ -334,7 +334,7 @@
     };
 
 //Send E-mail
-
+    //form 안에 input 태그에 값 담기
     document.getElementById("ProjectName").value = window.localStorage.getItem("lastProjectName");
     document.getElementById("ProjectField").value = window.localStorage.getItem("lastField");
     document.getElementById("SelectProject").value = window.localStorage.getItem("lastNew");
@@ -374,8 +374,103 @@
     let sendPhoneNumber= window.localStorage.getItem("lastphone");
     let sendEmail= window.localStorage.getItem("lastemail");
 
-    
+// form태그 값 메일로 보내기    
    
+(function() {
+                                 
+    function getFormData(form) {
+    var elements = form.elements;
+    var honeypot;
+
+    var fields = Object.keys(elements).filter(function(k) {
+    if (elements[k].name === "honeypot") {
+    honeypot = elements[k].value;
+    return false;
+    }
+    return true;
+    }).map(function(k) {
+    if(elements[k].name !== undefined) {
+    return elements[k].name;
+    }else if(elements[k].length > 0){
+    return elements[k].item(0).name;
+    }
+    }).filter(function(item, pos, self) {
+    return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+    var element = elements[name];
+                           
+    formData[name] = element.value;
+
+    if (element.length) {
+    var data = [];
+    for (var i = 0; i < element.length; i++) {
+    var item = element.item(i);
+    if (item.checked || item.selected) {
+    data.push(item.value);}
+     }
+    formData[name] = data.join(', ');
+    }
+    });
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
+    formData.formGoogleSendEmail = form.dataset.email || "";
+    return {data: formData, honeypot: honeypot};
+    }
+
+    function handleFormSubmit(event) { 
+        event.preventDefault();         
+        var form = event.target;
+        var formData = getFormData(form);
+        var data = formData.data;
+        if (formData.honeypot) {
+        return false;
+        }
+        disableAllButtons(form);
+        var url = form.action;
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+                                   
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+        form.reset();
+        var formElements = form.querySelector(".form-elements")
+        if (formElements) {
+        formElements.style.display = "none"; 
+        }
+        var thankYouMessage = form.querySelector(".thankyou_message");
+        if (thankYouMessage) {
+        thankYouMessage.style.display = "block";
+        alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
+        }
+        }
+        };
+                                   
+        var encoded = Object.keys(data).map(function(k) {
+            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
+            xhr.send(encoded);
+            }
+            function loaded() {
+                                        
+            var forms = document.querySelectorAll("form.gform");
+            for (var i = 0; i < forms.length; i++) {
+            forms[i].addEventListener("submit", handleFormSubmit, false);
+            }
+            };
+            document.addEventListener("DOMContentLoaded", loaded, false);
+
+            function disableAllButtons(form) {
+                var buttons = form.querySelectorAll("button");
+                for (var i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = true;
+                }
+                };
+            })();
+
 
 
 //Mobile
