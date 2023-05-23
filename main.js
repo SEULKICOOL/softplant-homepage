@@ -64,8 +64,14 @@ getSlidesPerView();
     menu.style.display = 'none';
   })
 
+  function projectGo(){
+    window.location.href = "./Project1.html";
+  }
+  function DownloadPDF(){
+  window.location.href = "./소프트플랜트회사소개서.pdf"
+  }
 //  //MENU SCROLL EVENT
-console.log()
+
 //   const service = document.querySelector(".p-service").pageYOffset
 //   const  portfolio= document.querySelector(".p-portfolio")
 //   // const Teams = document.querySelector(".").offsetTop;

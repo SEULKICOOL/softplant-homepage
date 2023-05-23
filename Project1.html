@@ -83,9 +83,9 @@
                      
     </section>
 
-    <div class="next">
-       <button class="btn" ><a href="#" onclick="getValues();">다음</a></button>
-
+        <div class="next">
+       <button class="btn" onclick="getValues()">다 음 </button>
+        </div>
 
 
  <!-- script -->
@@ -103,48 +103,44 @@
     }else{
     };
 
-    if(window.localStorage.getItem("lastReady") == "ready"){
-        document.getElementById("ready").checked = true;  
-    }else if(window.localStorage.getItem("lastReady") == "no"){
-        document.getElementById("no").checked = true;  
-    }else{
-    };
-
-
-    window.lastProjectName = '';
-    window.lastField = '';
-    window.lastNew = '';
-    window.lastOld = '';
-    window.lastReady = '';
-    window.lastNo = '';
-    window.testTxt ='testTxt';
-
-
-    function goSecondPage(){
-        lastProjectName = document.getElementById("projectName").value;
-        lastField = document.getElementById("field").value;
-        lastNew = document.getElementById("new").value;
-        lastOld = document.getElementById("old").value;
-        lastReady = document.getElementById("ready").value;
-        lastNo = document.getElementById("no").value;
-        window.location.href = "./Project2.html";
+    if(window.localStorage.getItem("lastReady") !== ''){
+        if(window.localStorage.getItem("lastReady") == "ready"){
+            document.getElementById("ready").checked = true;  
+        }else if(window.localStorage.getItem("lastReady") == "no"){
+            document.getElementById("no").checked = true;  
+        };
     }
 
-    function getValues(){  
-        window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+
+
+    // window.lastProjectName = '';
+    // window.lastField = '';
+    // window.lastNew = '';
+    // window.lastOld = '';
+    // window.lastReady = '';
+    // window.lastNo = '';
+    // window.testTxt ='testTxt';
+
+
+    // function goSecondPage(){
+    //     lastProjectName = document.getElementById("projectName").value;
+    //     lastField = document.getElementById("field").value;
+    //     lastNew = document.getElementById("new").value;
+    //     lastOld = document.getElementById("old").value;
+    //     lastReady = document.getElementById("ready").value;
+    //     lastNo = document.getElementById("no").value;
+    //     window.location.href = "./Project2.html";
+    // }
+
+    function getValues(){
+         window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
         window.localStorage.setItem("lastField",document.getElementById("field").value);
         window.localStorage.setItem("lastNew",document.querySelector('input[name="project"]:checked').value);
-        window.localStorage.setItem("lastOld",document.getElementById("old").value);
+        // window.localStorage.setItem("lastOld",document.getElementById("old").value);
         window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
-        window.localStorage.setItem("lastNo",document.getElementById("no").value);
-        // let  = document.getElementById("projectName");
-        //     for(let i =0; i < projectName.length;i++)
-        //     if(projectName){
-        //         alert('필수 입력항목을 입력해주셔야 합니다.')
-        //         return false;
-        //     }else{
-             window.location.href = "./Project2.html";}
-    // }
+        // window.localStorage.setItem("lastNo",document.getElementById("no").value);
+        window.location.href = "./Project2.html";}
+    
     // Mobile
 
 

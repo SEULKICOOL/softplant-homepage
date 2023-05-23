@@ -351,6 +351,7 @@ form input {
 
 
 
+
 .thankyou_message{
 
   font-size: 15px;
@@ -389,6 +390,8 @@ button{
   height: 50px;
   font-size: 15px;
   font-family: 'SCDream4';
+  justify-content: center;
+  align-items:center;
 
 }
 button:hover{
