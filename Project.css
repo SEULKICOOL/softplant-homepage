@@ -553,20 +553,10 @@ textarea{
     width: 100px;
     height: 40px;
     font-size: 12px;
-    margin-top: 40px;    
-  }
-  #emailForm{
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 40px;    523
+    align-items: center;
   }
 
-  
-  #emailForm p{
-    font-size: 12px;
-    padding-top : 15px;
-  }
  
   textarea{
     width: 350px;
@@ -598,6 +588,8 @@ textarea{
     justify-content: left;
     margin-top: 20px;
    }
+   
+  
 
 }
 
