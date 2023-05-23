@@ -65,12 +65,13 @@ getSlidesPerView();
   })
 
 //  //MENU SCROLL EVENT
-//   const service = document.querySelector(".").offsetTop;
-//   const  portfolio= document.querySelector(".").offsetTop;
-//   const Teams = document.querySelector(".").offsetTop;
+console.log()
+//   const service = document.querySelector(".p-service").pageYOffset
+//   const  portfolio= document.querySelector(".p-portfolio")
+//   // const Teams = document.querySelector(".").offsetTop;
  
 
-//   nav.forEach((span, index)=>{
+//   service.forEach((span, index)=>{
 //     span.addEventListener("click",()=>{
 //         if(index===0){
 //             scrollTo({top:0,behavior:"smooth"});
