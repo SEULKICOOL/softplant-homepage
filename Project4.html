@@ -66,7 +66,7 @@
                       
                         <div class="select">
                             <h3> * 구분</h3>
-                            <input type="radio" id="buisness" name="division" value="division">
+                            <input type="radio" id="buisness" name="division" value="division" onchange="getValues4()">
                             <label for="division">사업자</label>
                             <input type="radio" id="solo" name="division" value="solo">
                             <label for="division">개인</label>
@@ -74,11 +74,11 @@
                     
                         <div class="callInfo">
                             <h3>* 연락정보</h3>
-                            <input type="text" id="company" placeholder=" * 회사명">
-                            <input type="text" id="yourname" placeholder=" * 담당자이름">
-                            <input type="text" id="position" placeholder="직책">
-                            <input type="text" id="phone" placeholder=" * 담당자 휴대폰 번호">
-                            <input type="text" id="email" placeholder="담당자 이메일 주소">
+                            <input type="text" id="company" onchange="getValues4()" placeholder=" * 회사명">
+                            <input type="text" id="yourname" onchange="getValues4()" placeholder=" * 담당자이름">
+                            <input type="text" id="position" onchange="getValues4()" placeholder="직책">
+                            <input type="text" id="phone" onchange="getValues4()" placeholder=" * 담당자 휴대폰 번호">
+                            <input type="text" id="email" onchange="getValues4()" placeholder="담당자 이메일 주소">
                         </div>
                         <div class="privacy">
                             <h3> * 개인정보 취급방침 </h3>
@@ -249,14 +249,14 @@
                         </div>
                     </div>
                 </div>
+            
 
                 
     </section>
     <div class="next">
-            <button class="btn"> <a href="./Project2.html"> 이 전</a> </button>
-            <form id="emailForm" class="gform" method="POST" data-email="softplant99@gmail.com" 
-            action="https://script.google.com/macros/s/AKfycbyHwtkCQxjUxyBQCdydAx9KVWn41hPpCYyTSMO2WNOF2iDjq38hJhQ8GLQVAtiiLVk3/exec
-            " ><p>제 출</p>
+            <button class="btn" onclick="getValues4()"> <a href="./Project3.html"> 이 전 </a> </button>
+            <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant99@gmail.com" 
+                action="https://script.google.com/macros/s/AKfycbyIdAEZZEo9vjka67ZNrZLq9vnrkxPnMWFXM8xr_tVIbjEv0XXlUViJ11vJ4XONhlA/exec">
                 <input type="text" id="ProjectName" name="ProjectName"/>
                 <input type="text" id="ProjectField" name="ProjectField"/>
                 <input type="text" id="SelectProject" name="SelectProject"/>
@@ -275,7 +275,14 @@
                 <input type="text" id="Position" name="Position"/>
                 <input type="text" id="PhoneNumber" name="PhoneNumber"/>
                 <input type="text" id="Email" name="Email"/>
+                <!-- <button type="button" onclick="checkValidation()">제출</button> -->
+                <button id="btnSubmit">제출</button> 
             </form>
+    </div>
+    <div style="display:none;" class="thankyou_message">
+        <div class="container">
+        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        </div>
     </div>
 <!-- script -->
 <script>
@@ -290,50 +297,6 @@
 
 
 
-
-
-    //로컬에 저장하기
-    document.getElementById("company").value = window.localStorage.getItem("lastcompany");
-    document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
-    document.getElementById("position").value = window.localStorage.getItem("lastposition");
-    document.getElementById("phone").value = window.localStorage.getItem("lastphone");
-    document.getElementById("email").value = window.localStorage.getItem("lastemail");
-    
-
-
-    //로컬에 저장하기 글로벌 함수
-    window.lastbusiness = '';
-    window.lastsolo = '';
-    window.lastcompany = '';
-    window.lastyourname = '';
-    window.lastposition = '';
-    window.lastphone = '';
-    window.lastemail ='';
-
-    //다음페이지로 가도 로컬에 저장된 내용 보이도록 값 설정
-    function goSecondPage4(){
-        lastbusiness = document.getElementById("buisness").value;
-        lastsolo = document.getElementById("solo").value
-        lastcompany = document.getElementById("company").value
-        lastyourname = document.getElementById("yourname").value
-        lastposition = document.getElementById("position").value
-        lastphone = document.getElementById("phone").value
-        lastemail = document.getElementById("email").value
-        
-    }
-    
-    function getValues4(){  
-        window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
-        window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
-        window.localStorage.setItem("lastcompany",document.getElementById("company").value);
-        window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
-        window.localStorage.setItem("lastposition",document.getElementById("position").value);
-        window.localStorage.setItem("lastphone",document.getElementById("phone").value);
-        window.localStorage.setItem("lastemail",document.getElementById("email").value);
-            
-    };
-
-//Send E-mail
     //form 안에 input 태그에 값 담기
     document.getElementById("ProjectName").value = window.localStorage.getItem("lastProjectName");
     document.getElementById("ProjectField").value = window.localStorage.getItem("lastField");
@@ -346,134 +309,178 @@
     document.getElementById("ProjectPeople").value = window.localStorage.getItem("lastitno");
     document.getElementById("ProjectMeeting").value = window.localStorage.getItem("lastonline");
     document.getElementById("ProjectManaging").value = window.localStorage.getItem("lastwork");
-    document.getElementById("ProjectDivision").value = window.localStorage.getItem("lastsolo");
     document.getElementById("ProjectText").value = window.localStorage.getItem("lastdesc");
-    document.getElementById("CompanyName").value = window.localStorage.getItem("lastcompany");
-    document.getElementById("UserName").value = window.localStorage.getItem("lastyourname");
-    document.getElementById("Position").value = window.localStorage.getItem("lastposition");
-    document.getElementById("PhoneNumber").value = window.localStorage.getItem("lastphone");
-    document.getElementById("Email").value = window.localStorage.getItem("lastemail");
+    
 
-  
-    let SendProjectName = window.localStorage.getItem("lastProjectName");
-    let SendFleid = window.localStorage.getItem("lastFleld");
-    let SendSelectProject = window.localStorage.getItem("SelectProject");
-    let sendConditionProject= window.localStorage.getItem("ConditionProject");
-    let SendProjectPay = window.localStorage.getItem("lastpay");
-    let sendProjectdate= window.localStorage.getItem("lastdate");
-    let SendProjectTerm = window.localStorage.getItem("lastterm");
-    let sendProjectMeeting= window.localStorage.getItem("lastonline");
-    let SendClientCity = window.localStorage.getItem("lastcity");
-    let sendProjectPeople= window.localStorage.getItem("lastitno");
-    let sendProjectManaging= window.localStorage.getItem("lastwork");
-    let sendProjectText= window.localStorage.getItem("lastdesc");
-    let sendProjectDivision= window.localStorage.getItem("lastsolo");
-    let sendCompanyName= window.localStorage.getItem("lastcompany");
-    let sendUserName= window.localStorage.getItem("lastyourname");
-    let sendPosition= window.localStorage.getItem("lastposition");
-    let sendPhoneNumber= window.localStorage.getItem("lastphone");
-    let sendEmail= window.localStorage.getItem("lastemail");
+    //로컬에 저장하기
+    document.getElementById("company").value = window.localStorage.getItem("lastcompany");
+    document.getElementById("yourname").value = window.localStorage.getItem("lastyourname");
+    document.getElementById("position").value = window.localStorage.getItem("lastposition");
+    document.getElementById("phone").value = window.localStorage.getItem("lastphone");
+    document.getElementById("email").value = window.localStorage.getItem("lastemail");
+    
+
+
+   
+    
+    function getValues4(){  
+        window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
+        window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
+        window.localStorage.setItem("lastcompany",document.getElementById("company").value);
+        window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
+        window.localStorage.setItem("lastposition",document.getElementById("position").value);
+        window.localStorage.setItem("lastphone",document.getElementById("phone").value);
+        window.localStorage.setItem("lastemail",document.getElementById("email").value);
+       
+        document.getElementById("ProjectDivision").value = window.localStorage.getItem("lastsolo");
+        document.getElementById("CompanyName").value = window.localStorage.getItem("lastcompany");
+        document.getElementById("UserName").value = window.localStorage.getItem("lastyourname");
+        document.getElementById("Position").value = window.localStorage.getItem("lastposition");
+        document.getElementById("PhoneNumber").value = window.localStorage.getItem("lastphone");
+        document.getElementById("Email").value = window.localStorage.getItem("lastemail");
+        //Send E-mail
+
+
+    };
+
+
 
 // form태그 값 메일로 보내기    
-   
-(function() {
-                                 
-    function getFormData(form) {
-    var elements = form.elements;
-    var honeypot;
 
-    var fields = Object.keys(elements).filter(function(k) {
-    if (elements[k].name === "honeypot") {
-    honeypot = elements[k].value;
-    return false;
-    }
-    return true;
-    }).map(function(k) {
-    if(elements[k].name !== undefined) {
-    return elements[k].name;
-    }else if(elements[k].length > 0){
-    return elements[k].item(0).name;
-    }
-    }).filter(function(item, pos, self) {
-    return self.indexOf(item) == pos && item;
-    });
 
-    var formData = {};
-    fields.forEach(function(name){
-    var element = elements[name];
-                           
-    formData[name] = element.value;
-
-    if (element.length) {
-    var data = [];
-    for (var i = 0; i < element.length; i++) {
-    var item = element.item(i);
-    if (item.checked || item.selected) {
-    data.push(item.value);}
-     }
-    formData[name] = data.join(', ');
-    }
-    });
-    formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
-    formData.formGoogleSendEmail = form.dataset.email || "";
-    return {data: formData, honeypot: honeypot};
-    }
-
-    function handleFormSubmit(event) { 
-        event.preventDefault();         
-        var form = event.target;
-        var formData = getFormData(form);
-        var data = formData.data;
-        if (formData.honeypot) {
-        return false;
-        }
-        disableAllButtons(form);
-        var url = form.action;
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', url);
-                                   
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-        form.reset();
-        var formElements = form.querySelector(".form-elements")
-        if (formElements) {
-        formElements.style.display = "none"; 
-        }
-        var thankYouMessage = form.querySelector(".thankyou_message");
-        if (thankYouMessage) {
-        thankYouMessage.style.display = "block";
-        alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
-        }
-        }
-        };
-                                   
-        var encoded = Object.keys(data).map(function(k) {
-            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-            }).join('&');
-            xhr.send(encoded);
+    (function() {
+        function checkValidation(){
+            // validation check
+            let f = document.emailForm;
+            let persoanlYn = document.getElementById("myCheckbox").checked;
+            if(!persoanlYn){
+                alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+                return false;
+            }else{
+                console.log('call handleFormSubmit');
+                f.submit();
+                // f.handleFormSubmit();
             }
-            function loaded() {
+            console.log("persoanlYn:"+persoanlYn)
+            // validation check
+        }                             
+        function getFormData(form) {
+            var elements = form.elements;
+            var honeypot;
+
+            var fields = Object.keys(elements).filter(function(k) {
+                if (elements[k].fo === "honeypot") {
+                    honeypot = elements[k].value;
+                    return false;
+                }
+                return true;
+            }).map(function(k) {
+                if(elements[k].name !== undefined) {
+                    return elements[k].name;
+                }else if(elements[k].length > 0){
+                    return elements[k].item(0).name;
+                }
+            }).filter(function(item, pos, self) {
+                return self.indexOf(item) == pos && item;
+            });
+            
+
+            var formData = {};
+            fields.forEach(function(name){
+                var element = elements[name];
+                                    
+                formData[name] = element.value;
+
+                if (element.length) {
+                    var data = [];
+                    for (var i = 0; i < element.length; i++) {
+                        var item = element.item(i);
+                        if (item.checked || item.selected) {
+                            data.push(item.value);
+                        }
+                    }
+                    formData[name] = data.join(', ');
+                }
+            });
+
+            formData.formDataNameOrder = JSON.stringify(fields);
+            formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
+            formData.formGoogleSendEmail = form.dataset.email || "";
+            return {data: formData, honeypot: honeypot};
+        }
+              
+        function handleFormSubmit(event) { 
+
+            console.log('in handleFormSubmit');
+            event.preventDefault();
+            let persoanlYn = document.getElementById("myCheckbox").checked;
+            if(!persoanlYn){
+                alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+                return false;
+            }
+            
+            var form = event.target;
+            console.log('start getForm')
+            var formData = getFormData(form);
+
+            console.log('end getForm')
+            var data = formData.data;
+            console.log('formData:'+ JSON.stringify(formData) );
+            console.log('data:'+ JSON.stringify(data) );
+            if (formData.honeypot) {
+                console.log('나가리')
+                return false;
+            }
+            console.log('1')
+            disableAllButtons(form);
+
+            var url = form.action;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+                                    
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            console.log('2')
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    form.reset();
+                    console.log('3')
+                    window.localStorage.clear();
+                    alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
+                    window.location.href = "/"
+                
+                }
+            };
+            console.log('4')        
+            var encoded = Object.keys(data).map(function(k) {
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
+
+            console.log('encoded:'+encoded)
+            xhr.send(encoded);
+        }
+
+        function loaded() {
                                         
             var forms = document.querySelectorAll("form.gform");
             for (var i = 0; i < forms.length; i++) {
-            forms[i].addEventListener("submit", handleFormSubmit, false);
+                forms[i].addEventListener("submit", handleFormSubmit, false);
             }
-            };
-            document.addEventListener("DOMContentLoaded", loaded, false);
+        };
 
-            function disableAllButtons(form) {
-                var buttons = form.querySelectorAll("button");
-                for (var i = 0; i < buttons.length; i++) {
+        document.addEventListener("DOMContentLoaded", loaded, false);
+
+        function disableAllButtons(form) {
+            var buttons = form.querySelectorAll("button");
+            for (var i = 0; i < buttons.length; i++) {
                 buttons[i].disabled = true;
-                }
-                };
-            })();
+            }
+        };
+        
+        })();
 
 
 
-//Mobile
+    //Mobile
     const menuIcon = document.querySelector('.mobile-icon');
     const menu = document.querySelector('.mobile-menu');
 
@@ -487,7 +494,9 @@
     closeIcon.addEventListener('click',function() {
         menu.style.display = 'none';
     })
-  
+
+
+
 </script>
 
  

@@ -63,7 +63,7 @@
                         <h3>* 프로젝트 제목</h3>
                             <input type="text" id="projectName" placeholder="프로젝트 제목을 입력해 주세요 (ex.통합 DB구축, 건강 앱 개발)">
                         <h3>* 프로젝트 분야</h3>
-                            <input type="text" id ="field" placeholder="프로젝트 분야를 선택해 주세요.">
+                            <input type="text" id ="field" placeholder="ex.웹,애플리케이션,퍼블리싱,소프트웨어">
                         <div class="select">
                             <h3> * 프로젝트 진행 분류</h3>
                             <input type="radio" id="new" name="project" value="new">
@@ -137,9 +137,14 @@
         window.localStorage.setItem("lastOld",document.getElementById("old").value);
         window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
         window.localStorage.setItem("lastNo",document.getElementById("no").value);
-
-        window.location.href = "./Project2.html";
-    }
+        // let  = document.getElementById("projectName");
+        //     for(let i =0; i < projectName.length;i++)
+        //     if(projectName){
+        //         alert('필수 입력항목을 입력해주셔야 합니다.')
+        //         return false;
+        //     }else{
+             window.location.href = "./Project2.html";}
+    // }
     // Mobile
 
 
