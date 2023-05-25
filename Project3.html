@@ -133,10 +133,32 @@
     //     }
 
         function getValues3(){  
-            window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);
-            // window.localStorage.setItem("lastitno",document.getElementById("itNo").value);
-            window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);
-            // window.localStorage.setItem("lastworkno",document.getElementById("workNo").value);
+            var chk_radio3 = document.getElementsByName('it')
+            var sel_type3 = null;
+            for(var i =0; i<chk_radio3.length; i++){
+                if(chk_radio3[i].checked == true){
+                    sel_type3 = chk_radio3[i].value
+                }
+            }
+            if(sel_type3 == null){
+                 window.localStorage.setItem("lastit",'');
+            }else{
+            window.localStorage.setItem("lastit",document.querySelector('input[name="it"]:checked').value);  
+        }
+
+        var chk_radio4 = document.getElementsByName('work')
+        var sel_type4 = null;
+        for(var i =0; i<chk_radio4.length; i++){
+            if(chk_radio4[i].checked == true){
+                sel_type4 = chk_radio4[i].value
+            }
+        }
+            if(sel_type4 == null){
+                window.localStorage.setItem("lastwork",'');
+            }else{
+                window.localStorage.setItem("lastwork",document.querySelector('input[name="work"]:checked').value);  
+        }
+           
             window.localStorage.setItem("lastdesc",document.getElementById("desc").value);
             window.location.href = "./Project4.html";
         }

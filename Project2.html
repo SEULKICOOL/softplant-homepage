@@ -166,10 +166,23 @@
         //     }
 
             function getValues2(){  
+            var chk_radio2 = document.getElementsByName('online')
+            var sel_type2 = null;
+            for(var i =0; i<chk_radio2.length; i++){
+                if(chk_radio2[i].checked == true){
+                sel_type2 = chk_radio2[i].value
+                }
+            }
+                if(sel_type2 == null){
+                window.localStorage.setItem("lastonline",'');
+                }else{
+                window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);  
+                }
+    
                 window.localStorage.setItem("lastpay",document.getElementById("pay").value);
                 window.localStorage.setItem("lastdate",document.getElementById("date").value);
                 window.localStorage.setItem("lastterm",document.getElementById("term").value);
-                window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
+                // window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
                 // window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
                 const cityValue = document.getElementById("city");
                 window.localStorage.setItem("lastcity",cityValue.options[cityValue.selectedIndex].value);

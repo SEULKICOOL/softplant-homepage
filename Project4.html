@@ -324,7 +324,19 @@
    
     
     function getValues4(){  
-        window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
+        var chk_radio5 = document.getElementsByName('division')
+        var sel_type5 = null;
+            for(var i =0; i<chk_radio5.length; i++){
+                if(chk_radio5[i].checked == true){
+                    sel_type5 = chk_radio5[i].value
+                }
+            }
+            if(sel_type5 == null){
+                 window.localStorage.setItem("lastcompany",'');
+            }else{
+            window.localStorage.setItem("lastcompany",document.querySelector('input[name="division"]:checked').value);  
+        }
+        // window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
         // window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
         window.localStorage.setItem("lastcompany",document.getElementById("company").value);
         window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
