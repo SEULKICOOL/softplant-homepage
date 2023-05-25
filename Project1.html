@@ -96,12 +96,15 @@
     document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
     document.getElementById("field").value = window.localStorage.getItem("lastField");
 
-    if(window.localStorage.getItem("lastNew") == "new"){
-        document.getElementById("new").checked = true;  
-    }else if(window.localStorage.getItem("lastNew") == "old"){
-        document.getElementById("old").checked = true;  
-    }else{
-    };
+    if(window.localStorage.getItem("lastNew") !== ''){
+        if(window.localStorage.getItem("lastNew") == "new"){
+            document.getElementById("new").checked = true;  
+        }else if(window.localStorage.getItem("lastNew") == "old"){
+            document.getElementById("old").checked = true;  
+
+        }
+    }
+    
 
     if(window.localStorage.getItem("lastReady") !== ''){
         if(window.localStorage.getItem("lastReady") == "ready"){
@@ -133,11 +136,47 @@
     // }
 
     function getValues(){
-         window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+        // window.localStorage.setItem("lastProjectName",document.getElementById("projectName").value);
+        var chk_radio = document.getElementsByName('project')
+        
+        var sel_type = null;
+
+        for(var i =0; i<chk_radio.length; i++){
+        if(chk_radio[i].checked == true){
+            sel_type = chk_radio[i].value
+        }
+        }
+
+        if(sel_type == null){
+        // alert("프로젝트 진행 분류를 선택해 주세요")
+        // return false;
+            window.localStorage.setItem("lastNew",'');
+        }else{
+            window.localStorage.setItem("lastNew",document.querySelector('input[name="project"]:checked').value);  
+        }
+
+        var chk_radio1 = document.getElementsByName('ready')
+        
+        var sel_type1 = null;
+
+        for(var i =0; i<chk_radio1.length; i++){
+        if(chk_radio1[i].checked == true){
+            sel_type1 = chk_radio1[i].value
+        }
+        }
+
+        if(sel_type1 == null){
+        // alert("프로젝트 진행 분류를 선택해 주세요")
+        // return false;
+            window.localStorage.setItem("lastReady",'');
+        }else{
+            window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);  
+        }
+        // window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
         window.localStorage.setItem("lastField",document.getElementById("field").value);
-        window.localStorage.setItem("lastNew",document.querySelector('input[name="project"]:checked').value);
+        
         // window.localStorage.setItem("lastOld",document.getElementById("old").value);
-        window.localStorage.setItem("lastReady",document.querySelector('input[name="ready"]:checked').value);
+        
         // window.localStorage.setItem("lastNo",document.getElementById("no").value);
         window.location.href = "./Project2.html";}
     
