@@ -29,24 +29,6 @@ function getSlidesPerView() {
 getSlidesPerView();
 
 
-
-//Topbutton scroll Event
-
-  window.addEventListener('scroll', function() {
-    const element = document.getElementById('topButton'); 
-    const windowHeight = window.pageYOffset;
-      if (400< windowHeight) {
-        element.style.display = 'block';
-      } else {
-        element.style.display = 'none'; 
-      }
-  });
-
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-
   // Mobile
 
 
@@ -71,7 +53,7 @@ getSlidesPerView();
   window.location.href = "./소프트플랜트회사소개서.pdf"
   }
 
-  //  //MENU SCROLL EVENT
+//MENU SCROLL EVENT
 
 const Service1 = document.querySelectorAll(".ClkService");
 const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
@@ -82,7 +64,7 @@ const sec3 = document.querySelector(".PORTFOLIO").offsetTop;
 
 Service1.forEach((span, index) => {
   span.addEventListener("click", () => {
-    window.scrollTo({ top: sec1, behavior: "smooth" });
+    window.scrollTo({ top: sec1, behavior: "smooth" });ㅡ
   });
 });
 
@@ -91,3 +73,20 @@ PORTFOLIO1.forEach((span, index) => {
     window.scrollTo({ top: sec3, behavior: "smooth" });
   });
 });
+
+//Topbutton scroll Event
+
+window.addEventListener('scroll', function() {
+  const element = document.getElementById('topButton'); 
+  const windowHeight = window.pageYOffset;
+    if (400< windowHeight) {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none'; 
+    }
+});
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
