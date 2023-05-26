@@ -70,25 +70,24 @@ getSlidesPerView();
   function DownloadPDF(){
   window.location.href = "./소프트플랜트회사소개서.pdf"
   }
-//  //MENU SCROLL EVENT
 
-//   const service = document.querySelector(".p-service").pageYOffset
-//   const  portfolio= document.querySelector(".p-portfolio")
-//   // const Teams = document.querySelector(".").offsetTop;
- 
+  //  //MENU SCROLL EVENT
 
-//   service.forEach((span, index)=>{
-//     span.addEventListener("click",()=>{
-//         if(index===0){
-//             scrollTo({top:0,behavior:"smooth"});
-//         }else if(index===1){
-//             scrollTo({top:service,behavior:"smooth"});
-//         }else if(index===2){
-//             scrollTo({top:portfolio,behavior:"smooth"});
-//         }else{
-//             scrollTo({top:Teams,behavior:"smooth"});
-//         }
-//     });
-// });
+const Service1 = document.querySelectorAll(".ClkService");
+const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
 
+const sec1 = document.querySelector(".know-how").offsetTop;
+// const sec2 = document.querySelector("").offsetTop;
+const sec3 = document.querySelector(".PORTFOLIO").offsetTop;
 
+Service1.forEach((span, index) => {
+  span.addEventListener("click", () => {
+    window.scrollTo({ top: sec1, behavior: "smooth" });
+  });
+});
+
+PORTFOLIO1.forEach((span, index) => {
+  span.addEventListener("click", () => {
+    window.scrollTo({ top: sec3, behavior: "smooth" });
+  });
+});

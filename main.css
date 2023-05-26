@@ -163,6 +163,7 @@ header ul li a{
   display: block;
   color: #333;
   font-family:'SCDream4';
+  cursor: pointer;
 }
 
   header ul li a:hover{
@@ -230,6 +231,7 @@ header ul li a{
 .mobile-menu a{
  text-decoration: none;
  color: #333;
+ cursor: pointer;
 }
 
 .mobile-menu a:hover{
