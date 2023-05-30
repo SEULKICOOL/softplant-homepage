@@ -265,30 +265,30 @@ header ul li a{
 
 
 .visual .inner h1{
+  letter-spacing: -2px;
   font-size: 70px;
-  margin: 24px 0px 24px;
+  margin-bottom: 25px;
   background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family:'SCDream9';
-    
+  margin-top: 50px;
 }
   
 .visual .inner h4{
-  font-size: 45px;
-  font-weight: 800;
-  font-family:'SCDream6';
+  font-size: 70px;  
+  word-spacing: -5px;
+  font-family:'SCDream9';
   color: #333336;
-  margin: 24px 0px 24px;
-
+  margin-bottom: 35px;
 }
 .visual .inner h5{
-
-  font-size: 18px ;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 20px;
   color: #999;
-  margin: 24px 0 48px;
-  margin-top: 10px;
+  margin-bottom: 50px;
   font-family:"SCDream4";
 }
 
@@ -307,7 +307,7 @@ header ul li a{
 
 }
 .know-how p{
-  font-family:'SCDream2';
+  font-family:'SCDream3';
   font-size: 14px;
 }
 .know-how strong{
@@ -336,17 +336,17 @@ header ul li a{
 
 }
 .Service p{
-  font-size: 15px;
-  font-family:'SCDream2';
+  font-size: 14px;
+  font-family:'SCDream4';
   margin-top: 15px;
   text-align:left;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-left: 50px;
   color: #3c3c3cb3;
 }
 .Service strong{
   
-  font-family:'SCDream3';
+  font-family:'SCDream4';
 }
 
 .client-mesage{
