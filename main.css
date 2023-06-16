@@ -409,7 +409,7 @@ header ul li a{
 
 /* Teams */
 .Teams{
-  height: 1800px;
+  height: 1700px;
 }
 
 .Teams .inner{
@@ -426,8 +426,7 @@ header ul li a{
 }
 
 .Text-line h1{
-  text-align: left;
-  margin-left: 300px;
+  
   font-size: 30px;
   font-family:'SCDream6';
   padding-bottom: 10px;
@@ -437,8 +436,7 @@ header ul li a{
 .Text-line h4{
   font-size: 20px;
   font-family:'SCDream3';
-  text-align: left;
-  margin-left: 300px;
+
   padding-bottom: 10px;
   color:#333;
 
@@ -454,11 +452,13 @@ header ul li a{
 }
 
 .EX-line{
-  margin-left: 300px;
-  text-align: left;
-  margin-top: 20px;
+  padding-top: 20px;
+  margin: 0 auto;
+ 
+
 }
 .EX-line h2{
+  margin: 0 auto;
   font-size: 20px;
   font-family:'SCDream4';
   padding-bottom: 15px;
