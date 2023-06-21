@@ -724,8 +724,12 @@ footer strong{
 
     .btn{
 
-        width: 160px;
+        width: 140px;
       }
+
+    .btn-main{
+       width: 140px;
+    }
     
     
     .visual{
@@ -813,6 +817,7 @@ footer strong{
       font-family:'SCDream5';
       margin:20px;
     }
+
     
 
     /* SWIPER */
