@@ -734,7 +734,7 @@ footer strong{
       height: 100vh;
     }
     .visual .inner h1{
-      font-size: 35px;
+      font-size: 40px;
     
       background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
       background-clip: text;
@@ -744,7 +744,7 @@ footer strong{
         
     }
     .visual .inner h4{
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 800;
       font-family:'SCDream6';
       color: #333336;
