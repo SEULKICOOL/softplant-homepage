@@ -532,7 +532,7 @@ textarea{
   .inner label {
       font-size: 13px;
       padding-left: 0;
-  
+      margin-left: 0;
      
       
   }
