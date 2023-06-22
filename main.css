@@ -819,7 +819,7 @@ footer strong{
 
     /* Teams */
     .Teams{
-      height: 1300px;
+     
       position: relative;
     }
 
@@ -839,7 +839,7 @@ footer strong{
 
     }
     .automation{
-      margin-top: 320px;
+      margin-top: 240px;
       margin-left: 25px;
       position: absolute;
       width: 95%;
@@ -847,7 +847,7 @@ footer strong{
     }
 
     .WEB{
-      margin-top: 340px;
+      margin-top: 260px;
       position: absolute;
       margin-left: 25px;
       width: 95%;
@@ -855,7 +855,7 @@ footer strong{
 
     }
     .ERP{
-      margin-top: 620px;
+      margin-top: 465px;
       position: absolute;
       width: 95%;
       margin-left: 25px;
