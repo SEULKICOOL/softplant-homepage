@@ -944,6 +944,15 @@ footer strong{
 
 @media screen and (min-width:700px) and (max-width:1000px){
 
+  header ul{
+    display: none;
+
+  }
+  
+  .mobile-icon{
+    display: block;
+    
+  }
     header ul li{
       margin: 15px;
     }
