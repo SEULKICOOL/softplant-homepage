@@ -533,7 +533,7 @@ textarea{
       font-size: 13px;
       padding-left: 0;
       margin-left: 0;
-     
+      vertical-align: middle;
       
   }
   .select{
