@@ -351,6 +351,7 @@ header ul li a{
 
 .client-mesage{
   margin-top: 100px;
+  padding-bottom: 200px;
   font-size: 22px;
 }
 
@@ -372,6 +373,15 @@ header ul li a{
 
 }
 
+.img-box1{
+  margin-top: 30px;
+}
+.img-box2{
+  margin-top: 30px;
+}
+.img-box3{
+  margin-top: 30px;
+}
 
 .client img{
   width:290px;
@@ -409,7 +419,7 @@ header ul li a{
 
 /* Teams */
 .Teams{
-  height: 1700px;
+  height: 1000px;
 }
 
 .Teams .inner{
@@ -469,50 +479,38 @@ header ul li a{
   line-height: 1.6;
   
 }
+.Teams img{
+  display: block;
+}
+.first {
+  display: flex;
+}
 
+.Seconds{
+  display: flex;
+}
 
 .CEO{
-
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 570px;
-  height: 250px;
- 
-  
-}
-
-.Teams h3{
-  padding-top: 30px;
-  padding-bottom: 20px;
-  font-size: 18px;
-  font-family:'SCDream6';
-}
-.Teams p{
-  line-height: 1.6;
-  font-size: 16px;
-  font-family:'SCDream4';
-}
-
-.automation{
   margin: 0 auto;
   margin-top: 70px;
-  width: 570px;
-  height: 250px;
+  margin-right: 20px;
+
+}
+.automation{
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .WEB{
   margin: 0 auto;
-  margin-top: 120px;
-  width: 570px;
-  height: 250px;
-
+  margin-top: 70px;
+  margin-left: 0px;
 }
 .ERP{
   margin: 0 auto;
-  margin-top: 120px;
-  width: 570px;
-  height: 250px;
-
+  margin-top: 20px;
+  margin-left: 0px;
 }
  
    
@@ -724,11 +722,11 @@ footer strong{
 
     .btn{
 
-        width: 140px;
+        width: 160px;
       }
 
     .btn-main{
-       width: 140px;
+       width: 160px;
     }
     
     
