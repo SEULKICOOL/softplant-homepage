@@ -792,7 +792,7 @@ footer strong{
     }
  
     .client{
-      height: 1300px;
+      height: 1400px;
    
     }
     .client h1{
@@ -800,6 +800,7 @@ footer strong{
       margin-left: 100px;
       display: inline-block;
       font-size: 22px;
+      margin-top: 70px;
      
     }
     
@@ -816,7 +817,50 @@ footer strong{
       margin:20px;
     }
 
+    /* Teams */
+    .Teams{
+      height: 1300px;
+      position: relative;
+    }
+
+    .Text-line h1{
+      font-size: 25px;
+    }
+  
+    .Teams img{
+      width: 95%;
+    }
+
+    .CEO{
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 0;
     
+
+    }
+    .automation{
+      margin-top: 320px;
+      margin-left: 25px;
+      position: absolute;
+      width: 95%;
+      
+    }
+
+    .WEB{
+      margin-top: 340px;
+      position: absolute;
+      margin-left: 25px;
+      width: 95%;
+
+
+    }
+    .ERP{
+      margin-top: 620px;
+      position: absolute;
+      width: 95%;
+      margin-left: 25px;
+    }
+ 
 
     /* SWIPER */
 
