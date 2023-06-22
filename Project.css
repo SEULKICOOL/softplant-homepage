@@ -446,7 +446,7 @@ textarea{
   padding-left: 10px;
 }
 
-
+/* MOBILE */
 @media (max-width:700px){
   header ul{
     display: none;
@@ -530,7 +530,7 @@ textarea{
       height:15px;
   }
   .inner label {
-      font-size: 14px;
+      font-size: 13px;
       padding-left: 0;
   
      
