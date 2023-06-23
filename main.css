@@ -712,6 +712,7 @@ footer strong{
       display: block;
       
     }
+    
 
   
     header img{
@@ -946,6 +947,11 @@ footer strong{
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   header ul{
+    display: none;
+
+  }
+  
+  header .menu{
     display: none;
 
   }
