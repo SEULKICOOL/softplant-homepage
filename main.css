@@ -971,6 +971,17 @@ footer strong{
     }
     
   }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    header ul{
+      display: none;
+  
+    }
+    
+    .mobile-icon{
+      display: block;
+      
+    }
+  }
 
 
   @media screen and (max-width:1500px){
