@@ -700,7 +700,7 @@ footer strong{
 
 /* MOBILE */
   
-@media screen and (max-width:786px){
+@media screen and (max-width:480px){
 
     
     header ul{
@@ -943,7 +943,7 @@ footer strong{
 }
 
 
-@media screen and (min-width:700px) and (max-width:1000px){
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
   header ul{
     display: none;
