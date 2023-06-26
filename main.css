@@ -243,6 +243,7 @@ header ul li a{
 /* VISUAL */
 .visual{
  height: 580px;
+ overflow: hidden;
 
 }
 
@@ -953,6 +954,12 @@ footer strong{
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
+
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
   header ul{
     display: none;
 
@@ -986,6 +993,12 @@ footer strong{
     
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    body{
+      width:100%;
+      overflow-x:hidden;
+    }
     header ul{
       display: none;
   
@@ -999,6 +1012,7 @@ footer strong{
 
 
   @media screen and (max-width:1500px){
+    
     .monitor{
      width: 150px;
       top: 120px;
