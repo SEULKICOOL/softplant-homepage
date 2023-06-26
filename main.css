@@ -780,7 +780,7 @@ footer strong{
       display:block;
       text-align: center;
       width:100%;
-      overflow-x:hidden;
+      overflow:hidden;
     }
     
     .Service h1{
@@ -957,7 +957,7 @@ footer strong{
 
   body{
     width:100%;
-    overflow-x:hidden;
+    overflow:hidden;
   }
 
   header ul{
@@ -997,7 +997,7 @@ footer strong{
 
     body{
       width:100%;
-      overflow-x:hidden;
+      overflow:hidden;
     }
     header ul{
       display: none;
@@ -1012,7 +1012,7 @@ footer strong{
 
 
   @media screen and (max-width:1500px){
-    
+
     .monitor{
      width: 150px;
       top: 120px;
