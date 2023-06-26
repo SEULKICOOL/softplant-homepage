@@ -702,7 +702,10 @@ footer strong{
   
 @media screen and (max-width:480px){
 
-    
+    body{
+      width:100%;
+      overflow-x:hidden;
+    }
     header ul{
       display: none;
   
@@ -734,6 +737,7 @@ footer strong{
     
     .visual{
       height: 100vh;
+      
     }
     .visual .inner h1{
       font-size: 40px;
