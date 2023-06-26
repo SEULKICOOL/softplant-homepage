@@ -737,6 +737,8 @@ footer strong{
     
     .visual{
       height: 100vh;
+      width:100%;
+      overflow-x:hidden;
       
     }
     .visual .inner h1{
@@ -776,7 +778,8 @@ footer strong{
       height: 650px;
       display:block;
       text-align: center;
-    
+      width:100%;
+      overflow-x:hidden;
     }
     
     .Service h1{
