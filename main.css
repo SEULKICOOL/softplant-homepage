@@ -944,29 +944,14 @@ footer strong{
     }
  
     .content img{
-      width: 100px;
+      width: 50%;
     
       }
     
-    .Client{
-     
-
-    }
+ 
     
-    .client .inner{
-      display: block;
-  
-    }
-    .client-mesage{
-      display: none;
-    }
-    .mesage-mobile{
-      display: block;
-      font-family:'SCDream5';
-      margin:20px;
-    }
     .projects{
-      height: 3000px;
+      height: 4000px;
       display: block;
     }
     .flex{      
@@ -978,20 +963,10 @@ footer strong{
     img.back-img{
       width: 380px;
       display: block;
-      margin: 10px;
+      margin: 0;
     }
    
-    /* Teams */
-
-
-    .Text-line h1{
-      font-size: 25px;
-    }
-  
-    .Teams img{
-      width: 95%;
-    }
-
+ 
     
 
     /* SWIPER */
@@ -1034,43 +1009,8 @@ footer strong{
     margin-left: 10px;
     font-size: 14px;
     }
-    .detail .ex strong{
-    font-family:'SCDream5';
-    }
-    .ex p:nth-child(2){
-    margin-top: 50px;
-    }
-    .ex p:nth-child(4){
-    margin-top: 45px;
-    }
-    .nemo-box-1 img{
-    display: none;
-    }
-    .nemo-box img{
-    display: none;
-    }
-    .nemo-box h5{
-    display: none;
-    }
-    .content img{
-      width: 100%;
-      height:250px;
-    }
-    .monitor{
-      display: none;
-    }
-  
-   
-    .ex-salt p:nth-child(2){
-      margin-top: 40px;
-    }
-    .ex-salt p:nth-child(4){
-      margin-top:45px;
-    }
-    .detail .ex-salt{
-      margin-top: 5px;
-    }
     
+
 }
 
 
