@@ -529,6 +529,9 @@ button .material-icons:hover{
   margin-top: 20px;
   color: #333;
 }
+.industy p{
+  font-size: 18px;
+}
 .line1{
   margin-left: 10px;
   width: 80px;
@@ -561,9 +564,6 @@ font-size: 18px;
 font-family:'SCDream3';
 margin-top: 10px;
 color: #333;
-}
-.navi{
-  display: none;
 }
 
 

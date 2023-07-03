@@ -917,7 +917,7 @@ footer strong{
       display:block;
       text-align: center;
       width:100%;
-      overflow:hidden;
+      overflow-x:hidden;
     }
     
     .Service h1{
@@ -948,6 +948,7 @@ footer strong{
     .projects{
       height: 4000px;
       display: block;
+      overflow-x:hidden;
     }
     .flex{      
       display:block;
@@ -955,10 +956,15 @@ footer strong{
     .projects .item{
       display: block;
     }
+    .projects .items .item:hover .back-img{
+      transform: scale(1.1);
+     
+    }
     img.back-img{
-      width: 370px;
+      width: 350px;
       display: block;
       margin: 0;
+      overflow: hidden;
     }
     .projects .items img{
      
@@ -981,12 +987,43 @@ footer strong{
       height: 2000px;
     }
     
-      
+    .CEO{
+      display: block;
+    }
    
- 
+    .teams-img{
+      margin: 0 auto;
+      margin-top: 30px;
+     
+    }
     
+    .ceo-name h1 {
+      text-align: center;
+      overflow-x: hidden;
+      margin-right: 0px;
+    }
+    .ceo-name h5{
+    
+      margin-bottom: 10px;
+      text-align: center;
+      margin-top: 2px;
+      margin-right: 0px;
+     
+    }
+    .ceo-career{
+      text-align: center;
+      margin-right: 50px;
+    }
+    
+    .automation{
+      margin-left: 0;
+     }
+     .ERP{
+       margin-left: 0;
+     }
+     
 
-}
+  }
 
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
