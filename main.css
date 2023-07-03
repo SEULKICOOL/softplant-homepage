@@ -758,11 +758,20 @@ img .tino{
   font-family:'SCDream6';
   align-items: center;
   text-align: center;
-  margin-bottom: 70px;
   margin-top: 70px;
   color:#213547;
   letter-spacing: 5px;
 
+}
+.head h5{
+  font-size: 18px;
+  font-family:'SCDream4';
+  align-items: center;
+  text-align: center;
+  color:#999;
+  letter-spacing: 10px;
+  margin-top: 10px;
+  margin-bottom: 70px;
 }
 .member{
   display: flex;
@@ -775,6 +784,8 @@ img .tino{
   background-color: #f7f7f7;
   margin-left: 50px;
   margin-top: 70px;
+  box-shadow: 1px 1px 1px 1px #999;
+  margin-bottom: 10px;
 }
 
 .name h1{
