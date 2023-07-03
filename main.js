@@ -63,7 +63,7 @@ const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
 const Teams = document.querySelectorAll(".ClkTeams");
 const sec1 = document.querySelector(".know-how").offsetTop;
 const sec2 = document.querySelector(".Teams").offsetTop;
-const sec3 = document.querySelector(".PORTFOLIO").offsetTop;
+const sec3 = document.querySelector(".projects").offsetTop;
 
 
 Service1.forEach((span, index) => {
