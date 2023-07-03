@@ -1,5 +1,5 @@
 
-
+AOS.init();
 
 //Portfolio Swiper
 
@@ -7,23 +7,24 @@ const contents = document.querySelectorAll(".swiper");
 let num = 0;
 var swiper = new Swiper(".mySwiper", { 
     loop : true,
-    slidesPerView:getSlidesPerView(),
-    spaceBetween: 100,
-    centeredSlides: true,
+    // spaceBetween:0,
+    slidesPerView: getSlidesPerView(),
+    // loopAdditionalSlides : 1,
+    // loopedSlides: auto,noSwiping : true,
+    observer:true, observeParents:true,
+    speed:7000,
     autoplay: {    
-    delay: 2500, 
-    disableOnInteraction: false, // false-스와이프 후 자동 재생
-    },
-    pagination : {
-      el : ".pagination-span",
-      clickable: true
+    delay: 0,
+    stopOnLastSlide: false,
+    disableOnInteraction: false // false-스와이프 후 자동 재생
     }
+   
 })
 
 //Mobile Size Swiper
 function getSlidesPerView() {
   const isMobile = window.innerWidth <= 800;
-  return isMobile ? 1 : 1.5;
+  return isMobile ? 1 : 5;
 }
 
 getSlidesPerView();

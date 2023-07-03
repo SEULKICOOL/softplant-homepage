@@ -122,15 +122,15 @@ button .material-icons{
 }
 
 
-
 /* header */
 header{
   width: 100%;
   height: 55px;
   background-color:#fff;
   box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
+  border-collapse: collapse;
   position: fixed;
-  z-index: 8;
+  z-index: 99;
   
  
 
@@ -351,45 +351,9 @@ header ul li a{
   font-family:'SCDream4';
 }
 
-.client-mesage{
-  margin-top: 100px;
-  padding-bottom: 200px;
-  font-size: 22px;
-}
 
-/* Client */
 
-.client{
- 
-  height: 500px;
-  background-color: #fff;
-  margin-top: 20px; 
-}
 
-.client .inner{
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-
-}
-
-.img-box1{
-  margin-top: 30px;
-}
-.img-box2{
-  margin-top: 30px;
-}
-.img-box3{
-  margin-top: 30px;
-}
-
-.client img{
-  width:290px;
-  margin: 0.1px 2px;
-  
-}
 .mesage-mobile{
   display: none;
 }
@@ -419,261 +383,428 @@ header ul li a{
   color: #fff;
     }
 
+
+   
+/* SWIPER */
+
+
+
+.Client{
+  background-color: #F9F9F9;
+
+}
+.inner-swiper{
+ 
+  margin: 0 auto;
+
+}
+ 
+.inner-swiper h1{
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-family:'SCDream6';
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  margin: 50px;
+  color:#59656f;
+}
+
+
+
+  
+.content{
+  animation:text-scroll 15s linear infinite;}
+
+@keyframes text-scroll{
+  from{
+    transform:translateX(20%);
+    -moz-transform:translateX(20%);
+    -webkit-transform:translateX(20%);
+    -o-transform:translateX(20%);
+    -ms-transform:translateX(20%);
+  }
+  to{
+    transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -webkit-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+  }
+}
+  
+
+.content img{
+  width: 200px;
+
+  }
+
+
+
+
+  /* Projects */
+
+.projects{
+  height: 2200px;
+  overflow: hidden;
+}
+
+.inner{
+  margin: 0 auto;
+}
+.line{
+  width: 1700px;
+  border: 1px solid #f9f9f9;
+  margin-top: 100px;
+}
+.projects h1{
+  font-size: 40px;
+  font-family:'SCDream6';
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 30px;
+  color:#213547;
+  margin-left: 50px;
+  letter-spacing: 5px;
+}
+.projects h3{
+  font-size: 18px;
+  margin-top: 10px;
+  font-family:'SCDream3';
+  align-items: center;
+  text-align: center;
+  margin-left: 52px;
+  letter-spacing: 7px;
+  color: #999;
+
+
+}
+.flex{
+
+  margin: 0px auto;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.projects .item{
+  position: relative;
+}
+.text-box{
+  height: 40px;
+  opacity: 0;
+}
+.projects h4{
+  font-size: 18px;
+  font-family:'SCDream4';
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+ 
+}
+.projects p{
+  font-size: 14px;
+  font-family:'SCDream3';
+  color: #999;
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+.projects h5 {
+  font-size: 14px;
+  font-family:'SCDream3';
+  color: #999;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+img .tino{
+  margin-top: 200px;
+}
+.projects .items img{
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  margin-top: 70px;
+  margin-left: 40px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.scope{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 60px;
+ 
+}
+
+.scope .plan{
+ 
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  
+
+
+}
+
+.scope .design{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+
+
+}
+.scope .infra{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+
+
+}
+.scope .db{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+
+}
+.scope2 .front{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+
+}
+.scope2{
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.scope2 .back{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+ 
+}
+.scope2 .fix{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #fff;
+  background-color: #3b4447;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 8px;
+}
+.scope .plan1{
+   
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 20px;
+
+
+
+}
+
+
+.scope .design1{
+ 
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+
+
+}
+
+
+.scope2 .back1{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+ 
+}
+.projects .items .item:hover .back-img{
+  transform: scale(0.9);
+ 
+}
+
+.projects .items .item:hover .text-box{
+  opacity: 1;
+}
+.projects .items .item:hover{
+  
+}
+
+.scope{
+  display: flex;
+}
+
 /* Teams */
 .Teams{
   height: 1000px;
 }
 
 .Teams .inner{
-  position: relative;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.Teams-line{
-  border:1px solid #f9f9f9;
-  width: 1200px;
-  text-align: center;
-  display:inline-block;
-}
-
-.Text-line h1{
-  
-  font-size: 30px;
-  font-family:'SCDream6';
-  padding-bottom: 10px;
-  color:#333;
-
-}
-.Text-line h4{
-  font-size: 20px;
-  font-family:'SCDream3';
-
-  padding-bottom: 10px;
-  color:#333;
-
-}
-.Text-line p{
-  font-size: 18px;
-  font-family:'SCDream4';
-  padding-top: 5px;
-  padding-bottom: 20px;
-  line-height: 1.1;
-  color:#333; 
- 
-}
-
-.EX-line{
-  padding-top: 20px;
-  margin: 0 auto;
- 
-
-}
-.EX-line h2{
-  margin: 0 auto;
-  font-size: 20px;
-  font-family:'SCDream4';
-  padding-bottom: 15px;
-}
-.EX-line h5{
-  font-size: 13px;
-  font-family:'SCDream2';
-  line-height: 1.6;
-  
-}
-.Teams img{
-  display: block;
-}
-.first {
-  display: flex;
-}
-
-.Seconds{
-  display: flex;
-}
-
 .CEO{
-  margin: 0 auto;
-  margin-top: 70px;
-  margin-right: 20px;
+  display: flex;
+ 
+}
+.ceo-name h1{
+  font-size: 20px;
+  font-family:'SCDream6';
+  color:#333;
+  margin-top: 50px;
+}
+.ceo-name h5{
+  font-size: 12px;
+  font-family:'SCDream4';
+  margin-bottom: 10px;
+  margin-left: 1px;
+  margin-top: 2px;
+ 
+}
+.ceo-career{
+  font-size: 15px;
+  font-family:'SCDream3';
+  line-height: 1.4;
+  text-align: left;
+  margin-left: 50px;
 
 }
+
+
 .automation{
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.WEB{
-  margin: 0 auto;
-  margin-top: 70px;
-  margin-left: 0px;
+ margin-left: 70px;
 }
 .ERP{
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-left: 0px;
+  margin-left: 70px;
 }
- 
-   
-/* SWIPER */
 
-.PORTFOLIO{
-  background-color: #F9F9F9;
-  /* border: 0.1px solid #999; */
-
-}
-.inner-swiper{
-  /* width: 100%; */
-  /* position: relative; */
-  margin: 0 auto;
-
-}
- 
-.inner-swiper h1{
-  font-size: 35px;
+.head h1{
+  font-size: 40px;
   font-family:'SCDream6';
   align-items: center;
   text-align: center;
-  padding-top: 50px;
-  margin: 50px;
-  color:#333;
-}
-.swiper-detail{
-  align-items: center;
-  justify-content: center;
-}
+  margin-bottom: 70px;
+  margin-top: 70px;
+  color:#213547;
+  letter-spacing: 5px;
 
-.title h5{
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 70px;
-  color:#42B883;
-  font-family:'SCDream5';
 }
-.detail{
-
-  margin-left: 70px;
+.member{
   display: flex;
-  
-}
-.figure .circle{
-  width: 14px;
-  height: 14px;
-  border: 1px solid #999;
-  border-radius: 20px;
-  margin-top: 2px;
-
-
-}
-.figure .circle:first-child{
-  margin-top: 20px;
-}
-.figure .circle:last-child{
-  margin-bottom: 80px;
-}
-.figure .line{
-  margin-left: 6px;
-  border-left: 2px dashed #999;
-  height:40px;
-  margin-top: 5px;
-}
-.detail .ex{
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 50px;
-  font-family:'SCDream3';
-  line-height: 1.1;
-  font-size: 15px;
-}
-.detail .ex strong{
-  font-family:'SCDream5';
-}
-.ex p:nth-child(2){
-  margin-top: 45px;
-}
-.ex p:nth-child(4){
-  margin-top: 30px;
-}
-.detail .ex-salt{
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-right: 50px;
-  font-family:'SCDream3';
-  line-height: 1.1;
-  font-size: 15px;
 }
 
-.ex-salt p:nth-child(2){
-  margin-top: 45px;
-}
-.ex-salt p:nth-child(4){
-  margin-top: 30px;
-}
-
-.nemo-box-1 img{
-  margin-left: 0;
-  padding-left: 0;
-}
-.nemo-box img{
+.teams-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #f7f7f7;
   margin-left: 50px;
-  width: auto;
-  height: 180px;
+  margin-top: 70px;
 }
 
-.nemo-box h5{
-  font-size: 16px;
-  margin-left: 100px;
-  margin-top: 20px;
-  font-family:'SCDream5';
-}
-.monitor{
-  width: 180px;
-  position: absolute;
-  right: 50px;
-  top: 170px;
+.name h1{
+  font-size: 20px;
+  font-family:'SCDream6';
+  margin-top: 30px;
 }
 
-.aline{
-  display: flex;
-  align-items: center;
-  position: relative;
-  }
-  
-.content{
-  transition: 0.4s;
-   overflow: hidden;
-  }
+.position h5{
+  font-size: 12px;
+  font-family:'SCDream4';
+  margin-top: 10px;
+}
 
-.content img{
-  width: 100%;
-
-  }
-
-.pagination-span{
-  display: flex;
-  justify-content: center;
-  /* text-align: center; */
-
-  margin: 20px;
-  
-
+.career p{
+  font-size: 15px;
+  font-family:'SCDream3';
+  line-height: 1.4;
+  margin-top: 10px;
 
  
 }
-.pagination-span span{
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  margin: 5px;
-  background-color: #888a89;
-  bottom: 20px;
- 
-  
-  }
 
-  /* Footer */
+
+
+
+
+
+
+/* Footer */
 footer{
   height: 150px;
   background-color:#fff;
@@ -767,7 +898,7 @@ footer strong{
     }
    
     .know-how{
-      height: 70px;
+      height: 80px;
       border: #fff;
 
     }
@@ -801,17 +932,14 @@ footer strong{
     
     }
  
-    .client{
-      height: 1400px;
-   
-    }
-    .client h1{
-      margin-right: 0;
-      margin-left: 100px;
-      display: inline-block;
-      font-size: 22px;
-      margin-top: 70px;
+    .content img{
+      width: 100px;
+    
+      }
+    
+    .Client{
      
+
     }
     
     .client .inner{
@@ -826,12 +954,24 @@ footer strong{
       font-family:'SCDream5';
       margin:20px;
     }
-
-    /* Teams */
-    .Teams{
-      height: 1300px;
-      position: relative;
+    .projects{
+      height: 3000px;
+      display: block;
     }
+    .flex{      
+      display:block;
+    }
+    .projects .item{
+      display: block;
+    }
+    img.back-img{
+      width: 380px;
+      display: block;
+      margin: 10px;
+    }
+   
+    /* Teams */
+
 
     .Text-line h1{
       font-size: 25px;
@@ -841,36 +981,7 @@ footer strong{
       width: 95%;
     }
 
-    .CEO{
-    margin-top: 40px;
-    margin-left: 25px;
-    margin-right: 0;
     
-
-    }
-    .automation{
-      margin-top: 380px;
-      margin-left: 25px;
-      position: absolute;
-      margin-right: 0;
-      
-    }
-
-    .WEB{
-      margin-top: 330px;
-      position: absolute;
-      margin-left: 25px;
-      margin-right: 0;
-
-
-    }
-    .ERP{
-      margin-top: 670px;
-      position: absolute;
-      margin-right: 0;
-      margin-left: 25px;
-    }
- 
 
     /* SWIPER */
 

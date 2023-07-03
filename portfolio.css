@@ -1,0 +1,566 @@
+@charset "utf-8";
+
+/* COMMON */
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+/* font */
+@font-face {
+  font-family: 'SCDream2';
+  font-weight: 300;
+  src:url(./font/SCDream2.otf) format(opentype);
+}
+
+@font-face {
+  font-family: 'SCDream3';
+  font-weight: 400;
+  src:url(./font/SCDream3.otf) format(opentype);}
+
+@font-face {
+  font-family: 'SCDream4';
+  font-weight: 500;
+  src:url(./font/SCDream4.otf) format(opentype);
+
+  
+}
+@font-face {
+  font-family: 'SCDream5';
+  font-weight: 600;
+  src:url(./font/SCDream5.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream6';
+  font-weight: 700;
+  src:url(./font/SCDream6.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream8';
+  font-weight: 800;
+  src:url(./font/SCDream8.otf) format(opentype);
+}
+@font-face {
+  font-family: 'SCDream9';
+  font-weight: 900;
+  src:url(./font/SCDream9.otf) format(opentype);
+}
+
+
+header{
+    width: 100%;
+    height: 55px;
+
+    background-color: #fff;
+    position: fixed; 
+    z-index: 999;
+
+
+   
+  
+  }
+  header .inner{
+    width: 1200px;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  header img{
+    position: absolute;
+    left: 0;
+  
+    
+  } 
+  
+  header .inner ul{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  
+  header ul li a{
+    font-size: 13px;
+    padding: 11px 40px;
+    display: block;
+    color: #333;
+    font-family:'SCDream4';
+    cursor: pointer;
+  }
+  
+    header ul li a:hover{
+    color: #42B883;
+  }
+  
+ 
+  .title{
+    display: flex;
+
+    
+  }
+  
+.inner{
+
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+  }
+
+  
+  .client{
+
+  }
+  .client p{
+
+   
+  }
+
+
+  .title h1{
+
+    font-size: 40px;
+    font-family:'SCDream6';
+    color: #333;
+    margin-top: 250px;
+  
+    
+  }
+
+
+  .about p{
+
+    font-size: 18px;
+    font-family:'SCDream3';
+    color: #333;
+    
+    margin-top: 30px;
+    line-height: 1.7;
+   
+   
+  }
+
+  .scope{
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .scope .plan{
+   
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+ 
+
+  }
+
+  .scope .design{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  .scope .infra{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  .scope .db{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  .scope .front{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+  }
+  .scope2{
+    display: flex;
+  }
+
+  .scope2 .back{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+   
+  }
+  .scope2 .fix{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #fff;
+    background-color: #333;
+      color: #fff;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left:10px;
+  }
+  .scope .plan1{
+   
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #E0E0E0;
+    background-color: #f9f9f9;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+ 
+
+  }
+
+
+  .scope .design1{
+   
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #E0E0E0;
+    background-color: #f9f9f9;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+ 
+
+  }
+
+
+  .scope2 .back1{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #E0E0E0;
+    background-color: #f9f9f9;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+   
+  }
+  .ex{
+    display: flex;
+  }
+  .mobile-functions{
+    display: none;
+  }
+  .functions h4{
+
+    font-size: 20px;
+    font-family:'SCDream5';
+    margin-top: 15px;
+    color: #333;
+    line-height: 1.8;
+  }
+
+  .functions p{
+    font-size: 18px;
+    font-family:'SCDream3';
+
+    line-height: 1.3;
+   
+  }
+
+
+.right-line{
+    display: flex;
+    margin-top: 150px;
+    margin-left:270px;
+}
+.line1{
+    width: 90px;
+    border: 2px solid #999;
+    border-radius: 10px;
+  
+}
+
+.technology{
+    margin-left: 100px;
+   
+}
+.line2{
+    width: 170px;
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+.line3{
+    margin-top: 150px;
+    width: 100px;
+    border: 2px solid #999;
+    border-radius: 10px;
+}
+
+.right-line h4{
+    font-size: 20px;
+    font-family:'SCDream5';
+    margin-top: 20px;
+    color: #333;
+}
+
+.right-line p{
+    font-size: 18px;
+    font-family:'SCDream3';
+    margin-top: 10px;
+    color: #333;
+    line-height: 1.5;
+}
+.mobile-right{
+  display: none;
+}
+
+.img h1{
+    font-size: 20px;
+    font-family:'SCDream5';
+    
+}
+
+.img{
+
+    margin-top: 70px;
+    display: flex;
+    
+    
+
+}
+.img .inner{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img img{
+    margin-top: 50px;
+    width: 1200px;
+    display: block;
+}
+
+
+
+
+.navi{
+    width: 200px;
+    height: 100px;
+    background-color:#fff;
+    border-radius: 20px;
+    box-shadow:2px 2px 2px 2px #999;
+   
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99;
+    padding-top: 30px; 
+    
+  
+}
+.navi p{
+  color: #999;
+  font-size: 15px;
+  font-family:'SCDream4';
+}
+
+button .material-icons{
+    /* margin-left: 10px;
+    margin-right: 10px; */
+  
+    font-size: 60px;
+    text-align: center;
+    color: #999;
+ 
+    
+
+}
+button{
+    background: none;
+    border: none;
+}
+
+button .material-icons:hover{
+    color: #42B883;
+}
+
+/* Mobile */
+
+@media screen and (max-width:480px){
+ 
+  header ul{
+    display: none;
+
+  }
+  .title h1{
+
+    font-size: 25px;
+    font-family:'SCDream6';
+    color: #333;
+    margin-top: 150px;
+    line-height: 1.2;
+
+  }
+  span{
+    display: block;
+    
+  }
+  .about p{
+    font-size: 16px;
+  
+    font-family:'SCDream3';
+    color: #333;
+    margin-top: 30px;
+    line-height: 1.2;
+  
+  }
+  .scope{
+    display: none;
+  }
+  .scope2{
+    display: none;
+  }
+ 
+
+  .img img{
+  width: 380px;
+  
+}
+.functions{
+  display: none;
+}
+.right-line{
+  display: none;
+}
+.mobile-functions{
+  display: block;
+  margin-top: 20px;
+}
+.mobile-functions h4{
+
+  font-size: 20px;
+  font-family:'SCDream5';
+  margin-top: 100px;
+  color: #333;
+
+}
+.mobile-functions p{
+
+  margin-top: 10px;
+  font-size: 16px;
+  font-family:'SCDream3';
+  line-height: 1.4;
+}
+.mobile-right{
+  display: block;
+  margin-top: 100px;
+}
+.industy h4{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family:'SCDream5';
+  margin-top: 20px;
+  color: #333;
+}
+.line1{
+  margin-left: 10px;
+  width: 80px;
+}
+.industy p{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family:'SCDream3';
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.technology{
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.technology h4{
+  font-size: 20px;
+  font-family:'SCDream5';
+  margin-top: 20px;
+ 
+}
+.line2{
+  width: 150px;
+}
+.technology p{
+
+font-size: 18px;
+font-family:'SCDream3';
+margin-top: 10px;
+color: #333;
+}
+
+}
