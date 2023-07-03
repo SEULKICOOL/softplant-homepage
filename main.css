@@ -493,10 +493,7 @@ header ul li a{
 .projects .item{
   position: relative;
 }
-.text-box{
-  height: 40px;
-  opacity: 0;
-}
+
 .projects h4{
   font-size: 18px;
   font-family:'SCDream4';
@@ -522,9 +519,7 @@ header ul li a{
   margin-top: 10px;
 }
 
-img .tino{
-  margin-top: 200px;
-}
+
 .projects .items img{
   border-radius: 5px;
   transition: all 0.2s linear;
@@ -949,7 +944,7 @@ footer strong{
       }
     
  
-    
+    /* Project */
     .projects{
       height: 4000px;
       display: block;
@@ -965,50 +960,18 @@ footer strong{
       display: block;
       margin: 0;
     }
+    .projects .items img{
+     
+      margin-top: 70px;
+      margin-left: 10px;
+    }
+    
+    /* Teams */
+    .Teams{
+      height: 2000px;
+    }
    
  
-    
-
-    /* SWIPER */
-
-    .inner-swiper h1{
-    font-size: 25px;
-    }
- 
-    .swiper-detail{
-    align-items: center;
-    justify-content: center;
-    }
-
-    .title h5{
-      font-size: 18px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      margin-left: 20px;
-    }
-    .detail{
-    margin-left: 5px;
-    }
-    .figure .circle{
-    width: 10px;
-    height: 10px;
-    margin-top: 2px;
-    }
-    .figure .circle:first-child{
-    margin-top: 5px;
-    }
-    .figure .circle:last-child{
-    margin-bottom: 40px;
-    }
-    .figure .line{
-    height: 50px;
-    margin-top: 5px;
-    }
-    .detail .ex{
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 14px;
-    }
     
 
 }
