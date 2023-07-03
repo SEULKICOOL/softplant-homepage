@@ -965,13 +965,17 @@ footer strong{
       margin-top: 70px;
       margin-left: 10px;
     }
+    .scope{
+      margin-left: 0;
+    
+    }
     
     /* Teams */
     .Teams{
       height: 2000px;
     }
-
-  
+    
+      
    
  
     
