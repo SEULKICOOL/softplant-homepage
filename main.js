@@ -24,7 +24,7 @@ var swiper = new Swiper(".mySwiper", {
 //Mobile Size Swiper
 function getSlidesPerView() {
   const isMobile = window.innerWidth <= 800;
-  return isMobile ? 1 : 5;
+  return isMobile ? 2 : 5;
 }
 
 getSlidesPerView();
