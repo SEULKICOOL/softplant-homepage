@@ -958,9 +958,17 @@ footer strong{
       display: block;
     }
     .projects .items .item:hover .back-img{
-      transform: scale(1.1);
+      transform: scale(0.8);
      
     }
+    .projects h1{
+      margin-left: 0;
+  
+    }
+    .projects h3{
+      margin-left: 0;
+    }
+  
     img.back-img{
       width: 350px;
       display: block;
