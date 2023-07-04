@@ -995,6 +995,9 @@ footer strong{
     .Teams{
       height: 2000px;
     }
+   head h5{
+      letter-spacing: 1px;
+    }
     
     .CEO{
       display: block;
