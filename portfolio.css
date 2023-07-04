@@ -473,11 +473,12 @@ header{
   }
   .title h1{
 
-    font-size: 25px;
+    font-size: 20px;
     font-family:'SCDream6';
     color: #333;
     margin-top: 150px;
     line-height: 1.2;
+    margin-left: 10px;
 
   }
   span{
@@ -491,6 +492,7 @@ header{
     color: #333;
     margin-top: 30px;
     line-height: 1.2;
+    margin-left: 10px;
   
   }
   .scope{
@@ -514,6 +516,7 @@ header{
 .mobile-functions{
   display: block;
   margin-top: 20px;
+  margin-left: 10px;
 }
 .mobile-functions h4{
 
@@ -541,16 +544,14 @@ header{
   margin-top: 20px;
   color: #333;
 }
-.industy p{
-  font-size: 18px;
-}
+
 .line1{
   margin-left: 10px;
   width: 80px;
 }
 .industy p{
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-family:'SCDream3';
   margin-top: 10px;
   color: #333;
