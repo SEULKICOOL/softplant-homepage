@@ -453,9 +453,10 @@ header ul li a{
   margin: 0 auto;
 }
 .line{
-  width: 1700px;
+  width: 100%;
   border: 1px solid #f9f9f9;
   margin-top: 100px;
+  text-align: center;
 }
 .projects h1{
   font-size: 40px;
