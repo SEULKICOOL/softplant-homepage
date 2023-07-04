@@ -403,54 +403,66 @@ header{
     display: block;
 }
 
+/* Navigation */
 
-
-
-.navi{
-    width: 200px;
-    height: 100px;
-    background-color:#fff;
-    border-radius: 20px;
-    box-shadow:2px 2px 2px 2px #999;
-   
-    color: #333;
-    font-size: 18px;
-    text-align: center;
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 99;
-    padding-top: 30px; 
-    
-  
-}
-.navi p{
-  color: #999;
-  font-size: 15px;
+#navibtn {
+  width: 250px;
+  height: 60px;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 100px; 
+  z-index: 99; 
+  font-size: 16px; 
   font-family:'SCDream4';
-}
+  outline: none; 
+  color:#42B883; 
+  cursor: pointer; 
+  padding: 20px;
+  border-radius: 5px;  
 
-button .material-icons{
-    /* margin-left: 10px;
-    margin-right: 10px; */
+
+  }
+
+  button{
+    height: 60px;
+    width: 120px;
+    background-color: #fff;
+    border: 0.5px solid #42B883;
+    margin-left: 10px;
+    border-radius: 5px; 
   
-    font-size: 60px;
-    text-align: center;
-    color: #999;
  
-    
+  }
+  .prev{
+    position: absolute;
+   
+  
+  }
+  .next{
+    position: absolute;
+    margin-left: 125px;
 
-}
-button{
-    background: none;
-    border: none;
-}
-
-button .material-icons:hover{
+  }
+  .navi p{
+    font-family:'SCDream4';
+    font-size: 15px;
     color: #42B883;
-}
 
+  }
+  .material-icons{
+    color: #42B883;
+  }
+
+  button:hover{
+    background-color: #42B883;
+  }
+  button:hover p {
+   color: #fff;
+  }
+  button:hover .material-icons {
+    color: #fff;
+   }
 /* Mobile */
 
 @media screen and (max-width:480px){
