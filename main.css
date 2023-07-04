@@ -414,25 +414,25 @@ header ul li a{
 
   
 .content{
-  animation:text-scroll 15s linear infinite;}
+  animation:text-scroll 10s linear infinite;}
 
 @keyframes text-scroll{
   from{
-    transform:translateX(20%);
-    -moz-transform:translateX(20%);
-    -webkit-transform:translateX(20%);
-    -o-transform:translateX(20%);
-    -ms-transform:translateX(20%);
+    transform:translateX(100%);
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    -o-transform:translateX(100%);
+    -ms-transform:translateX(100%);
   }
-  to{
+o{
     transform:translateX(-100%);
     -moz-transform:translateX(-100%);
     -webkit-transform:translateX(-100%);
     -o-transform:translateX(-100%);
     -ms-transform:translateX(-100%);
-  }
-}
-  
+  } 5
+} 
+   
 
 .content img{
   width: 200px;
