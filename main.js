@@ -7,15 +7,16 @@ const contents = document.querySelectorAll(".swiper");
 let num = 0;
 var swiper = new Swiper(".mySwiper", { 
     loop : true,
-    // spaceBetween:0,
+    // spaceBetween:50,
     slidesPerView: getSlidesPerView(),
     // loopAdditionalSlides : 1,
-    // loopedSlides: auto,noSwiping : true,
-    observer:true, observeParents:true,
-    speed:7000,
+    noSwiping : true,
+    observer:true, 
+    observeParents:true,
+    speed:8000,
+    freeMode:true,
     autoplay: {    
-    delay: 0,
-    stopOnLastSlide: false,
+    delay:0,
     disableOnInteraction: false // false-스와이프 후 자동 재생
     }
    
