@@ -476,6 +476,7 @@ header{
     font-size: 20px;
     font-family:'SCDream6';
     color: #333;
+
     margin-top: 150px;
     line-height: 1.2;
     margin-left: 10px;
@@ -491,7 +492,7 @@ header{
     font-family:'SCDream3';
     color: #333;
     margin-top: 30px;
-    line-height: 1.2;
+    line-height: 1.5;
     margin-left: 10px;
   
   }
@@ -504,7 +505,7 @@ header{
  
 
   .img img{
-  width: 380px;
+  width: 350px;
   
 }
 .functions{
@@ -517,9 +518,10 @@ header{
   display: block;
   margin-top: 20px;
   margin-left: 10px;
+ 
 }
 .mobile-functions h4{
-  margin-left: 10px;
+
   font-size: 20px;
   font-family:'SCDream5';
   margin-top: 15px;
@@ -527,18 +529,19 @@ header{
 
 }
 .mobile-functions p{
-  margin-left: 10px;
+ 
   margin-top: 10px;
   font-size: 16px;
   font-family:'SCDream3';
-  line-height: 1.4;
+  line-height: 1.56;
 }
 .mobile-right{
+  margin-left: 10px;
   display: block;
   margin-top: 100px;
 }
 .industy h4{
-  margin-left: 10px;
+
   font-size: 20px;
   font-family:'SCDream5';
   margin-top: 20px;
@@ -546,14 +549,14 @@ header{
 }
 
 .line1{
-  margin-left: 10px;
+
   width: 80px;
 }
 .line3{
-  margin-left: 10px;
+
 }
 .industy p{
-  margin-left: 10px;
+
   font-size: 16px;
   font-family:'SCDream3';
   margin-top: 10px;
@@ -562,31 +565,40 @@ header{
 }
 
 .technology{
-  margin-left: 10px;
+  margin: 0;
   margin-top: 30px;
 }
 .technology h4{
-  margin-left: 10px;
+
   font-size: 20px;
   font-family:'SCDream5';
   margin-top: 20px;
  
 }
 .line2{
-  margin-left: 10px;
+ 
   width: 150px;
 }
 .technology p{
-margin-left: 10px;
+
 font-size: 18px;
 font-family:'SCDream3';
 margin-top: 10px;
 color: #333;
+line-height: 1.5;
 }
 
 #navibtn {
 
   right:50px
+}
+
+.ex{
+  display: block;
+}
+
+.inner{
+  margin: 10px;
 }
 
 }
