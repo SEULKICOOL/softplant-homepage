@@ -24,14 +24,14 @@ var swiper = new Swiper(".mySwiper", {
 // 이미지의 너비 설정
 const slideWidth = document.querySelector(".swiper").offsetWidth;
 const slideContainer = document.querySelector(".swiper-wrapper");
-// slideContainer.style.width = `${slideWidth * contents.length}px`;
+slideContainer.style.width = `${slideWidth * contents.length}px`;
 
 swiper.on("reachEnd", function () {
-  swiper.slideTo(5, 0, false);
+  swiper.slideTo(2, 0, false);
 });
 
 swiper.on("reachBeginning", function () {
-  swiper.slideTo(contents.length - 5, 0, false);
+  swiper.slideTo(contents.length - 2, 0, false);
 });
 
 //Mobile Size Swiper

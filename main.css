@@ -411,6 +411,8 @@ header ul li a{
 }
 
 .swiper {
+  width: 100%;
+
   overflow: hidden;
 }
 
@@ -428,7 +430,7 @@ header ul li a{
       transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
   }
 }
 
