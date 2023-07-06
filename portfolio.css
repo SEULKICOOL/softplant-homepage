@@ -474,6 +474,12 @@ header{
     display: none;
 
   }
+  header img{
+    width: 180px;
+    height: 40px;
+    margin-top: 5px;
+  }
+
   .title h1{
 
     font-size: 20px;
@@ -760,3 +766,5 @@ line-height: 1.5;
  
 
 }
+}
+  
