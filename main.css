@@ -211,7 +211,7 @@ header ul li a{
   to {
     opacity: 1;
   }
-}6
+}
 .mobile-menu ul{
  
  margin-top: 30px;
@@ -399,18 +399,7 @@ header ul li a{
 
 }
 
- /* 테스트 */
- /* 움직이는 텍스트 */
-.animated-title {font-size:60px; font-family:'Raleway',Sans-serif; font-weight:300; position: relative; width: 100%;max-width:100%; height: auto; padding:100px 0;  }
-.animated-title .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 25s linear infinite; }
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-/* @media (hover: hover) and (min-width: 700px){
-.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));} */
-    /* } */
-/* 테스트 */
+
 
 .inner-swiper h1{
   font-size: 40px;
@@ -421,45 +410,33 @@ header ul li a{
   color:#213547;
   letter-spacing: 1px;
   word-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+display: flex;
+
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
+ 
+
   justify-content: center;
   align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  
+  width: 200px;
+
 }
 
-.swiper-slide {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 20%;}
 
 
 
-/* .swiper-wrapper {
+.swiper-wrapper{
 
-  animation: text-scroll 25s linear infinite;
+  animation:  text-scroll 15s linear infinite;
 }
 
 
@@ -468,21 +445,25 @@ header ul li a{
     0% {
         transform: translateX(0);
     }
-    50% {
+    100%{
+      transform: translateX(-100%);
+  }
+  }
+    /* 50% {
         transform: translateX(-100%);
     }
     50.01%{
         transform: translateX(100%);
-    }
-    100%{
+    } */
+    /* 100%{
         transform: translateX(0);
     }
-}
+}  */
 
 
 
 
- */
+ 
 
 
   /* Projects */
@@ -983,12 +964,7 @@ footer strong{
     
     }
 
-    .swiper-wrapper {
 
-      animation: text-scroll 7s linear infinite;
-
-
-    }
    
       .inner-swiper h1 {
         font-size: 28px;
