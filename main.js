@@ -3,21 +3,28 @@ AOS.init();
 
 //Portfolio Swiper
 
-const contents = document.querySelectorAll(".swiper");
-let num = 0;
-var swiper = new Swiper(".mySwiper", { 
-    loop : true,
-    // spaceBetween:0,
-    slidesPerView: getSlidesPerView(),
-    loopAdditionalSlides : 1,
-    speed:8000,
-    autoplay: {    
-    delay:0,
-    disableOnInteraction: false // false-스와이프 후 자동 재생
-    }
+// const contents = document.querySelectorAll(".swiper");
+// let num = 0;
+// var swiper = new Swiper(".mySwiper", { 
+//     loop : true,
+//     // spaceBetween:0,
+//     slidesPerView: getSlidesPerView(),
+//     loopAdditionalSlides : 1,
+//     speed:8000,
+//     autoplay: {    
+//     delay:0,
+//     disableOnInteraction: false // false-스와이프 후 자동 재생
+//     }
    
-});
 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 5,
+  loopAdditionalSlides : 1,
+   speed:5000,
+    autoplay: true
+});
 //Mobile Size Swiper
 function getSlidesPerView() {
   const isMobile = window.innerWidth <= 800;
