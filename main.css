@@ -407,9 +407,9 @@ header ul li a{
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
-@media (hover: hover) and (min-width: 700px){
-.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
-    }
+/* @media (hover: hover) and (min-width: 700px){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));} */
+    /* } */
 /* 테스트 */
 
 .inner-swiper h1{
