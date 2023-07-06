@@ -266,9 +266,9 @@ header ul li a{
 }
 
 
-.visual .inner h1{
+.visual .inner .accent{
   letter-spacing: -2px;
-  font-size: 70px;
+  font-size: 64px;
   margin-bottom: 25px;
   background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
   background-clip: text;
@@ -278,20 +278,24 @@ header ul li a{
   margin-top: 50px;
 }
   
-.visual .inner h4{
-  font-size: 70px;  
+.visual .inner .visual-text{
+  font-size: 64px;
+  line-height: 1.25;
   word-spacing: -5px;
   font-family:'SCDream9';
-  color: #333336;
-  margin-bottom: 35px;
+  max-width: 960px;
+  margin: 0 auto;
+  
 }
 .visual .inner h5{
-  letter-spacing: 1px;
-  margin-bottom: 40px;
+  max-width: 960px;
+  line-height: 1.5;
+  margin: 24px auto 40px;
   font-size: 20px;
   color: #999;
-  margin-bottom: 50px;
-  font-family:"SCDream4";
+  font-family:'SCDream3';
+  letter-spacing: 2px;
+
 }
 
 
@@ -851,6 +855,9 @@ footer strong{
   margin-left: 15px;
 }
 
+
+
+
 /* MOBILE */
   
 @media screen and (max-width:480px){
@@ -894,26 +901,20 @@ footer strong{
       overflow-x:hidden;
       
     }
-    .visual .inner h1{
-      font-size: 40px;
-    
-      background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family:'SCDream8';
-        
+    .visual .inner .accent{
+      font-size: 48px;
+      letter-spacing: -.5px;
+  
     }
-    .visual .inner h4{
-      font-size: 30px;
-      font-weight: 800;
-      font-family:'SCDream6';
-      color: #333336;
-      margin-top: 20px;
-    
+    .visual .inner .visual-text{
+      font-size: 48px;
+      line-height: 1.25;
+     
+      
     }
     .visual .inner h5{
-      font-size: 12px;
+      font-size: 16px;
+      margin: 18px 0 30px;
     
     
     }
@@ -954,10 +955,12 @@ footer strong{
     }
  
     .content img{
-      width: 50%;
+      width: 150px;
     
       }
-    
+      .inner-swiper h1 {
+        font-size: 28px;
+      }
  
     /* Project */
     .projects{
@@ -977,33 +980,36 @@ footer strong{
     }
     .projects h1{
       margin-left: 0;
+      font-size: 30px;
   
     }
     .projects h3{
       margin-left: 0;
+      font-size: 14px;
     }
   
     img.back-img{
-      width: 350px;
+      width: 320px;
       display: block;
-      margin: 0;
+      margin: 0 auto;
       overflow: hidden;
+
     }
     .projects .items img{
      
       margin-top: 70px;
-      margin-left: 10px;
+      margin-left: 20px;
     }
     .scope{
       margin-left: 20px;
     
     }
     .scope2{
-      margin-left: 20px;
+      margin-left: 10px;
     
     }
     .projects h4{
-      margin-left: 20px;
+      margin-left: 32px;
     }
     /* Teams */
     .Teams{
