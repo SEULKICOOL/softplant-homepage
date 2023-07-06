@@ -7,37 +7,21 @@ const contents = document.querySelectorAll(".swiper");
 let num = 0;
 var swiper = new Swiper(".mySwiper", { 
     loop : true,
-    spaceBetween:0,
+    // spaceBetween:0,
     slidesPerView: getSlidesPerView(),
-    // loopAdditionalSlides : 5,
-    // noSwiping : true,
-    // observer:true, 
-    // observeParents:true,
+    loopAdditionalSlides : 1,
     speed:8000,
-    freeMode:true,
     autoplay: {    
-    delay:0
-    // disableOnInteraction: false // false-스와이프 후 자동 재생
+    delay:0,
+    disableOnInteraction: false // false-스와이프 후 자동 재생
     }
    
-});
-// 이미지의 너비 설정
-const slideWidth = document.querySelector(".swiper").offsetWidth;
-const slideContainer = document.querySelector(".swiper-wrapper");
-slideContainer.style.width = `${slideWidth * contents.length}px`;
-
-swiper.on("reachEnd", function () {
-  swiper.slideTo(2, 0, false);
-});
-
-swiper.on("reachBeginning", function () {
-  swiper.slideTo(contents.length - 2, 0, false);
 });
 
 //Mobile Size Swiper
 function getSlidesPerView() {
   const isMobile = window.innerWidth <= 800;
-  return isMobile ? 2 : 4;
+  return isMobile ? 2 : 5;
 }
 
 getSlidesPerView();
