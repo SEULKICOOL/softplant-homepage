@@ -398,11 +398,7 @@ header ul li a{
   background-color: #F9F9F9;
 
 }
-.inner-swiper{
- 
-  margin: 0 auto;
 
-}
  
 .inner-swiper h1{
   letter-spacing: 4px;
@@ -418,7 +414,8 @@ header ul li a{
 
 .swiper {
   width: 100%;
-  
+  margin: 0 auto;
+ 
 }
 
 .swiper-wrapper {
@@ -944,14 +941,20 @@ footer strong{
     
     }
 
-    .content img{
-      width: 10px;
-    
-    
-      }
+    .swiper-wrapper {
+
+      animation: text-scroll 7s linear infinite;
+
+
+    }
+   
       .inner-swiper h1 {
         font-size: 28px;
       }
+
+
+
+      
  
     /* Project */
     .projects{
@@ -978,6 +981,7 @@ footer strong{
       margin-left: 0;
       font-size: 14px;
       letter-spacing:2px;
+      font-family:'SCDream3';
     }
   
     img.back-img{
