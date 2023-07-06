@@ -211,7 +211,7 @@ header ul li a{
   to {
     opacity: 1;
   }
-}
+}6
 .mobile-menu ul{
  
  margin-top: 30px;
@@ -401,7 +401,7 @@ header ul li a{
 
  /* 테스트 */
  /* 움직이는 텍스트 */
-.animated-title {font-size:60px; font-family:'Raleway',Sans-serif; font-weight:300; position: relative; width: 100%;max-width:100%; height: auto; padding:100px 0; overflow-x: hidden; overflow-y: hidden; }
+.animated-title {font-size:60px; font-family:'Raleway',Sans-serif; font-weight:300; position: relative; width: 100%;max-width:100%; height: auto; padding:100px 0;  }
 .animated-title .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 25s linear infinite; }
 @keyframes marquee {
   from { transform: translateX(0); }
