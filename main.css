@@ -294,7 +294,8 @@ header ul li a{
   font-size: 20px;
   color: #999;
   font-family:'SCDream3';
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 
 }
 
@@ -964,7 +965,7 @@ footer strong{
  
     /* Project */
     .projects{
-      height: 4000px;
+      height: 3500px;
       display: block;
       overflow-x:hidden;
     }
@@ -1013,7 +1014,7 @@ footer strong{
     }
     /* Teams */
     .Teams{
-      height: 2000px;
+      height: 1800px;
     }
    head h5{
       letter-spacing:0;
