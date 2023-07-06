@@ -975,7 +975,7 @@ footer strong{
       display: block;
     }
     .projects .items .item:hover .back-img{
-      transform: scale(0.8);
+      transform: scale(0.9);
      
     }
     .projects h1{
