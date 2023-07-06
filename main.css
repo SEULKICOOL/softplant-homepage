@@ -488,7 +488,7 @@ header ul li a{
   /* Projects */
 
 .projects{
-  height: 2200px;
+  height: 2300px;
   overflow: hidden;
 }
 
@@ -509,7 +509,6 @@ header ul li a{
   padding-top: 10px;
   margin-top: 30px;
   color:#213547;
-  margin-left: 50px;
   letter-spacing: 1px;
   word-spacing: 2px;
 
@@ -1002,7 +1001,7 @@ footer strong{
  
     /* Project */
     .projects{
-      height: 3500px;
+      height: 3620px;
       display: block;
       overflow-x:hidden;
     }
