@@ -450,7 +450,7 @@ display: flex;
 
 
 /* jms */
-.marquee-container {
+/* .marquee-container {
   width: 100%;
   overflow: hidden;
 }
@@ -473,7 +473,7 @@ display: flex;
   100% {
       transform: translateX(-50%);
   }
-}
+} */
 /* jms */
   /* Projects */
 
