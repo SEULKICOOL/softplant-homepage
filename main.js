@@ -3,29 +3,49 @@ AOS.init();
 
 // Swiper
 
-const contents = document.querySelectorAll(".swiper");
-let num = 0;
-var swiper = new Swiper(".mySwiper", { 
-    loop : true,
-    // spaceBetween:0,
-    slidesPerView: getSlidesPerView(),
-    loopAdditionalSlides : 1,
-    speed:8000,
-    autoplay: {    
-    delay:0,
-    disableOnInteraction: false // false-스와이프 후 자동 재생
+var images = [
+  "./logoimage/ac.png",
+  "./logoimage/samsung.png",
+  "./logoimage/kefico.png",
+  "./logoimage/kyungdong.png",
+  "./logoimage/sabbun.png",
+  "./logoimage/lg.png",
+  "./logoimage/tino.png",
+  "./logoimage/beiersdorf.png",
+  "./logoimage/hanyang.png",
+  "./logoimage/ac.png",
+  "./logoimage/samsung.png",
+  "./logoimage/kefico.png",
+  "./logoimage/kyungdong.png",
+  "./logoimage/sabbun.png",
+  "./logoimage/lg.png",
+  "./logoimage/tino.png",
+  "./logoimage/beiersdorf.png",
+  "./logoimage/hanyang.png",
+  "./logoimage/ac.png",
+  "./logoimage/samsung.png",
+  "./logoimage/kefico.png",
+  "./logoimage/kyungdong.png",
+  "./logoimage/sabbun.png",
+  "./logoimage/lg.png",
+  "./logoimage/tino.png",
+  "./logoimage/beiersdorf.png",
+  "./logoimage/hanyang.png",
+];
+
+
+var str = "<div class='marquee-container'><div class='marquee'>";
+for (var i = 0; i < 4; i++) {
+    for (var j = 0; j < images.length; j++) {
+        str += "<span><img src='" + images[j] + "'></span>";
     }
-  });
+}
+str += "</div></div>";
 
-
-
-//Mobile Size Swiper
-function getSlidesPerView() {
-  const isMobile = window.innerWidth <= 800;
-  return isMobile ? 2: 4;
+window.onload = function () {
+    document.getElementById("console").innerHTML = str;
 }
 
-getSlidesPerView();
 
 
   // Mobile
