@@ -1060,12 +1060,12 @@ footer strong{
 
      /* SWIPER */
      .marquee-container {
-      max-width: 385px;
+      width: 100%;
       white-space: nowrap;
     }
     .marquee {
       white-space: nowrap;
-      animation: flow 30s linear infinite;
+      animation: flow 20s linear infinite;
     }
     @keyframes flow {
       0% {
