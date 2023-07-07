@@ -434,21 +434,6 @@ display: flex;
 
 
 
-.swiper-wrapper{
-  animation: 33s linear 0s infinite normal forwards running rollingleft1;
-  
-}
-
-
-.swiper-wrapper2{
-  display: flex;
-  animation: 100s linear 0s infinite normal none running rollingleft2;
-  
-
-}
-
-
-
 .projects{
   height: 2300px;
   overflow: hidden;
@@ -817,6 +802,8 @@ display: flex;
 }
 
 
+/* SWIPER */
+
 .marquee-container {
   width: 100%;
   overflow: hidden;
@@ -825,7 +812,7 @@ display: flex;
 .marquee {
   white-space: nowrap;
   display: inline-block;
-  animation: flow 50s linear infinite;
+  animation: flow 30s linear infinite;
 }
 
 .marquee span {
@@ -975,15 +962,6 @@ footer strong{
       }
 
 
-    /* swiper */
-    .marquee-container {
-      width: 100%;
-      overflow:auto;
-    }
-    
-
-    
- 
     /* Project */
     .projects{
       height: 3620px;
