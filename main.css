@@ -978,28 +978,10 @@ footer strong{
     /* swiper */
     .marquee-container {
       width: 100%;
-      overflow: hidden;
+      overflow-x: hidden;
     }
     
-    .marquee {
-      white-space: nowrap;
-      display: inline-block;
-      animation: flow 50s linear infinite;
-    }
-    
-    .marquee span {
-      display: inline-block;
-      margin-right: 20px;
-    }
-    
-    @keyframes flow {
-      0% {
-          transform: translateX(0%);
-      }
-      100% {
-          transform: translateX(-20%);
-      }
-    }
+
     
  
     /* Project */
