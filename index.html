@@ -41,32 +41,7 @@
 </head>
 
 <!-- swiper style -->
-<style>
-  .marquee-container {
-  width: 100%;
-  overflow: hidden;
-}
 
-.marquee {
-  white-space: nowrap;
-  display: inline-block;
-  animation: flow 100s linear infinite;
-}
-
-.marquee span {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-@keyframes flow {
-  0% {
-      transform: translateX(0%);
-  }
-  100% {
-      transform: translateX(-50%);
-  }
-}
-</style>
 <body>
  <!-- HEADER -->
   <header>
@@ -147,7 +122,40 @@
 <section class="Client">
     <div class="inner-swiper" >
       <h1> Major Client </h1>
-      <div id="console"></div>
+
+      <div class='marquee-container'>
+        <div class='marquee'>
+          <span><img src="./logoimage/ac.png"></span>
+          <span><img src="./logoimage/samsung.png"></span>
+          <span><img src="./logoimage/kefico.png"></span>
+          <span><img src="./logoimage/kyungdong.png"></span>
+          <span><img src="./logoimage/sabbun.png"></span>
+          <span><img src="./logoimage/lg.png"></span>
+          <span><img src="./logoimage/tino.png"></span>
+          <span><img src="./logoimage/beiersdorf.png"></span>
+          <span><img src="./logoimage/hanyang.png"></span>
+          <span><img src="./logoimage/ac.png"></span>
+          <span><img src="./logoimage/samsung.png"></span>
+          <span><img src="./logoimage/kefico.png"></span>
+          <span><img src="./logoimage/kyungdong.png"></span>
+          <span><img src="./logoimage/sabbun.png"></span>
+          <span><img src="./logoimage/lg.png"></span>
+          <span><img src="./logoimage/tino.png"></span>
+          <span><img src="./logoimage/beiersdorf.png"></span>
+          <span><img src="./logoimage/hanyang.png"></span>
+          <span><img src="./logoimage/ac.png"></span>
+          <span><img src="./logoimage/samsung.png"></span>
+          <span><img src="./logoimage/kefico.png"></span>
+          <span><img src="./logoimage/kyungdong.png"></span>
+          <span><img src="./logoimage/sabbun.png"></span>
+          <span><img src="./logoimage/lg.png"></span>
+          <span><img src="./logoimage/tino.png"></span>
+          <span><img src="./logoimage/beiersdorf.png"></span>
+          <span><img src="./logoimage/hanyang.png"></span>
+        </div>
+      </div>
+
+      <!-- <div id="console"></div> -->
       </div>
      
    </div>
@@ -155,48 +163,49 @@
 </section>
 
 <script>
-var images = [
-  "./logoimage/ac.png",
-  "./logoimage/samsung.png",
-  "./logoimage/kefico.png",
-  "./logoimage/kyungdong.png",
-  "./logoimage/sabbun.png",
-  "./logoimage/lg.png",
-  "./logoimage/tino.png",
-  "./logoimage/beiersdorf.png",
-  "./logoimage/hanyang.png",
-  "./logoimage/ac.png",
-  "./logoimage/samsung.png",
-  "./logoimage/kefico.png",
-  "./logoimage/kyungdong.png",
-  "./logoimage/sabbun.png",
-  "./logoimage/lg.png",
-  "./logoimage/tino.png",
-  "./logoimage/beiersdorf.png",
-  "./logoimage/hanyang.png",
-  "./logoimage/ac.png",
-  "./logoimage/samsung.png",
-  "./logoimage/kefico.png",
-  "./logoimage/kyungdong.png",
-  "./logoimage/sabbun.png",
-  "./logoimage/lg.png",
-  "./logoimage/tino.png",
-  "./logoimage/beiersdorf.png",
-  "./logoimage/hanyang.png",
-];
+// var images = [
+//   "./logoimage/ac.png",
+//   "./logoimage/samsung.png",
+//   "./logoimage/kefico.png",
+//   "./logoimage/kyungdong.png",
+//   "./logoimage/sabbun.png",
+//   "./logoimage/lg.png",
+//   "./logoimage/tino.png",
+//   "./logoimage/beiersdorf.png",
+//   "./logoimage/hanyang.png",
+//   "./logoimage/ac.png",
+//   "./logoimage/samsung.png",
+//   "./logoimage/kefico.png",
+//   "./logoimage/kyungdong.png",
+//   "./logoimage/sabbun.png",
+//   "./logoimage/lg.png",
+//   "./logoimage/tino.png",
+//   "./logoimage/beiersdorf.png",
+//   "./logoimage/hanyang.png",
+//   "./logoimage/ac.png",
+//   "./logoimage/samsung.png",
+//   "./logoimage/kefico.png",
+//   "./logoimage/kyungdong.png",
+//   "./logoimage/sabbun.png",
+//   "./logoimage/lg.png",
+//   "./logoimage/tino.png",
+//   "./logoimage/beiersdorf.png",
+//   "./logoimage/hanyang.png",
+// ];
 
 
-var str = "<div class='marquee-container'><div class='marquee'>";
-for (var i = 0; i < 4; i++) {
-    for (var j = 0; j < images.length; j++) {
-        str += "<span><img src='" + images[j] + "'></span>";
-    }
-}
-str += "</div></div>";
+// var str = "<div class='marquee-container'><div class='marquee'>";
+// for (var i = 0; i < 4; i++) {
+//     for (var j = 0; j < images.length; j++) {
+//         str += "<span><img src='" + images[j] + "'></span>";
+//     }
+// }
+// str += "</div></div>";
 
-window.onload = function () {
-    document.getElementById("console").innerHTML = str;
-}</script>
+// window.onload = function () {
+//     document.getElementById("console").innerHTML = str;
+// }
+</script>
 
 
   <section class="projects">
