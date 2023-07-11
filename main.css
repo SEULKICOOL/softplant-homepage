@@ -1052,6 +1052,10 @@ footer strong{
      }
 
      /* SWIPER */
+     .inner-swiper h1{
+      font-size: 30px;
+     }
+
      .inner-swiper {
       width: 100%;
       position: relative;
