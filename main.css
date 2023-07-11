@@ -952,11 +952,11 @@ footer strong{
     }
 
 
-   
-      .inner-swiper h1 {
-        font-size: 28px;
-      }
+   /* SWIPER */
 
+   .Client{
+    display: none;
+   }
 
     /* Project */
     .projects{
