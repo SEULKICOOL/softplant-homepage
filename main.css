@@ -934,11 +934,15 @@ footer strong{
       line-height: 1.8;
    
     
-    }
+    } 
 
     /* SWIPER */
 
-    @keyframes flow {
+    .marquee{
+      animation: linear 30s linear infinite;
+    }
+
+    @keyframes linear {
       0% {
           transform: translateX(-0%) ;
       }
