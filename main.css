@@ -787,7 +787,7 @@ header ul li a{
 
 .marquee-container {
   width: 100%;
-  overflow: hidden;
+  
 }
 
 .marquee {
@@ -938,7 +938,7 @@ footer strong{
 
     /* SWIPER */
 
-    .marquee{
+    /* .marquee{
       animation: linear 30s linear infinite;
     }
 
@@ -952,7 +952,7 @@ footer strong{
       100% {
           transform: translateX(-100%);
       }
-    }
+    } */
     
 
     /* Project */
