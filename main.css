@@ -59,6 +59,11 @@ a{
   src:url(./font/SCDream9.otf) format(opentype);
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+
 /* Button */
 
 .btn {
