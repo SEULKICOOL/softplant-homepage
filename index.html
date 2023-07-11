@@ -39,6 +39,99 @@
 
 
 </head>
+<style>
+  .Client{
+  background-color: #F9F9F9;
+
+}
+
+
+
+.inner-swiper h1{
+  font-size: 40px;
+  font-family:'SCDream6';
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  color:#213547;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.myswiper {
+display: flex;
+
+}
+
+.swiper-slide {
+ 
+
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+
+  width: 200px;
+ 
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  animation: flow 30s linear infinite;
+}
+
+.marquee span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@keyframes flow {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:480px){
+   .client{
+      height: 100%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+     }
+     .inner-swiper h1{
+      font-size: 30px;
+     }
+
+     .inner-swiper {
+      width: 100%;
+      height: 100%;
+     }
+    
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+     overflow: visible;
+      object-fit: cover;
+    }
+  }
+  
+</style>
 
 <!-- swiper style -->
 
@@ -137,7 +230,8 @@
           <span><img src="./logoimage/ac.png"></span>
           <span><img src="./logoimage/samsung.png"></span>
           <span><img src="./logoimage/kefico.png"></span>
-          <span><img src="./logoimage/kyungdong.png"></span>
+
+
           <span><img src="./logoimage/sabbun.png"></span>
           <span><img src="./logoimage/lg.png"></span>
           <span><img src="./logoimage/tino.png"></span>
