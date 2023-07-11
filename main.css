@@ -1053,16 +1053,21 @@ footer strong{
 
      /* SWIPER */
      .inner-swiper {
-      max-width: 100%;
+      width: 100%;
       overflow: hidden;
     }
-
+    
+    .swiper-slide {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
     .swiper-slide img {
       max-width: 100%;
       height: auto;
-    }
-    .marquee {
-      animation: flow 15s linear infinite;
     }
   }
 
