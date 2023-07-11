@@ -1059,13 +1059,15 @@ footer strong{
      .inner-swiper {
       width: 100%;
       position: relative;
+      margin-right: 50px;
+      margin-left: auto;
 
      }
     
     .swiper-slide {
       width: 100%;
       height: auto;
-      display: flex;
+
       justify-content: center;
       align-items: center;
       margin-right: 50px;
@@ -1077,7 +1079,7 @@ footer strong{
       margin-right: 100px; 
       margin-left: 100px;
       padding: 100px;
-      overflow-y: auto;
+   
  
     }
   }
