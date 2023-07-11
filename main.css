@@ -763,7 +763,7 @@ header ul li a{
 /* SWIPER */
    
 
-.Client{
+/* .Client{
   background-color: #F9F9F9;
 
 }
@@ -824,7 +824,7 @@ display: flex;
       transform: translateX(-50%);
   }
 }
-
+ */
 
 /* Footer */
 footer{
@@ -1052,8 +1052,10 @@ footer strong{
      }
 
      /* SWIPER */
-     .client{
+     /* .client{
       height: 100%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
      }
      .inner-swiper h1{
       font-size: 30px;
@@ -1075,7 +1077,7 @@ footer strong{
     .swiper-slide img {
      overflow: visible;
       object-fit: cover;
-    }
+    } */
   }
 
 
