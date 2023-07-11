@@ -1054,6 +1054,7 @@ footer strong{
      /* SWIPER */
      .inner-swiper {
       width: 100%;
+      position: relative;
 
      }
     
