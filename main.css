@@ -951,13 +951,6 @@ footer strong{
     
     }
 
-
-   /* SWIPER */
-
-   .Client{
-    display: none;
-   }
-
     /* Project */
     .projects{
       height: 3620px;
@@ -1059,23 +1052,18 @@ footer strong{
      }
 
      /* SWIPER */
-     .marquee-container {
-      width: 100%;
-      white-space: nowrap;
-    }
-    .marquee {
-      white-space: nowrap;
-      animation: flow 20s linear infinite;
-    }
-    @keyframes flow {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-20%);
-      }
+     .inner-swiper {
+      max-width: 100%;
+      overflow: hidden;
     }
 
+    .swiper-slide img {
+      max-width: 100%;
+      height: auto;
+    }
+    .marquee {
+      animation: flow 15s linear infinite;
+    }
   }
 
 
