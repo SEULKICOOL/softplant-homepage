@@ -799,17 +799,17 @@ header ul li a{
 .marquee {
   white-space: nowrap;
   display: inline-block;
-  animation: flow 30s linear infinite;
+  animation: flow 25s linear infinite;
   
 }
 
 .marquee span {
   display: inline-block;
   margin-right: 20px;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-backface-visibility : hidden;
+
  
 }
+
 
 @keyframes flow {
   0% {
@@ -819,6 +819,22 @@ header ul li a{
       transform: translateX(-50%);
   }
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+	/* 이 안에 Safari(10.1 이상)에서만 적용할 스타일 작성 */
+  .marquee {
+    
+    animation: flow 20s linear infinite;
+    
+  }
+  .marquee span {
+    
+    -webkit-transform: translate3d(0,0,0);
+    /* -webkit-backface-visibility : hidden; */
+   
+  }
+}}
 
 
 /* Footer */
