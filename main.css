@@ -1077,8 +1077,7 @@ footer strong{
       margin-right: 100px; 
       margin-left: 100px;
       padding: 100px;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+ 
     }
   }
 
