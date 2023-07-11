@@ -792,6 +792,7 @@ header ul li a{
 
 .marquee-container {
   width: 100%;
+  height: auto;
   
 }
 
@@ -799,11 +800,13 @@ header ul li a{
   white-space: nowrap;
   display: inline-block;
   animation: flow 30s linear infinite;
+  
 }
 
 .marquee span {
   display: inline-block;
   margin-right: 20px;
+  height: 0;
 }
 
 @keyframes flow {
