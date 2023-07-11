@@ -1054,11 +1054,10 @@ footer strong{
     
     .marquee span  {
       overflow: visible;
-      object-fit: cover;
+    
       display: inline-block;
-      margin-right: 20px;
-      /* display: -webkit-box;
-      display: -ms-flexbox; */
+
+ 
     }
   }
 
