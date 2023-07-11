@@ -1056,21 +1056,15 @@ footer strong{
       font-size: 30px;
      }
 
-     .inner-swiper {
-      width: 100%;
-      position: relative;
-      margin-right: 50px;
-      margin-left: auto;
-
+      .inner-swiper {
+        display: flex;
+        justify-content: center;
+      }
      }
     
     .swiper-slide {
-      width: 100%;
-      height: auto;
-
-      justify-content: center;
-      align-items: center;
-      margin-right: 50px;
+      
+    
     }
     
     .swiper-slide img {
@@ -1082,6 +1076,7 @@ footer strong{
    
  
     }
+  
   }
 
 
