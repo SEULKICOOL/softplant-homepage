@@ -1054,12 +1054,13 @@ footer strong{
     
     .marquee span  {
       overflow: visible;
-    
+      isolation: isolate;
       display: inline-block;
-
+      z-index: 0;
  
     }
   }
+
 
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -1068,6 +1069,7 @@ footer strong{
   body{
     width:100%;
     overflow:hidden;
+
   }
 
   header ul{
