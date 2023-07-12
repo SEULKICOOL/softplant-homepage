@@ -28,6 +28,9 @@ AOS.init();
   function DownloadPDF(){
   window.location.href = "./소프트플랜트회사소개서.pdf"
   }
+  function quickGo(){
+    window.location.href = "./Project4.html";
+  }
 
 //MENU SCROLL EVENT
 

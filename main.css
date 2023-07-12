@@ -393,9 +393,57 @@ header ul li a{
   color: #fff;
     }
 
+/* Contact button */
+
+button#contact{
+  width: 250px;
+  background: none;
+  border: none;
+  position:fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 60px;
+  
+}
+.nemo{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  background: #F9F9F9;
+  border-radius: 20px;
+  top: 20px;
+  right: 0;
+}
+button:hover .nemo {
+  border: 1px solid #42B883;
+  
+}
+button:hover h1 {
+  color: #42B883;
+}
+button h1{
+  font-size: 20px;
+  font-family:'SCDream5';
+  line-height: 50px;
+  text-align: center;
+  padding-left: 40px;
+  color: #333;
 
 
+}
+#contact .material-icons{
+  position: relative;
+ font-size: 45px;
+ color: #fff;
+ width: 80px;
+ height: 80px;
+ border-radius: 100px;
+ background-color: #42B883;
+ z-index: 5;
+}
 
+
+/* Project */
 
 .projects{
   height: 2300px;
