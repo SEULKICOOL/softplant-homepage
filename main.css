@@ -1144,14 +1144,16 @@ footer strong{
     /* Contact button */
 
 button#contact{
- 
+ width: 250px;
   right: 0;
+  bottom: 65px;
 }
 .nemo{
-  width: 200px;
+  width: 150px;
   height: 40px;
   top: 10px;
-  right: 10px;
+  right: 18px;
+  
 }
 button:hover .nemo {
   border: 1px solid #42B883;
@@ -1161,24 +1163,21 @@ button:hover h1 {
   color: #42B883;
 }
 button h1{
-  font-size: 16px;
+  font-size: 14px;
   font-family:'SCDream5';
   line-height: 40px;
-  padding-left: 20px;
+  padding-left: 40px;
 
 
 
 }
 #contact .material-icons{
  
+ left: 70px;
+ font-size: 25px;
+ width: 50px;
+ height: 50px;
 
- font-size: 30px;
- color: #fff;
- width: 60px;
- height: 60px;
- border-radius: 100px;
- background-color: #42B883;
- z-index: 5;
 }
 
   }
