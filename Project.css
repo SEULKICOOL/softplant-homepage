@@ -551,13 +551,14 @@ textarea{
     height: 40px;
     margin-top: 40px;
     font-size: 12px;
+    margin-top: 60px;
 
   }
   button{
     width: 100px;
     height: 40px;
     font-size: 12px;
-    margin-top: 40px;    
+    margin-top: 60px;    
     align-items: center;
   }
 
