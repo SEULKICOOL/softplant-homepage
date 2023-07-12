@@ -424,15 +424,15 @@ header ul li a{
 
 }
 .projects h3{
-  max-width: 960px;
-  line-height: 1.2;
+  font-size: 18px;
+  font-family:'SCDream4';
+
   text-align: center;
-  margin: 24px auto 40px;
-  font-size: 20px;
+  margin: 20px auto 40px;
   color: #999;
   font-family:'SCDream3';
   letter-spacing: 1px;
-  word-spacing: 2px;
+  word-spacing: 1px;
 
 
 }
@@ -848,6 +848,9 @@ footer strong{
   font-family:'SCDream5';
   margin-left: 15px;
 }
+
+
+/* CONTACT */
 
 
 

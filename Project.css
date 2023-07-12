@@ -265,6 +265,7 @@ header ul li a{
   
 
   .basic .inner{
+
     width: 800px;
     height: 700px;
     background-color: #fff;
@@ -445,6 +446,9 @@ textarea{
   font-size: 14px;
   padding-left: 10px;
 }
+
+/* CONTACT */
+
 
 /* MOBILE */
 @media (max-width:700px){
