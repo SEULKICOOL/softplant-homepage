@@ -422,12 +422,12 @@ button:hover h1 {
   color: #42B883;
 }
 button h1{
-  font-size: 20px;
+  font-size: 18px;
   font-family:'SCDream5';
   line-height: 50px;
   text-align: center;
   padding-left: 40px;
-  color: #333;
+  color: #222;
 
 
 }
@@ -1141,6 +1141,46 @@ footer strong{
       z-index: 0;
  
     }
+    /* Contact button */
+
+button#contact{
+ 
+  right: 0;
+}
+.nemo{
+  width: 200px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+}
+button:hover .nemo {
+  border: 1px solid #42B883;
+  
+}
+button:hover h1 {
+  color: #42B883;
+}
+button h1{
+  font-size: 16px;
+  font-family:'SCDream5';
+  line-height: 40px;
+  padding-left: 20px;
+
+
+
+}
+#contact .material-icons{
+ 
+
+ font-size: 30px;
+ color: #fff;
+ width: 60px;
+ height: 60px;
+ border-radius: 100px;
+ background-color: #42B883;
+ z-index: 5;
+}
+
   }
 
 
