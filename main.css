@@ -854,7 +854,7 @@ footer strong{
 
 /* MOBILE */
   
-@media screen and (max-width:480px){
+@media screen and (max-width:420px){
 
     body{
       width:100%;
