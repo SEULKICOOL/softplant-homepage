@@ -593,7 +593,9 @@ textarea{
     margin-top: 20px;
    }
    
-  
+   #myCheckbox{
+    margin-bottom: 5px;
+   }
    
 
 }
