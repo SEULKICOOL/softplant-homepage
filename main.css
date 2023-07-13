@@ -418,6 +418,7 @@ button#contact{
 }
 button:hover .nemo {
   border: 1px solid #42B883;
+  box-shadow: none;
   
 }
 button:hover h1 {
@@ -816,6 +817,7 @@ button h1{
 
 
 /* SWIPER */
+
    
 
 .Client{
@@ -869,7 +871,7 @@ button h1{
   100% {
       transform: translateX(-50%);
   }
-}
+} */
 
 
 
