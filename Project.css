@@ -706,6 +706,8 @@ button#contact{
   font-size: 25px;
   width: 50px;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
  
  }
 
