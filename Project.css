@@ -272,6 +272,7 @@ header ul li a{
     border-radius: 10px;
     box-shadow:  3px 3px rgb(206, 202, 202);
     border: 1px solid #ede6e6;
+    margin-bottom: 10px;
 
 
 
@@ -344,6 +345,7 @@ button{
     background-color: #fff;
     border: 1px solid #999;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 form input {
