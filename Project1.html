@@ -105,10 +105,15 @@
        <button class="btn" onclick="getValues()">다 음 </button>
         </div>
 
-
+<!-- Contact Button -->
+<button onclick="quickGo()" id="contact"><div class="material-icons">mail</div><div class="nemo"><h1>빠른문의</h1></div></button>
  <!-- script -->
 
 <script>
+    // 빠른문의로 이동 
+    function quickGo(){
+    window.location.href = "./contact.html";
+  }
     
     console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
     document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");

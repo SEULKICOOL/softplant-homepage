@@ -29,7 +29,7 @@ AOS.init();
   window.location.href = "./소프트플랜트회사소개서.pdf"
   }
   function quickGo(){
-    window.location.href = "./Project4.html";
+    window.location.href = "./contact.html";
   }
 
 //MENU SCROLL EVENT
@@ -79,3 +79,42 @@ function topFunction() {
 
 
 //swiper
+
+// // swiper 객체 생성
+// const mySwiper = new Swiper(".swiper-container", {
+//   // 옵션 설정
+//   loop: true,
+//   autoplay: {
+//     delay: 0,
+//   },
+//   speed: 2000, //add
+//   slidesPerView: 1, //add
+// });
+
+// const mainSwiper = document.getElementById("main-swiper");
+// const tabletSwiper = document.getElementById("tablet-swiper");
+// const mobileSwiper = document.getElementById("mobile-swiper");
+
+// const resizeSwiperHandler = () => {
+//   if (window.innerWidth < 400) {
+//     mainSwiper.style.display = "none";
+//     mobileSwiper.style.display = "block";
+//     tabletSwiper.style.display = "none";
+//   }
+
+//   if (window.innerWidth < 768 && window.innerWidth > 400) {
+//     mainSwiper.style.display = "none";
+//     mobileSwiper.style.display = "none";
+//     tabletSwiper.style.display = "block";
+//   }
+
+//   if (window.innerWidth > 768) {
+//     mainSwiper.style.display = "block";
+//     mobileSwiper.style.display = "none";
+//     tabletSwiper.style.display = "none";
+//   }
+// };
+
+// window.addEventListener("resize", resizeSwiperHandler);
+
+// resizeSwiperHandler();

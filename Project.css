@@ -429,7 +429,12 @@ textarea{
 .privacy textarea{
   width: 600px;
   height: 100px;
+
   /* margin-left: 50px; */
+}
+.privacy1 textarea{
+  width: 600px;
+  height: 60px;
 }
 
 .check input{
@@ -437,6 +442,10 @@ textarea{
   padding-left: 25px;
 
   
+}
+.ask input{
+  width: 600px;
+  height: 100px;
 }
 .check{
   display: flex;
@@ -450,6 +459,60 @@ textarea{
 }
 
 /* CONTACT */
+/* Contact button */
+
+button#contact{
+  width: 250px;
+  background: none;
+  border: none;
+  position:fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 40px;
+
+}
+.nemo{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  background: #F9F9F9;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #999;
+  top: 20px;
+  right: 0;
+ 
+}
+button:hover .nemo {
+  border: 1px solid #42B883;
+  box-shadow: none;
+  
+}
+button:hover h1 {
+  color: #42B883;
+}
+button h1{
+  font-size: 18px;
+  font-family:'SCDream5';
+  line-height: 55px;
+  text-align: center;
+  padding-left: 60px;
+  color: #222;
+
+
+}
+#contact .material-icons{
+position: absolute;
+top: 5px;
+right: 123px;
+ font-size: 45px;
+ color: #fff;
+ width: 80px;
+ height: 80px;
+ line-height: 80px;
+ border-radius: 100px;
+ background-color: #42B883;
+ z-index: 5;
+}
 
 
 /* MOBILE */
@@ -573,6 +636,13 @@ textarea{
     width: 300px;
     height: 30px;
     margin-left: 10px;
+  }
+  .privacy1 textarea{
+    width: 300px;
+    height: 60px;
+  }
+  .ask input{
+    height: 60px;
   }
     .basic h2{
     
