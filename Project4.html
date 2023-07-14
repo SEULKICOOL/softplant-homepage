@@ -98,7 +98,7 @@
                             <input type="text" id="company" onchange="getValues4()" placeholder=" * 회사명">
                             <input type="text" id="yourname" onchange="getValues4()" placeholder=" * 담당자이름">
                             <input type="text" id="position" onchange="getValues4()" placeholder="직책">
-                            <input type="text" id="phone" onchange="getValues4()" placeholder=" * 담당자 휴대폰 번호">
+                            <input type="text" id="phone" onchange="getValues4()" placeholder=" * 휴대폰번호를 - 없이 입력해주세요 " onkeyup="phoneConfirm(this)">
                             <input type="text" id="email" onchange="getValues4()" placeholder="담당자 이메일 주소">
                         </div>
                         <div class="privacy">
@@ -307,8 +307,24 @@
     </div>
 <!-- script -->
 <script>
-    console.log('프로젝트이름" :'+window.localStorage.getItem("lastcompany"));
-   
+
+  // 핸드폰 번호 글자 금지, 숫자 11자 이내 
+  function phoneConfirm(obj) {
+            obj.value = comma(uncomma(obj.value));
+        }
+        function comma(str) {
+            str = String(str);
+            return str.replace(/(\d)(?=(?:\d{11})+(?!\d))/g,'');
+           
+        }
+        function uncomma(str) {
+            str = String(str);
+            return str.replace(/[^\d]+/g, '');
+        };
+
+
+
+
     if(window.localStorage.getItem("lastbusiness") == "division"){
         document.getElementById("buisness").checked = true;  
     }else if(window.localStorage.getItem("lastbusiness") == "solo"){
