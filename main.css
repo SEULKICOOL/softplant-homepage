@@ -113,12 +113,15 @@ button .material-icons{
  }
 
  .btn:hover{
-
- background-color:#f1f1f1;
+  transition: all 0.5s;
+  animation: anitext3 1.5s ease 1.2s;
+  background-color:#f1f1f1;
 
  }
  .btn-main:hover{
   background-color: #42d392;
+  transition: all 0.5s;
+  animation: anitext3 1.5s ease 1.2s;
 
 
  }
@@ -391,6 +394,8 @@ header ul li a{
 #topButton:hover {
   background-color: #42B883;
   color: #fff;
+  transition: all 0.5s;
+  animation: anitext3 1.5s ease 1.2s;
     }
 
 /* Contact button */
@@ -419,10 +424,13 @@ button#contact{
 button:hover .nemo {
   border: 1px solid #42B883;
   box-shadow: none;
+ 
+ 
   
 }
 button:hover h1 {
   color: #42B883;
+ 
 }
 button h1{
   font-size: 18px;
