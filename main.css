@@ -912,7 +912,7 @@ button h1{
 
 /* Footer */
 footer{
-  height: 150px;
+  height: 200px;
   background-color:#fff;
   padding-top: 10px;
   text-align: center;
@@ -920,7 +920,8 @@ footer{
 }
 
 .info{
-padding-top: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
 text-align: center;
 }
 
