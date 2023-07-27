@@ -539,6 +539,7 @@ right: 123px;
   height: 20px;
   margin-left: 20px;
   border-radius: 5px;
+  line-height: 20px;
 }
 .filewrap input[type="file"] {
   position: absolute;
