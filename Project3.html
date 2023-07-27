@@ -100,6 +100,12 @@
                             <h3> * 프로젝트 상세내용</h3>
                              <textarea name="desc" id="desc" placeholder="프로젝트 진행 시 파트너가 알아야 할 사항이 있다면 상세 내용을 입력해 주세요."></textarea>
                         </div>
+                        <div class="filewrap"> 
+                           
+                                <input class="upload-name" id="file1" value="첨부파일" placeholder="프로젝트에 참고할 첨부파일을 첨부해 주세요">
+                                <label for="file" >파일찾기</label> 
+                                <input type="file" id="file" class="file_input_hidden" onchange="javascript: document.getElementById('file1').value = this.value" >
+                        
                      
                             </div>
                         </div>
@@ -200,6 +206,13 @@
     closeIcon.addEventListener('click',function() {
         menu.style.display = 'none';
     })
+    
+    // 파일명 가져오기
+   
+ 
+
+
+    
 
 </script>
 </body>

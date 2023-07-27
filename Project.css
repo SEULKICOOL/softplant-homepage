@@ -267,7 +267,7 @@ header ul li a{
   .basic .inner{
 
     width: 800px;
-    height: 700px;
+    height: 800px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow:  3px 3px rgb(206, 202, 202);
@@ -516,7 +516,38 @@ right: 123px;
  background-color: #42B883;
  z-index: 5;
 }
-
+/* UPLOAD */
+.filewrap{
+  margin-top: 20px;
+} 
+#file1 {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+  width: 60%;
+  color: #999999;
+}
+.filewrap label {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #999999;
+  cursor: pointer;
+  height: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.filewrap input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
 
 /* MOBILE */
 @media (max-width:700px){
