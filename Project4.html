@@ -276,8 +276,8 @@
     </section>
     <div class="next">
             <button class="btn" onclick="beforeLocation()">이 전</button> 
-            <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant99@gmail.com" 
-                action="https://script.google.com/macros/s/AKfycbyIdAEZZEo9vjka67ZNrZLq9vnrkxPnMWFXM8xr_tVIbjEv0XXlUViJ11vJ4XONhlA/exec">
+            <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant77@gmail.com" 
+                action="https://script.google.com/macros/s/AKfycbxZzeKl7W0t7FxNzEWn_EDNnIjlLBc_I4VBZiBWVISL8HO3OKkfyfrqaAQ-_M2RbKiXhA/exec">
                 <input type="text" id="ProjectName" name="ProjectName"/>
                 <input type="text" id="ProjectField" name="ProjectField"/>
                 <input type="text" id="SelectProject" name="SelectProject"/>
@@ -307,7 +307,6 @@
     </div>
 <!-- script -->
 <script>
-
   // 핸드폰 번호 글자 금지, 숫자 11자 이내 
   function phoneConfirm(obj) {
             obj.value = comma(uncomma(obj.value));
@@ -468,7 +467,7 @@
             event.preventDefault();
             let persoanlYn = document.getElementById("myCheckbox").checked;
             if(!persoanlYn){
-                alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+                alert('개인정보 취급방침에 동의해주셔야 합니다.')
                 return false;
             }
             
@@ -495,7 +494,7 @@
                     form.reset();
                 
                     window.localStorage.clear();
-                    alert("제출되었습니다. 확인 후 연락드리겠습니다.");
+                    alert("제출되었습니다. 확인 후 연락 드리겠습니다.");
                     window.location.href = "/"
                 
                 }
