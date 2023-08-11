@@ -282,9 +282,7 @@
                 
     </section>
     <div class="next">
-   
-            <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant77@gmail.com" 
-                action="https://script.google.com/macros/s/AKfycbxZzeKl7W0t7FxNzEWn_EDNnIjlLBc_I4VBZiBWVISL8HO3OKkfyfrqaAQ-_M2RbKiXhA/exec">
+        <form name="emailForm" id="emailForm" >
                 <input type="text" id="ProjectName" name="ProjectName"/>
                 <input type="text" id="ProjectField" name="ProjectField"/>
                 <input type="text" id="SelectProject" name="SelectProject"/>
@@ -297,23 +295,26 @@
                 <input type="text" id="ProjectPeople" name="ProjectPeople"/>
                 <input type="text" id="ProjectManaging" name="ProjectManaging"/>
                 <input type="text" id="ProjectText" name="ProjectText"/>
-                <input type="text" id="ProjectDivision" name="ProjectDivision"/>
-                <input type="text" id="CompanyName" name="CompanyName"/>
+                <input type="text" id="ProjectDivision" name="ProjectDivision"/> 
+                <input type="text" id="CompanyName" name="CompanyName"/> 
                 <input type="text" id="UserName" name="UserName"/>
                 <input type="text" id="Position" name="Position"/>
                 <input type="text" id="PhoneNumber" name="PhoneNumber"/>
                 <input type="text" id="Email" name="Email"/>
-                <!-- <button type="button" onclick="checkValidation()">제출</button> -->
-                <button id="btnSubmit">등 록</button> 
+                <button type="button" onclick="sendMail2() ">제 출</button>
+                <!-- <button type="button" onclick="sendMail()">제 출</button> -->
             </form>
     </div>
-    <div style="display:none;" class="thankyou_message">
-        <div class="container">
-        <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
-        </div>
+
     </div>
 <!-- script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+
+
+
+   
+
     // 핸드폰 번호 글자 금지, 숫자 11자 이내 
         function phoneConfirm(obj) {
             obj.value = comma(uncomma(obj.value));
@@ -379,7 +380,7 @@
             }else{
             window.localStorage.setItem("lastcompany",document.querySelector('input[name="division"]:checked').value);  
         }
-        // window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
+        window.localStorage.setItem("lastbusiness",document.querySelector('input[name="division"]:checked').value);
         // window.localStorage.setItem("lastsolo",document.getElementById("solo").value);
         window.localStorage.setItem("lastcompany",document.getElementById("company").value);
         window.localStorage.setItem("lastyourname",document.getElementById("yourname").value);
@@ -397,142 +398,169 @@
 
 
     };
-    function    beforeLocation(){
-        window.location.href = "./Project3.html";
+
+
+
+// // form태그 값 메일로 보내기    
+
+
+//     (function() {
+//         function checkValidation(){
+//             // validation check
+//             let f = document.emailForm;
+//             let persoanlYn = document.getElementById("myCheckbox").checked;
+//             if(!persoanlYn){
+//                 alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+//                 return false;
+//             }else{
+//                 console.log('call handleFormSubmit');
+//                 f.submit();
+//                 // f.handleFormSubmit();
+//             }
+//             console.log("persoanlYn:"+persoanlYn)
+//             // validation check
+//         }                             
+//         function getFormData(form) {
+//             var elements = form.elements;
+//             var honeypot;
+
+//             var fields = Object.keys(elements).filter(function(k) {
+//                 if (elements[k].fo === "honeypot") {
+//                     honeypot = elements[k].value;
+//                     return false;
+//                 }
+//                 return true;
+//             }).map(function(k) {
+//                 if(elements[k].name !== undefined) {
+//                     return elements[k].name;
+//                 }else if(elements[k].length > 0){
+//                     return elements[k].item(0).name;
+//                 }
+//             }).filter(function(item, pos, self) {
+//                 return self.indexOf(item) == pos && item;
+//             });
+            
+
+//             var formData = {};
+//             fields.forEach(function(name){
+//                 var element = elements[name];
+                                    
+//                 formData[name] = element.value;
+
+//                 if (element.length) {
+//                     var data = [];
+//                     for (var i = 0; i < element.length; i++) {
+//                         var item = element.item(i);
+//                         if (item.checked || item.selected) {
+//                             data.push(item.value);
+//                         }
+//                     }
+//                     formData[name] = data.join(', ');
+//                 }
+//             });
+
+//             formData.formDataNameOrder = JSON.stringify(fields);
+//             formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
+//             formData.formGoogleSendEmail = form.dataset.email || "";
+//             return {data: formData, honeypot: honeypot};
+//         }
+              
+//         function handleFormSubmit(event) { 
+
+//             console.log('in handleFormSubmit');
+//             event.preventDefault();
+//             // let persoanlYn = document.getElementById("myCheckbox").checked;
+//             // if(!persoanlYn){
+//             //     alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+//             //     return false;
+//             // }
+            
+//             var form = event.target;
+//             console.log('start getForm')
+//             var formData = getFormData(form);
+
+            
+//             var data = formData.data;
+          
+//             if (formData.honeypot) {
+//                 return false;
+//             }
+           
+//             disableAllButtons(form);
+
+//             var url = form.action;
+//             var xhr = new XMLHttpRequest();
+//             xhr.open('POST', url);
+                                    
+//             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//             xhr.onreadystatechange = function() {
+//                 if (xhr.readyState === 4 && xhr.status === 200) {
+//                     form.reset();
+                
+//                     window.localStorage.clear();
+//                     alert("제출되었습니다. 확인 후 연락드리겠습니다.");
+//                     window.location.href = "/"
+                
+//                 }
+//             };
+//             var encoded = Object.keys(data).map(function(k) {
+//                 return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+//             }).join('&');
+
+           
+//             xhr.send(encoded);
+//         }
+
+//         function loaded() {
+                                        
+//             var forms = document.querySelectorAll("form.gform");
+//             for (var i = 0; i < forms.length; i++) {
+//                 forms[i].addEventListener("submit", handleFormSubmit, false);
+//             }
+//         };
+
+//         document.addEventListener("DOMContentLoaded", loaded, false);
+
+//         function disableAllButtons(form) {
+//             var buttons = form.querySelectorAll("button");
+//             for (var i = 0; i < buttons.length; i++) {
+//                 buttons[i].disabled = true;
+//             }
+//         };
+        
+//         })();
+
+function sendMail2() { 
+            
+
+            emailjs.init("fast"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
+
+            const emailConfig = {
+            service_id: 'softplant77', // 이메일 서비스 ID
+            template_id: 'template_ax501sj', // 이메일 템플릿 ID
+            user_id: 'l_EHZkUL6Yd5dTuQ-', // 사용자 ID (API Key)
+            };
+          
+            // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
+            const emailContent = {
+                CompanyName: document.getElementById('company').value,
+                UserName: document.getElementById('yourname').value,
+                PhoneNumber : document.getElementById('phone').value,
+                Email: document.getElementById('email').value,
+                position : document.getElementById('position').value
+                };
+          
+            emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
+            .then(function(response) {
+                window.localStorage.clear();
+                alert('전송에 성공하였습니다. 확인 후 연락드리겠습니다.', response);
+                window.location.href = "/"
+            }, function(error) {
+                console.error('이메일 전송 실패:', error);
+            });
+ 
 
     }
-
-
-// form태그 값 메일로 보내기    
-
-
-    (function() {
-        function checkValidation(){
-            // validation check
-            let f = document.emailForm;
-            let persoanlYn = document.getElementById("myCheckbox").checked;
-            if(!persoanlYn){
-                alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
-                return false;
-            }else{
-                console.log('call handleFormSubmit');
-                f.submit();
-                // f.handleFormSubmit();
-            }
-            console.log("persoanlYn:"+persoanlYn)
-            // validation check
-        }                             
-        function getFormData(form) {
-            var elements = form.elements;
-            var honeypot;
-
-            var fields = Object.keys(elements).filter(function(k) {
-                if (elements[k].fo === "honeypot") {
-                    honeypot = elements[k].value;
-                    return false;
-                }
-                return true;
-            }).map(function(k) {
-                if(elements[k].name !== undefined) {
-                    return elements[k].name;
-                }else if(elements[k].length > 0){
-                    return elements[k].item(0).name;
-                }
-            }).filter(function(item, pos, self) {
-                return self.indexOf(item) == pos && item;
-            });
-            
-
-            var formData = {};
-            fields.forEach(function(name){
-                var element = elements[name];
-                                    
-                formData[name] = element.value;
-
-                if (element.length) {
-                    var data = [];
-                    for (var i = 0; i < element.length; i++) {
-                        var item = element.item(i);
-                        if (item.checked || item.selected) {
-                            data.push(item.value);
-                        }
-                    }
-                    formData[name] = data.join(', ');
-                }
-            });
-
-            formData.formDataNameOrder = JSON.stringify(fields);
-            formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
-            formData.formGoogleSendEmail = form.dataset.email || "";
-            return {data: formData, honeypot: honeypot};
-        }
-              
-        function handleFormSubmit(event) { 
-
-            console.log('in handleFormSubmit');
-            event.preventDefault();
-            // let persoanlYn = document.getElementById("myCheckbox").checked;
-            // if(!persoanlYn){
-            //     alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
-            //     return false;
-            // }
-            
-            var form = event.target;
-            console.log('start getForm')
-            var formData = getFormData(form);
-
-            
-            var data = formData.data;
-          
-            if (formData.honeypot) {
-                return false;
-            }
-           
-            disableAllButtons(form);
-
-            var url = form.action;
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', url);
-                                    
-            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    form.reset();
-                
-                    window.localStorage.clear();
-                    alert("제출되었습니다. 확인 후 연락드리겠습니다.");
-                    window.location.href = "/"
-                
-                }
-            };
-            var encoded = Object.keys(data).map(function(k) {
-                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-            }).join('&');
-
-           
-            xhr.send(encoded);
-        }
-
-        function loaded() {
-                                        
-            var forms = document.querySelectorAll("form.gform");
-            for (var i = 0; i < forms.length; i++) {
-                forms[i].addEventListener("submit", handleFormSubmit, false);
-            }
-        };
-
-        document.addEventListener("DOMContentLoaded", loaded, false);
-
-        function disableAllButtons(form) {
-            var buttons = form.querySelectorAll("button");
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].disabled = true;
-            }
-        };
-        
-        })();
-
-
 
     //Mobile
     const menuIcon = document.querySelector('.mobile-icon');
@@ -555,4 +583,3 @@
 
  
 </body>
-</html>
