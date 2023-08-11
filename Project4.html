@@ -613,6 +613,7 @@
           
             // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
             const emailContent = {
+            
                 ProjectName : document.getElementById('ProjectName').value,
                 ProjectField : document.getElementById('ProjectField').value,
                 SelectProject : document.getElementById('SelectProject').value,
@@ -631,6 +632,7 @@
                 Email: document.getElementById('Email').value
 
                 };
+                console.log(lastProjectName)
           
             emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
             .then(function(response) {
