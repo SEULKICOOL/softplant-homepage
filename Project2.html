@@ -128,6 +128,7 @@
     <!-- script -->
 
     <script>
+        console.log('예산") :'+window.localStorage.getItem("lastpay"));
         //예산 금액 숫자에 콤마 찍어주는 함수
         function inputNumberFormat(obj) {
             obj.value = comma(uncomma(obj.value));
@@ -185,6 +186,7 @@
         //     }
 
             function getValues2(){  
+                
             var chk_radio2 = document.getElementsByName('online')
             var sel_type2 = null;
             for(var i =0; i<chk_radio2.length; i++){
@@ -204,6 +206,7 @@
                 // window.localStorage.setItem("lastonline",document.querySelector('input[name="online"]:checked').value);
                 // window.localStorage.setItem("lastoffline",document.getElementById("offline").value);
                 const cityValue = document.getElementById("city");
+             
                 window.localStorage.setItem("lastcity",cityValue.options[cityValue.selectedIndex].value);
                 window.location.href = "./Project3.html";
             }

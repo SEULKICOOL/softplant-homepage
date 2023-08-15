@@ -309,6 +309,7 @@
 </script> -->
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+     console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
   // 핸드폰 번호 글자 금지, 숫자 11자 이내 
   function phoneConfirm(obj) {
             obj.value = comma(uncomma(obj.value));
@@ -336,6 +337,7 @@
 
 
     //form 안에 input 태그에 값 담기
+    console.log('로컬테스트") :'+window.localStorage.getItem("ProjectName"));
     document.getElementById("ProjectName").value = window.localStorage.getItem("lastProjectName");
     document.getElementById("ProjectField").value = window.localStorage.getItem("lastField");
     document.getElementById("SelectProject").value = window.localStorage.getItem("lastNew");
@@ -348,6 +350,7 @@
     document.getElementById("ProjectMeeting").value = window.localStorage.getItem("lastonline");
     document.getElementById("ProjectManaging").value = window.localStorage.getItem("lastwork");
     document.getElementById("ProjectText").value = window.localStorage.getItem("lastdesc");
+    console.log('담긴이름") :'+window.localStorage.getItem("lastProjectName"));
    
     
 
@@ -528,30 +531,6 @@
 
     //EmailJS
 
-    //     const sendEmail = () => {
-    //     emailjs.init('');
-    //     let templateParams  = {
-    //         ProjectName : document.getElementById('ProjectName').value,
-    //         ProjectField : document.getElementById('ProjectField').value,
-    //         SelectProject : document.getElementById('SelectProject').value,
-    //         ConditionProject : document.getElementById('ConditionProject').value,
-    //         Projectpay : document.getElementById('Projectpay').value,
-    //         Projectdate : document.getElementById('Projectdate').value,
-    //         ProjectTerm : document.getElementById('ProjectTerm').value,
-    //         ClientCity : document.getElementById('ClientCity').value,
-    //         ProjectPeople : document.getElementById('ProjectPeople').value,
-    //         ProjectManaging : document.getElementById('ProjectManaging').value,
-    //         ProjectText : document.getElementById('ProjectText').value
-    //     }
-    //     console.log(templateParams);
-    //     emailjs.send('softplant77', 'template_pmel3rs', templateParams).then(function(response){
-    //         console.log('Success!', response.status, response.text);
-    //         setStatus('success');
-    //     }, function(error){
-    //         console.log('Failed...', error);
-    //         setStatus('fail');
-    //     })
-    // }
     // (function() {
     //     emailjs.init("softplant");
 
@@ -600,6 +579,7 @@
     //     }
     // })();
 
+    console.log(ProjectName.value)
 
     function sendMail() { 
             
@@ -612,31 +592,101 @@
             };
           
             // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
+            let makeStr = '프로젝트 이름:' +window.localStorage.getItem("lastProjectName")
+                        + '\n프로젝트 분야:' + window.localStorage.getItem("lastField")
+                        + '\n프로젝트 진행분류:' +window.localStorage.getItem("lastNew")
+                        + '\n기획상태:'+window.localStorage.getItem("lastReady")
+                        + '\n프로젝트예산:'+window.localStorage.getItem("lastpay")
+                        + '\n예상시작일:'+window.localStorage.getItem("lastdate")
+                        + '\n프로젝트 진행기간:'+window.localStorage.getItem("lastterm")
+                        + '\n프로젝트 미팅방식:'+window.localStorage.getItem("lastcity")
+                        + '\n클라이언트 위치:'+window.localStorage.getItem("lastit")
+                        + '\n프로젝트인력상황:'+window.localStorage.getItem("lastonline")
+                        + '\n프로젝트 매니징 경험 :'+window.localStorage.getItem("lastwork")
+                        + '\n프로젝트 상세내용:'+window.localStorage.getItem("lastdesc")
+                        + '\n상호명 :'+window.localStorage.getItem("lastcompany")
+                        + '\n성함 :'+window.localStorage.getItem("lastyourname")
+                        + '\n직급 :'+window.localStorage.getItem("lastposition")
+                        + '\n휴대폰번호 :'+window.localStorage.getItem("lastphone")
+                        + '\n이메일주소 :'+window.localStorage.getItem("lastemail");
+
             const emailContent = {
             
-                ProjectName : document.getElementById('ProjectName').value,
-                ProjectField : document.getElementById('ProjectField').value,
-                SelectProject : document.getElementById('SelectProject').value,
-                ConditionProject : document.getElementById('ConditionProject').value,
-                Projectpay : document.getElementById('Projectpay').value,
-                Projectdate : document.getElementById('Projectdate').value,
-                ProjectTerm : document.getElementById('ProjectTerm').value,
-                ClientCity : document.getElementById('ClientCity').value,
-                ProjectPeople : document.getElementById('ProjectPeople').value,
-                ProjectManaging : document.getElementById('ProjectManaging').value,
-                ProjectText : document.getElementById('ProjectText').value,
-                CompanyName: document.getElementById('CompanyName').value,
-                UserName: document.getElementById('UserName').value,
-                Position: document.getElementById('Position').value,
-                PhoneNumber : document.getElementById('PhoneNumber').value,
-                Email: document.getElementById('Email').value
+                // ProjectName : window.localStorage.getItem("lastProjectName"),
+                // ProjectField : window.localStorage.getItem("lastField"),
+                // SelectProject: window.localStorage.getItem("lastNew"),
+                // ConditionProject:  window.localStorage.getItem("lastReady"),
+                // Projectpay: window.localStorage.getItem("lastpay"),
+                // Projectdate : window.localStorage.getItem("lastpay"),
+                // ProjectTerm : window.localStorage.getItem("lastterm"),
+                // ClientCity : window.localStorage.getItem("lastcity"),
+                // ProjectPeople: window.localStorage.getItem("lastit"),
+                // ProjectMeeting : window.localStorage.getItem("lastonline"),
+                // ProjectManaging : window.localStorage.getItem("lastwork"),
+                // ProjectText : window.localStorage.getItem("lastdesc"),            
+
+
+                // // ProjectName : document.getElementById('lastProjectName'),
+                // // ProjectField : document.getElementById('ProjectField').value,
+                // // SelectProject : document.getElementById('SelectProject').value,
+                // // ConditionProject : document.getElementById('ConditionProject').value,
+                // // Projectpay : document.getElementById('Projectpay').value,
+                // // Projectdate : document.getElementById('Projectdate').value,
+                // // ProjectTerm : document.getElementById('ProjectTerm').value,
+                // // ClientCity : document.getElementById('ClientCity').value,
+                // // ProjectPeople : document.getElementById('ProjectPeople').value,
+                // // ProjectManaging : document.getElementById('ProjectManaging').value,
+                // // ProjectText : document.getElementById('ProjectText').value,
+                // CompanyName: document.getElementById('CompanyName').value,
+                // UserName: document.getElementById('UserName').value,
+                // Position: document.getElementById('Position').value,
+                // PhoneNumber : document.getElementById('PhoneNumber').value,
+                // Email: document.getElementById('Email').value
+
+
+                MailContents : makeStr,
+//                 프로젝트 이름: {{ProjectName}}
+
+// 프로젝트 분야: {{ProjectField}}
+
+// 프로젝트 진행분류: {{SelectProject}}
+
+// 기획상태: {{ConditionProject}}
+
+// 프로젝트예산: {{Projectpay}}
+
+// 예상시작일:{{Projectdate}}
+
+// 프로젝트 진행기간:{{ProjectTerm}}
+
+// 프로젝트 미팅방식: {{ProjectMeeting}}
+
+// 클라이언트 위치:{{ClientCity}}
+
+// 프로젝트인력상황: {{ProjectPeople}}
+
+// 프로젝트 매니징 경험 :{{ProjectManaging}}
+
+// 프로젝트 상세내용: {{ProjectText}}
+
+// 상호명 : {{CompanyName}}
+
+// 성함: {{UserName}}
+
+// 직급:{{Position}}
+
+// 휴대폰번호:{{PhoneNumber}}
+
+// 이메일주소:{{Email}}
 
                 };
-                console.log(lastProjectName)
-          
+             
+            console.log("emailContent:" + JSON.stringify(emailContent));
+            // return false;
             emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
             .then(function(response) {
-                window.localStorage.clear();
+                
+               
                 alert('전송에 성공하였습니다. 확인 후 연락드리겠습니다.', response);
                 
             }, function(error) {
