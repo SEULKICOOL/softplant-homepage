@@ -139,8 +139,8 @@
             contentType: false,
             success: function(response){
                 console.log('file link : ', response.data);
-                setData(response)
                 alert('업로드 완료 되었습니다.다음 페이지로 이동해주세요');
+                localStorage.getItem(response.data);
             },
             error: function(){
                 alert('정상적으로 첨부되지 않았습니다 파일을 다시 확인해주세요');
@@ -149,7 +149,8 @@
     });
     });
 
-    const UPLOAD = 
+    // const upText = response.text();
+   
     
     console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
     if(window.localStorage.getItem("lastit") == "ity"){
@@ -166,8 +167,7 @@
     };
 
     document.getElementById("desc").value = window.localStorage.getItem("lastdesc");
-
-
+   
 
     // window.lastit = '';
     // window.lastitno = '';
