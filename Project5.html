@@ -1,46 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EmailJS Example</title>
-</head>
+<html>
 <body>
 
-<h1>EmailJS Example</h1>
+<h2>File Upload Form</h2>
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<form id="upload-form" action="your_server_endpoint" method="post" enctype="multipart/form-data">
+  <label for="file">Select file:</label>
+  <input type="file" id="file" name="file" accept="*/*" >
+
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  (function(){
-    emailjs.init("softplant"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
+$(document).ready(function(){
+  $('#upload-form').on('submit', function(e){
+    e.preventDefault();
 
-    const emailConfig = {
-      service_id: 'softplant77', // 이메일 서비스 ID
-      template_id: 'template_pmel3rs', // 이메일 템플릿 ID
-      user_id: 'l_EHZkUL6Yd5dTuQ-', // 사용자 ID (API Key)
-    };
-    // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
-    const emailContent = {
-        ProjectName : '보내져라',
-        ProjectField : '1',
-        SelectProject : '2',
-        ConditionProject : '3',
-        Projectpay : '4',
-        Projectdate : '5',
-        ProjectTerm : '6',
-        ClientCity : '7',
-        ProjectPeople : '8',
-        ProjectManaging : '9',
-        ProjectText : '10'
-    };
-
-    emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
-      .then(function(response) {
-        console.log('이메일 전송 성공:', response);
-      }, function(error) {
-        console.error('이메일 전송 실패:', error);
-      });
-  })();
+    var formData = new FormData(this);
+    $.ajax({
+      url: 'https://softplant.shop/api/v1/tino/kolf/upload/attachment',
+      type: 'POST',
+      data: formData,
+      processData: false,
+      contentType: false,
+      success: function(response){
+        console.log('file link : ', response.data);
+        console.log('File has been uploaded successfully');
+      },
+      error: function(){
+        console.log('Error occurred during the file upload');
+      }
+    });
+  });
+});
 </script>
 
 </body>

@@ -101,6 +101,13 @@
                             <input type="text" id="phone" onchange="getValues4()" placeholder=" * 휴대폰번호를 - 없이 입력해주세요 " onkeyup="phoneConfirm(this)">
                             <input type="text" id="email" onchange="getValues4()" placeholder="담당자 이메일 주소">
                         </div>
+                       
+                          
+                        <!-- <div class="filewrap"> 
+                            <input class="upload-name" id="file1" value="첨부파일" placeholder="프로젝트에 참고할 첨부파일을 첨부해 주세요">
+                            <label for="file" >파일찾기</label> 
+                            <input type="file" id="file" class="file_input_hidden" onchange="javascript: document.getElementById('file1').value = this.value" >
+                        </div> -->
                         <div class="privacy">
                             <h3> * 개인정보 취급방침 </h3>
                             <textarea disabled placeholder="㈜소프트플랜트(이하 ‘회사’라 함)은 정보통신망 이용촉진 및 정보보호에 관한 법률, 개인정보보호법, 통신비밀보호법, 전기통신사업법, 전자문서 및 전자거래기본법 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.
@@ -276,7 +283,8 @@
     </section>
     <div class="next">
             <button class="btn" onclick="beforeLocation()">이 전</button> 
-            <form name="emailForm" id="emailForm" >
+            <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant77@gmail.com" 
+            action="https://script.google.com/macros/s/AKfycbxZzeKl7W0t7FxNzEWn_EDNnIjlLBc_I4VBZiBWVISL8HO3OKkfyfrqaAQ-_M2RbKiXhA/exec">
                 <input type="text" id="ProjectName" name="ProjectName"/>
                 <input type="text" id="ProjectField" name="ProjectField"/>
                 <input type="text" id="SelectProject" name="SelectProject"/>
@@ -295,8 +303,8 @@
                 <input type="text" id="Position" name="Position"/>
                 <input type="text" id="PhoneNumber" name="PhoneNumber"/>
                 <input type="text" id="Email" name="Email"/>
-                <button type="button" onclick="sendMail()">제 출</button>
-                <!-- <button id="btnSubmit" onclick="sendMail() " >제 출</button>  -->
+                <!-- <button type="button" onclick="checkValidation()">제 출</button> -->
+                <button id="btnSubmit" onclick="checkValidation() " >제 출</button> 
             </form>
     </div>
 
@@ -307,9 +315,34 @@
       
    })();
 </script> -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script>
-     console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
+
+//     // 파일첨부
+
+//     $(document).ready(function(){
+//   $('#upload-form').on('submit', function(e){
+//     e.preventDefault();
+
+//     var formData = new FormData(this);
+//     $.ajax({
+//       url: 'https://softplant.shop/api/v1/tino/kolf/upload/attachment',
+//       type: 'POST',
+//       data: formData,
+//       processData: false,
+//       contentType: false,
+//       success: function(response){
+//         console.log('file link : ', response.data);
+//         console.log('File has been uploaded successfully');
+//       },
+//       error: function(){
+//         console.log('Error occurred during the file upload');
+//       }
+//     });
+//   });
+// });
+    
+    
   // 핸드폰 번호 글자 금지, 숫자 11자 이내 
   function phoneConfirm(obj) {
             obj.value = comma(uncomma(obj.value));
@@ -400,134 +433,134 @@
 
  
 
-// // form태그 값 메일로 보내기    
+// form태그 값 메일로 보내기    
 
 
-    // (function() {
-    //     function checkValidation(){
-    //         // validation check
-    //         let f = document.emailForm;
-    //         let persoanlYn = document.getElementById("myCheckbox").checked;
-    //         if(!persoanlYn){
-    //             alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
-    //             return false;
-    //         }else{
-    //             console.log('call handleFormSubmit');
-    //             f.submit();
-    //             // f.handleFormSubmit();
-    //         }
-    //         console.log("persoanlYn:"+persoanlYn)
-    //         // validation check
-    //     }                             
-    //     function getFormData(form) {
-    //         var elements = form.elements;
-    //         var honeypot;
+    (function() {
+        function checkValidation(){
+            // validation check
+            let f = document.emailForm;
+            let persoanlYn = document.getElementById("myCheckbox").checked;
+            if(!persoanlYn){
+                alert('개인정보 취급방쳄에 동의해주셔야 합니다.')
+                return false;
+            }else{
+                console.log('call handleFormSubmit');
+                f.submit();
+                // f.handleFormSubmit();
+            }
+            console.log("persoanlYn:"+persoanlYn)
+            // validation check
+        }                             
+        function getFormData(form) {
+            var elements = form.elements;
+            var honeypot;
 
-    //         var fields = Object.keys(elements).filter(function(k) {
-    //             if (elements[k].fo === "honeypot") {
-    //                 honeypot = elements[k].value;
-    //                 return false;
-    //             }
-    //             return true;
-    //         }).map(function(k) {
-    //             if(elements[k].name !== undefined) {
-    //                 return elements[k].name;
-    //             }else if(elements[k].length > 0){
-    //                 return elements[k].item(0).name;
-    //             }
-    //         }).filter(function(item, pos, self) {
-    //             return self.indexOf(item) == pos && item;
-    //         });
+            var fields = Object.keys(elements).filter(function(k) {
+                if (elements[k].fo === "honeypot") {
+                    honeypot = elements[k].value;
+                    return false;
+                }
+                return true;
+            }).map(function(k) {
+                if(elements[k].name !== undefined) {
+                    return elements[k].name;
+                }else if(elements[k].length > 0){
+                    return elements[k].item(0).name;
+                }
+            }).filter(function(item, pos, self) {
+                return self.indexOf(item) == pos && item;
+            });
             
 
-    //         var formData = {};
-    //         fields.forEach(function(name){
-    //             var element = elements[name];
+            var formData = {};
+            fields.forEach(function(name){
+                var element = elements[name];
                                     
-    //             formData[name] = element.value;
+                formData[name] = element.value;
 
-    //             if (element.length) {
-    //                 var data = [];
-    //                 for (var i = 0; i < element.length; i++) {
-    //                     var item = element.item(i);
-    //                     if (item.checked || item.selected) {
-    //                         data.push(item.value);
-    //                     }
-    //                 }
-    //                 formData[name] = data.join(', ');
-    //             }
-    //         });
+                if (element.length) {
+                    var data = [];
+                    for (var i = 0; i < element.length; i++) {
+                        var item = element.item(i);
+                        if (item.checked || item.selected) {
+                            data.push(item.value);
+                        }
+                    }
+                    formData[name] = data.join(', ');
+                }
+            });
 
-    //         formData.formDataNameOrder = JSON.stringify(fields);
-    //         formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
-    //         formData.formGoogleSendEmail = form.dataset.email || "";
-    //         return {data: formData, honeypot: honeypot};
-    //     }
+            formData.formDataNameOrder = JSON.stringify(fields);
+            formData.formGoogleSheetName = form.dataset.sheet || "responses"; 
+            formData.formGoogleSendEmail = form.dataset.email || "";
+            return {data: formData, honeypot: honeypot};
+        }
               
-    //     function handleFormSubmit(event) { 
+        function handleFormSubmit(event) { 
 
-    //         console.log('in handleFormSubmit');
-    //         event.preventDefault();
-    //         let persoanlYn = document.getElementById("myCheckbox").checked;
-    //         if(!persoanlYn){
-    //             alert('개인정보 취급방침에 동의해주셔야 합니다.')
-    //             return false;
-    //         }
+            console.log('in handleFormSubmit');
+            event.preventDefault();
+            let persoanlYn = document.getElementById("myCheckbox").checked;
+            if(!persoanlYn){
+                alert('개인정보 취급방침에 동의해주셔야 합니다.')
+                return false;
+            }
             
-    //         var form = event.target;
-    //         console.log('start getForm')
-    //         var formData = getFormData(form);
+            var form = event.target;
+            console.log('start getForm')
+            var formData = getFormData(form);
 
             
-    //         var data = formData.data;
+            var data = formData.data;
           
-    //         if (formData.honeypot) {
-    //             return false;
-    //         }
+            if (formData.honeypot) {
+                return false;
+            }
            
-    //         disableAllButtons(form);
+            disableAllButtons(form);
 
-    //         var url = form.action;
-    //         var xhr = new XMLHttpRequest();
-    //         xhr.open('POST', url);
+            var url = form.action;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
                                     
-    //         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    //         xhr.onreadystatechange = function() {
-    //             if (xhr.readyState === 4 && xhr.status === 200) {
-    //                 form.reset();
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    form.reset();
                 
-    //                 window.localStorage.clear();
-    //                 alert("제출되었습니다. 확인 후 연락 드리겠습니다.");
-    //                 window.location.href = "/"
+                    window.localStorage.clear();
+                    alert("제출되었습니다. 확인 후 연락 드리겠습니다.");
+                    window.location.href = "/"
                 
-    //             }
-    //         };
-    //         var encoded = Object.keys(data).map(function(k) {
-    //             return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    //         }).join('&');
+                }
+            };
+            var encoded = Object.keys(data).map(function(k) {
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
 
            
-    //         xhr.send(encoded);
-    //     }
+            xhr.send(encoded);
+        }
 
-    //     function loaded() {
+        function loaded() {
                                         
-    //         var forms = document.querySelectorAll("form.gform");
-    //         for (var i = 0; i < forms.length; i++) {
-    //             forms[i].addEventListener("submit", handleFormSubmit, false);
-    //         }
-    //     };
+            var forms = document.querySelectorAll("form.gform");
+            for (var i = 0; i < forms.length; i++) {
+                forms[i].addEventListener("submit", handleFormSubmit, false);
+            }
+        };
 
-    //     document.addEventListener("DOMContentLoaded", loaded, false);
+        document.addEventListener("DOMContentLoaded", loaded, false);
 
-    //     function disableAllButtons(form) {
-    //         var buttons = form.querySelectorAll("button");
-    //         for (var i = 0; i < buttons.length; i++) {
-    //             buttons[i].disabled = true;
-    //         }
-    //     };
+        function disableAllButtons(form) {
+            var buttons = form.querySelectorAll("button");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = true;
+            }
+        };
         
-    //     })();
+        })();
 
     //EmailJS
 
@@ -579,73 +612,73 @@
     //     }
     // })();
 
-    console.log(ProjectName.value)
+//     console.log(ProjectName.value)
 
-    function sendMail() { 
+//     function sendMail() { 
             
-            emailjs.init("softplant"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
+//             emailjs.init("softplant"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
 
-            const emailConfig = {
-            service_id: 'softplant77', // 이메일 서비스 ID
-            template_id: 'template_pmel3rs', // 이메일 템플릿 ID
-            user_id: 'l_EHZkUL6Yd5dTuQ-', // 사용자 ID (API Key)
-            };
+//             const emailConfig = {
+//             service_id: 'softplant77', // 이메일 서비스 ID
+//             template_id: 'template_pmel3rs', // 이메일 템플릿 ID
+//             user_id: 'l_EHZkUL6Yd5dTuQ-', // 사용자 ID (API Key)
+//             };
           
-            // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
-            let makeStr = '프로젝트 이름:' +window.localStorage.getItem("lastProjectName")
-                        + '\n프로젝트 분야:' + window.localStorage.getItem("lastField")
-                        + '\n프로젝트 진행분류:' +window.localStorage.getItem("lastNew")
-                        + '\n기획상태:'+window.localStorage.getItem("lastReady")
-                        + '\n프로젝트예산:'+window.localStorage.getItem("lastpay")
-                        + '\n예상시작일:'+window.localStorage.getItem("lastdate")
-                        + '\n프로젝트 진행기간:'+window.localStorage.getItem("lastterm")
-                        + '\n프로젝트 미팅방식:'+window.localStorage.getItem("lastcity")
-                        + '\n클라이언트 위치:'+window.localStorage.getItem("lastit")
-                        + '\n프로젝트인력상황:'+window.localStorage.getItem("lastonline")
-                        + '\n프로젝트 매니징 경험 :'+window.localStorage.getItem("lastwork")
-                        + '\n프로젝트 상세내용:'+window.localStorage.getItem("lastdesc")
-                        + '\n상호명 :'+window.localStorage.getItem("lastcompany")
-                        + '\n성함 :'+window.localStorage.getItem("lastyourname")
-                        + '\n직급 :'+window.localStorage.getItem("lastposition")
-                        + '\n휴대폰번호 :'+window.localStorage.getItem("lastphone")
-                        + '\n이메일주소 :'+window.localStorage.getItem("lastemail");
+//             // emailjs.send("softplant77", "template_pmel3rs", params,'l_EHZkUL6Yd5dTuQ-')
+//             let makeStr = '프로젝트 이름:' +window.localStorage.getItem("lastProjectName")
+//                         + '\n프로젝트 분야:' + window.localStorage.getItem("lastField")
+//                         + '\n프로젝트 진행분류:' +window.localStorage.getItem("lastNew")
+//                         + '\n기획상태:'+window.localStorage.getItem("lastReady")
+//                         + '\n프로젝트예산:'+window.localStorage.getItem("lastpay")
+//                         + '\n예상시작일:'+window.localStorage.getItem("lastdate")
+//                         + '\n프로젝트 진행기간:'+window.localStorage.getItem("lastterm")
+//                         + '\n프로젝트 미팅방식:'+window.localStorage.getItem("lastcity")
+//                         + '\n클라이언트 위치:'+window.localStorage.getItem("lastit")
+//                         + '\n프로젝트인력상황:'+window.localStorage.getItem("lastonline")
+//                         + '\n프로젝트 매니징 경험 :'+window.localStorage.getItem("lastwork")
+//                         + '\n프로젝트 상세내용:'+window.localStorage.getItem("lastdesc")
+//                         + '\n상호명 :'+window.localStorage.getItem("lastcompany")
+//                         + '\n성함 :'+window.localStorage.getItem("lastyourname")
+//                         + '\n직급 :'+window.localStorage.getItem("lastposition")
+//                         + '\n휴대폰번호 :'+window.localStorage.getItem("lastphone")
+//                         + '\n이메일주소 :'+window.localStorage.getItem("lastemail");
 
-            const emailContent = {
+//             const emailContent = {
             
-                // ProjectName : window.localStorage.getItem("lastProjectName"),
-                // ProjectField : window.localStorage.getItem("lastField"),
-                // SelectProject: window.localStorage.getItem("lastNew"),
-                // ConditionProject:  window.localStorage.getItem("lastReady"),
-                // Projectpay: window.localStorage.getItem("lastpay"),
-                // Projectdate : window.localStorage.getItem("lastpay"),
-                // ProjectTerm : window.localStorage.getItem("lastterm"),
-                // ClientCity : window.localStorage.getItem("lastcity"),
-                // ProjectPeople: window.localStorage.getItem("lastit"),
-                // ProjectMeeting : window.localStorage.getItem("lastonline"),
-                // ProjectManaging : window.localStorage.getItem("lastwork"),
-                // ProjectText : window.localStorage.getItem("lastdesc"),            
+//                 // ProjectName : window.localStorage.getItem("lastProjectName"),
+//                 // ProjectField : window.localStorage.getItem("lastField"),
+//                 // SelectProject: window.localStorage.getItem("lastNew"),
+//                 // ConditionProject:  window.localStorage.getItem("lastReady"),
+//                 // Projectpay: window.localStorage.getItem("lastpay"),
+//                 // Projectdate : window.localStorage.getItem("lastpay"),
+//                 // ProjectTerm : window.localStorage.getItem("lastterm"),
+//                 // ClientCity : window.localStorage.getItem("lastcity"),
+//                 // ProjectPeople: window.localStorage.getItem("lastit"),
+//                 // ProjectMeeting : window.localStorage.getItem("lastonline"),
+//                 // ProjectManaging : window.localStorage.getItem("lastwork"),
+//                 // ProjectText : window.localStorage.getItem("lastdesc"),            
 
 
-                // // ProjectName : document.getElementById('lastProjectName'),
-                // // ProjectField : document.getElementById('ProjectField').value,
-                // // SelectProject : document.getElementById('SelectProject').value,
-                // // ConditionProject : document.getElementById('ConditionProject').value,
-                // // Projectpay : document.getElementById('Projectpay').value,
-                // // Projectdate : document.getElementById('Projectdate').value,
-                // // ProjectTerm : document.getElementById('ProjectTerm').value,
-                // // ClientCity : document.getElementById('ClientCity').value,
-                // // ProjectPeople : document.getElementById('ProjectPeople').value,
-                // // ProjectManaging : document.getElementById('ProjectManaging').value,
-                // // ProjectText : document.getElementById('ProjectText').value,
-                // CompanyName: document.getElementById('CompanyName').value,
-                // UserName: document.getElementById('UserName').value,
-                // Position: document.getElementById('Position').value,
-                // PhoneNumber : document.getElementById('PhoneNumber').value,
-                // Email: document.getElementById('Email').value
+//                 // // ProjectName : document.getElementById('lastProjectName'),
+//                 // // ProjectField : document.getElementById('ProjectField').value,
+//                 // // SelectProject : document.getElementById('SelectProject').value,
+//                 // // ConditionProject : document.getElementById('ConditionProject').value,
+//                 // // Projectpay : document.getElementById('Projectpay').value,
+//                 // // Projectdate : document.getElementById('Projectdate').value,
+//                 // // ProjectTerm : document.getElementById('ProjectTerm').value,
+//                 // // ClientCity : document.getElementById('ClientCity').value,
+//                 // // ProjectPeople : document.getElementById('ProjectPeople').value,
+//                 // // ProjectManaging : document.getElementById('ProjectManaging').value,
+//                 // // ProjectText : document.getElementById('ProjectText').value,
+//                 // CompanyName: document.getElementById('CompanyName').value,
+//                 // UserName: document.getElementById('UserName').value,
+//                 // Position: document.getElementById('Position').value,
+//                 // PhoneNumber : document.getElementById('PhoneNumber').value,
+//                 // Email: document.getElementById('Email').value
 
 
-                MailContents : makeStr,
-//                 프로젝트 이름: {{ProjectName}}
+//                 MailContents : makeStr,
+// //                 프로젝트 이름: {{ProjectName}}
 
 // 프로젝트 분야: {{ProjectField}}
 
@@ -679,22 +712,22 @@
 
 // 이메일주소:{{Email}}
 
-                };
+    //             };
              
-            console.log("emailContent:" + JSON.stringify(emailContent));
-            // return false;
-            emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
-            .then(function(response) {
+    //         console.log("emailContent:" + JSON.stringify(emailContent));
+    //         // return false;
+    //         emailjs.send(emailConfig.service_id, emailConfig.template_id, emailContent, emailConfig.user_id)
+    //         .then(function(response) {
                 
                
-                alert('전송에 성공하였습니다. 확인 후 연락드리겠습니다.', response);
+    //             alert('전송에 성공하였습니다. 확인 후 연락드리겠습니다.', response);
                 
-            }, function(error) {
-                console.error('이메일 전송 실패:', error);
-            });
+    //         }, function(error) {
+    //             console.error('이메일 전송 실패:', error);
+    //         });
  
 
-    }
+    // }
 
     //Mobile
     const menuIcon = document.querySelector('.mobile-icon');

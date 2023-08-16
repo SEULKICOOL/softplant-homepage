@@ -98,7 +98,30 @@
                         </div>    
                         
             </div>
-                     
+
+            <!-- <template>
+                <div class="inner">
+                  <h2>기본정보</h2>
+                  <h3>* 프로젝트 제목</h3>
+                  <input type="text" id="projectName" placeholder="프로젝트 제목을 입력해 주세요 (ex.통합 DB구축, 건강 앱 개발)" v-model="projectName">
+                  <h3>* 프로젝트 분야</h3>
+                  <input type="text" id="field" placeholder="ex.웹,애플리케이션,퍼블리싱,소프트웨어" v-model="field">
+                  <div class="select">
+                    <h3> * 프로젝트 진행 분류</h3>
+                    <input type="radio" id="new" name="project" value="new" v-model="projectType">
+                    <label for="new">신규 프로젝트</label>
+                    <input type="radio" id="old" name="project" value="old" v-model="projectType">
+                    <label for="old">기존 프로젝트 리뉴얼 or 유지보수</label>
+                  </div>
+                  <div class="condition">
+                    <h3> * 기획상태</h3>
+                    <input type="radio" id="ready" name="ready" value="ready" v-model="planningStatus">
+                    <label for="ready">준비가 되어있음</label>
+                    <input type="radio" id="no" name="ready" value="no" v-model="planningStatus">
+                    <label for="no">준비되어있지 않음</label>
+                  </div>
+                </div>
+              </template> -->
     </section>
 
         <div class="next">
@@ -107,13 +130,31 @@
 
 <!-- Contact Button -->
 <button onclick="quickGo()" id="contact"><div class="material-icons">mail</div><div class="nemo"><h1>빠른문의</h1></div></button>
- <!-- script -->
 
+<!-- <template>
+    <button @click="quickGo" id="contact">
+      <div class="material-icons">mail</div>
+      <div class="nemo">
+        <h1>빠른문의</h1>
+      </div>
+    </button>
+  </template> -->
+
+ <!-- script -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 <script>
+ 
     // 빠른문의로 이동 
     function quickGo(){
     window.location.href = "./contact.html";
   }
+//   export default {
+//   methods: {
+//     quickGo() {
+//       window.location.href = "./contact.html";
+//     }
+//   }
+// }
     
     console.log('프로젝트이름") :'+window.localStorage.getItem("lastProjectName"));
     document.getElementById("projectName").value = window.localStorage.getItem("lastProjectName");
@@ -136,6 +177,33 @@
             document.getElementById("no").checked = true;  
         };
     }
+
+//     export default {
+//   data() {
+//     return {
+//       projectName: '',
+//       field: '',
+//       newOrOld: '',
+//       readyOrNot: ''
+//     };
+//   },
+//   mounted() {
+//     this.projectName = window.localStorage.getItem("lastProjectName") || '';
+//     this.field = window.localStorage.getItem("lastField") || '';
+
+//     if (window.localStorage.getItem("lastNew") === 'new') {
+//       this.newOrOld = 'new';
+//     } else if (window.localStorage.getItem("lastNew") === 'old') {
+//       this.newOrOld = 'old';
+//     }
+
+//     if (window.localStorage.getItem("lastReady") === 'ready') {
+//       this.readyOrNot = 'ready';
+//     } else if (window.localStorage.getItem("lastReady") === 'no') {
+//       this.readyOrNot = 'no';
+//     }
+//   }
+// };
 
 
 

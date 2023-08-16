@@ -520,35 +520,51 @@ right: 123px;
 .filewrap{
   margin-top: 20px;
 } 
-#file1 {
+#file {
   display: inline-block;
   height: 40px;
-  padding: 0 10px;
   vertical-align: middle;
   border: 1px solid #dddddd;
-  width: 60%;
+  width: 400px;
   color: #999999;
+  font-family:'SCDream3';
+  font-size: 14px;
+  line-height: 40px;
+ 
 }
-.filewrap label {
+
+ label#fileButton {
   display: inline-block;
   padding: 10px 20px;
   color: #fff;
   vertical-align: middle;
   background-color: #999999;
   cursor: pointer;
-  height: 20px;
-  margin-left: 20px;
+  margin-left: 50px;
   border-radius: 5px;
   line-height: 20px;
+  font-family:'SCDream3';
+  font-size: 13px;
 }
-.filewrap input[type="file"] {
-  position: absolute;
-  width: 0;
-  height: 0;
+#submitButton{
+  display: inline-block;
+  height: 40px;
+  margin-left: 5px;
   padding: 0;
-  overflow: hidden;
-  border: 0;
+  background-color: #999999;
+  width:100px;
+  color: #fff;
+  cursor: pointer;
+  font-family:'SCDream5';
 }
+
+input#file{
+  margin-left: 5px;}
+
+form input::file-selector-button {
+    display: none;
+  }
+
 
 /* MOBILE */
 @media (max-width:700px){
