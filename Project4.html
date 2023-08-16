@@ -284,7 +284,7 @@
     <div class="next">
             <button class="btn" onclick="beforeLocation()">이 전</button> 
             <form name="emailForm" id="emailForm" class="gform" method="POST" data-email="softplant77@gmail.com" 
-            action="https://script.google.com/macros/s/AKfycbxZzeKl7W0t7FxNzEWn_EDNnIjlLBc_I4VBZiBWVISL8HO3OKkfyfrqaAQ-_M2RbKiXhA/exec">
+            action="https://script.google.com/macros/s/AKfycbwq4MfT6ErNiWDD5EABw2fqT4Q2riYdf8TS-9nQKBuAezT6gCVZCboHY1sqzlGEdmE4-g/exec">
                 <input type="text" id="ProjectName" name="ProjectName"/>
                 <input type="text" id="ProjectField" name="ProjectField"/>
                 <input type="text" id="SelectProject" name="SelectProject"/>
@@ -303,6 +303,7 @@
                 <input type="text" id="Position" name="Position"/>
                 <input type="text" id="PhoneNumber" name="PhoneNumber"/>
                 <input type="text" id="Email" name="Email"/>
+                <input type="text" id="UploadLink" name="UploadLink"/>
                 <!-- <button type="button" onclick="checkValidation()">제 출</button> -->
                 <button id="btnSubmit" onclick="checkValidation() " >제 출</button> 
             </form>
@@ -383,6 +384,8 @@
     document.getElementById("ProjectMeeting").value = window.localStorage.getItem("lastonline");
     document.getElementById("ProjectManaging").value = window.localStorage.getItem("lastwork");
     document.getElementById("ProjectText").value = window.localStorage.getItem("lastdesc");
+    document.getElementById("UploadLink").value = window.localStorage.getItem("lastfilelink");
+   
     console.log('담긴이름") :'+window.localStorage.getItem("lastProjectName"));
    
     
