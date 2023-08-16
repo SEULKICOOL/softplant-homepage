@@ -100,14 +100,12 @@
                     <h3>문의내용</h3>
                     <input type="text" id="position" onchange="getValues4()" placeholder="문의하실 내용을 남겨주세요.">
                 </div>
-                <div class="filewrap"> 
-                           
-                    <input class="upload-name" id="file1" value="프로젝트에 참고할 첨부파일을 첨부해 주세요" placeholder="프로젝트에 참고할 첨부파일을 첨부해 주세요">
-                    <label for="file" >파일찾기 </label> 
-                    <input type="file" id="file" class="file_input_hidden" onchange="javascript: document.getElementById('file1').value = this.value" >
-            
-         
-                </div>  
+                <h3>* 파일첨부</h3>
+                <form id="upload-form" action="your_server_endpoint" method="post" enctype="multipart/form-data">
+                  <label for="file" id="fileButton">파일찾기</label>
+                  <input type="file" id="file" name="file" accept="*/*" >
+                  <input type="submit" id="submitButton"value="Upload" name="submit">
+                </form>
                 <div class="privacy1">
                      <h3> * 개인정보 취급방침 </h3>
                      <textarea disabled placeholder="㈜소프트플랜트(이하 ‘회사’라 함)은 정보통신망 이용촉진 및 정보보호에 관한 법률, 개인정보보호법, 통신비밀보호법, 전기통신사업법, 전자문서 및 전자거래기본법 등 정보통신서비스제공자가 준수하여야 할 관련 법령상의 개인정보보호 규정을 준수하며, 관련 법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.
@@ -308,12 +306,35 @@
 
     </div>
 <!-- script -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script>
 
+    // 파일첨부
 
+    $(document).ready(function(){
+        $('#upload-form').on('submit', function(e){
+            e.preventDefault();
 
-   
+            var formData = new FormData(this);
+            $.ajax({
+            url: 'https://softplant.shop/api/v1/tino/kolf/upload/attachment',
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response){
+                console.log('file link : ', response.data);
+                setData(response)
+                alert('업로드 완료 되었습니다.다음 페이지로 이동해주세요');
+            },
+            error: function(){
+                alert('정상적으로 첨부되지 않았습니다 파일을 다시 확인해주세요');
+            }
+            });
+    });
+    });
+
 
     // 핸드폰 번호 글자 금지, 숫자 11자 이내 
         function phoneConfirm(obj) {
