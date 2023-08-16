@@ -524,7 +524,6 @@ right: 123px;
   display: inline-block;
   height: 40px;
   vertical-align: middle;
-  border: 1px solid #dddddd;
   width: 400px;
   color: #999999;
   font-family:'SCDream3';
@@ -551,7 +550,7 @@ right: 123px;
   height: 40px;
   margin-left: 5px;
   padding: 0;
-  background-color: #999999;
+  background-color: #42B883;
   width:100px;
   color: #fff;
   cursor: pointer;
@@ -559,7 +558,8 @@ right: 123px;
 }
 
 input#file{
-  margin-left: 5px;}
+  margin-left: 5px;
+  margin: 0;}
 
 form input::file-selector-button {
     display: none;
