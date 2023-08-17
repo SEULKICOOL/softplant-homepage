@@ -773,6 +773,38 @@ button#contact{
   line-height: 20px;
   padding-left: 15px;
 }
+/* UPLOAD */
+.filewrap{
+  margin-top: 20px;
+} 
+#file {
+
+  width: 200px;
+
+ 
+}
+
+ label#fileButton {
+ margin-left: 7px;
+ width: 30px;
+ height: 20px;
+ line-height: 13px; 
+
+}
+#submitButton{
+  height: 40px;
+  margin-left: 2px;
+  width:60px;
+  
+}
+
+input#file{
+  margin-left: 5px;
+  margin: 0;}
+
+form input::file-selector-button {
+    display: none;
+  }
 }
 
  

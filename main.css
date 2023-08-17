@@ -133,7 +133,7 @@ button .material-icons{
 /* header */
 header{
   width: 100%;
-  height: 55px;
+  height: 60px;
   background-color:#fff;
   box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
   border-collapse: collapse;
@@ -155,6 +155,7 @@ header .inner{
 header img{
   position: absolute;
   left: 0;
+  margin-top: 5px;
 
   
 } 
