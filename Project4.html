@@ -504,9 +504,9 @@
 
             console.log('in handleFormSubmit');
             event.preventDefault();
-            let persoanlYn = document.getElementById("myCheckbox").checked;
+            let persoanlYn = document.getElementById("phone").value;
             if(!persoanlYn){
-                alert('개인정보 취급방침에 동의해주셔야 합니다.')
+                alert('연락정보는 필수입니다.')
                 return false;
             }
             
