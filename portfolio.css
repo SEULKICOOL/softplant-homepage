@@ -300,6 +300,32 @@ header{
  
 
   }
+  .scope .infra1{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #E0E0E0;
+    background-color: #f9f9f9;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+   
+  }
+  .scope .db1{
+    font-size: 15px;
+    font-family:'SCDream4';
+    color: #E0E0E0;
+    background-color: #f9f9f9;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+   
+  }
 
 
   .scope2 .back1{
@@ -417,6 +443,13 @@ header{
     margin-top: 50px;
     width: 1200px;
     display: block;
+}
+.video .inner{
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
 }
 
 /* Navigation */
