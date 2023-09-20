@@ -451,6 +451,9 @@ header{
   text-align: center;
   margin-top: 100px;
 }
+.video video {
+  width: 1100px;
+}
 
 
 
@@ -846,10 +849,7 @@ line-height: 1.5;
   margin-top: 7px;
 
 }
-.title-img{
-  display: none;
-}
-.video video {
+0.video video {
   width: 350px;
 }
 
