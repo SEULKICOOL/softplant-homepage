@@ -451,6 +451,11 @@ header{
   text-align: center;
   margin-top: 100px;
 }
+.video video {
+  /* 기본 가로 길이 */
+  width: 1000px;
+}
+
 
 /* Navigation */
 
@@ -815,8 +820,40 @@ line-height: 1.5;
  
 
 }
+.mobile-scope2 .db1{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+ 
+
+}
+.mobile-scope1 .infra1{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+ 
+
+}
 .title-img{
   display: none;
+}
+.video video {
+
+  width: 350px;
 }
 
 }
