@@ -451,10 +451,7 @@ header{
   text-align: center;
   margin-top: 100px;
 }
-.video video {
-  /* 기본 가로 길이 */
-  width: 1000px;
-}
+
 
 
 /* Navigation */
@@ -831,6 +828,7 @@ line-height: 1.5;
   text-align: center;
   text-align: center;
   line-height: 20px;
+
  
 
 }
@@ -845,15 +843,12 @@ line-height: 1.5;
   text-align: center;
   text-align: center;
   line-height: 20px;
- 
+  margin-top: 7px;
 
 }
 .title-img{
   display: none;
 }
-.video video {
 
-  width: 350px;
-}
 
 }
