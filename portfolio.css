@@ -849,6 +849,8 @@ line-height: 1.5;
 .title-img{
   display: none;
 }
-
+.video video {
+  width: 350px;
+}
 
 }
