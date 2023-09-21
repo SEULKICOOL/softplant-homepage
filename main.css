@@ -458,7 +458,7 @@ button h1{
 /* Project */
 
 .projects{
-  height: 2300px;
+  height: 2800px;
   overflow: hidden;
 }
 
@@ -687,6 +687,7 @@ button h1{
   text-align: center;
   text-align: center;
   line-height: 20px;
+  margin-left: 7px;
 
 
 }
@@ -703,6 +704,34 @@ button h1{
   text-align: center;
   text-align: center;
   line-height: 20px;
+ 
+}
+.scope .infra1{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 7px;
+ 
+}
+.scope .db1{
+  font-size: 12px;
+  font-family:'SCDream4';
+  color: #e1d9d9;
+  background-color: #f9f9f9;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 7px;
  
 }
 .projects .items .item:hover .back-img{
