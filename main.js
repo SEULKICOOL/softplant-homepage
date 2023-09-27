@@ -36,6 +36,7 @@ AOS.init();
 
 
 const Service1 = document.querySelectorAll(".ClkService");
+// const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
 const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
 const Teams = document.querySelectorAll(".ClkTeams");
 const sec1 = document.querySelector(".know-how").offsetTop;
@@ -77,7 +78,32 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
 
+// 'value' 매개변수의 값을 가져옴
+const value = urlParams.get('value');
+
+// 가져온 값을 화면에 표시
+if (value !== null) {
+    
+    if(value == 'know-how'){
+
+      const subSec1 = document.querySelector(".know-how").offsetTop;
+      window.scrollTo({ top: subSec1, behavior: "smooth" });
+
+    }else if(value == 'project'){
+
+      const subSec1 = document.querySelector(".projects").offsetTop;
+      window.scrollTo({ top: subSec1, behavior: "smooth" });
+
+    }else if(value == 'teams'){
+
+      const subSec1 = document.querySelector(".Teams").offsetTop;
+      window.scrollTo({ top: subSec1, behavior: "smooth" });
+      
+    }
+  }
 //swiper
 
 // // swiper 객체 생성

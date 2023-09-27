@@ -43,13 +43,14 @@
 <!-- swiper style -->
 
 <body>
+
  <!-- HEADER -->
   <header>
     <div class="inner">
       <a href="/"><img src="./swiperimage/logo.png"s alt="logo"></a>
         <ul class="menu">
           <li><a class="ClkService">서비스</a> </li>  
-          <li><a class="ClkPortforio">포트폴리오</a></li>
+          <li><a id='potforio'  class="ClkPortforio">포트폴리오</a></li>
           <li><a class="ClkTeams">멤버</a></li>
           <li ><a href="./Project1.html">프로젝트 의뢰</a></li>
         </ul>
@@ -61,11 +62,11 @@
 
    <!--Mobile MENU -->
 
-   <div class="mobile-menu">
+  <div class="mobile-menu">
     <div class="material-icons"id="mobile">close</div>
       <ul>
         <li><a class="ClkService">서비스</a> </li>
-        <li><a class="ClkPortforio">포트폴리오</a></li>
+        <li><a id='potforio' class="ClkPortforio">포트폴리오</a></li>
         <li><a class="ClkTeams">멤버</a></li>
         <li><a href="./Project1.html">프로젝트 의뢰</a></li>
       </ul>
@@ -183,7 +184,7 @@
                  <div class="fix">유지보수</div>
                </div>
               
-           </a>
+            </a>
            <a href="./excel2.html" class="item" data-aos="fade-up" data-aos-duration="2000" >
                <img src="./logoimage/excel3.jpeg" alt="" class="back-img">
                <h4>자료 취합업무 자동화 프로그램</h4>
@@ -447,7 +448,46 @@
 <!-- Topbtn tag -->
   <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
 <!-- script tag -->
+<!-- <script>
+  // URL에서 매개변수 추출
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
 
+  // 'value' 매개변수의 값을 가져옴
+  const value = urlParams.get('value');
+
+  // 가져온 값을 화면에 표시
+  if (value !== null) {
+      console.log('value:'+value)        
+      if(value == 1){
+        alert('true')
+        const subSec1 = document.querySelector(".projects").offsetTop;
+        console.logf('subSec1:'+subSec1)
+        window.scrollTo({ top: subSec1, behavior: "smooth" });
+      }else{
+        alert('false')
+      }
+//           const test  = document.getElementById('potforio');
+//           // test.click();
+//           test.addEventListener("click", function(event){
+// 	alert('장바구니에 담았습니다.');
+// });
+// test.click();
+//           // const subPORTFOLIO1 = document.querySelectorAll(".ClkPortforio"); 
+//           const subSec1 = document.querySelector(".know-how").offsetTop;
+//           const subSec2 = document.querySelector(".Teams").offsetTop;
+//           const subSec3 = document.querySelector(".projects").offsetTop;
+
+
+//           PORTFOLIO1.forEach((span, index) => {
+//             span.addEventListener("click", () => {
+//               window.scrollTo({ top: sec1, behavior: "smooth" });
+//             });
+//           });
+//           // test.click()
+//         }
+  }
+</script> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
