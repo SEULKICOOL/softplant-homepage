@@ -104,6 +104,34 @@ if (value !== null) {
       
     }
   }
+
+
+  function getUniqueId() {
+    let uniqueId = localStorage.getItem('uniqueId');
+    if (!uniqueId) {
+      uniqueId = Math.random().toString(36).substr(2, 9);
+      localStorage.setItem('uniqueId', uniqueId);
+    }
+    return uniqueId;
+  }
+  
+  function sendMenuInfo(menu) {
+  
+    const uniqueId = getUniqueId(); // localStorage에서 uniqueId를 가져오거나 새로 생성합니다.
+  
+    fetch('https://softplant.shop/api/v1/softplant/click/menu', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ menu: menu, uniqueId: uniqueId }),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
 //swiper
 
 // // swiper 객체 생성
