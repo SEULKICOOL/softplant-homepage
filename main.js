@@ -112,6 +112,7 @@ if (value !== null) {
       uniqueId = Math.random().toString(36).substr(2, 9);
       localStorage.setItem('uniqueId', uniqueId);
     }
+
     return uniqueId;
   }
  
@@ -128,7 +129,12 @@ if (value !== null) {
       body: JSON.stringify({ menu: menu, uniqueId: uniqueId }),
     })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+      console.log(data);
+      // 이동하고자 하는 페이지의 URL로 변경
+      window.location.href = href;
+    
+    })
     .catch((error) => {
       console.error('Error:', error);
     });
@@ -141,10 +147,9 @@ if (value !== null) {
     // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
     items.forEach(item => {
       item.addEventListener('click', function(event) {
-        event.preventDefault(); // 기본 이벤트를 중단합니다.
-        const menu = this.getAttribute('data-menu'); // data-menu 속성의 값을 가져옵니다.
-
-        sendMenuInfo(menu); // sendMenuInfo 함수를 호출합니다.
+        const menu = this.getAttribute('data-menu');
+        const href = this.getAttribute('href');
+        sendMenuInfoAndNavigate(menu, href);
       });
     });
   }
