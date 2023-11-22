@@ -114,7 +114,8 @@ if (value !== null) {
     }
     return uniqueId;
   }
-  
+ 
+
   function sendMenuInfo(menu) {
   
     const uniqueId = getUniqueId(); // localStorage에서 uniqueId를 가져오거나 새로 생성합니다.
@@ -136,12 +137,13 @@ if (value !== null) {
   function setupClickListeners() {
     // 'item' 클래스를 가진 모든 a 태그를 선택합니다.
     const items = document.querySelectorAll('.item');
-  
+
     // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
     items.forEach(item => {
       item.addEventListener('click', function(event) {
         event.preventDefault(); // 기본 이벤트를 중단합니다.
         const menu = this.getAttribute('data-menu'); // data-menu 속성의 값을 가져옵니다.
+
         sendMenuInfo(menu); // sendMenuInfo 함수를 호출합니다.
       });
     });
