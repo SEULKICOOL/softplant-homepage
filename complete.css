@@ -1,0 +1,313 @@
+
+@font-face {
+    font-family: 'SCDream2';
+    font-weight: 300;
+    src:url(./font/SCDream2.otf) format(opentype);
+  }
+  
+  @font-face {
+    font-family: 'SCDream3';
+    font-weight: 400;
+    src:url(./font/SCDream3.otf) format(opentype);}
+  
+  @font-face {
+    font-family: 'SCDream4';
+    font-weight: 500;
+    src:url(./font/SCDream4.otf) format(opentype);
+  
+    
+  }
+  @font-face {
+    font-family: 'SCDream5';
+    font-weight: 600;
+    src:url(./font/SCDream5.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream6';
+    font-weight: 700;
+    src:url(./font/SCDream6.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream8';
+    font-weight: 800;
+    src:url(./font/SCDream8.otf) format(opentype);
+  }
+  @font-face {
+    font-family: 'SCDream9';
+    font-weight: 900;
+    src:url(./font/SCDream9.otf) format(opentype);
+  }
+
+ body{
+    background-color: #FAFAFB;
+    color:#333;
+   
+ }
+ a{
+    text-decoration: none;
+    color: #333;
+ }
+ /* HEADER */
+
+header{
+  width: 100%;
+  height: 55px;
+  background-color:#fff;
+  box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
+  position: fixed;
+  z-index: 8;
+  
+ 
+
+}
+header .inner{
+  width: 1200px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header img{
+  position: absolute;
+  left: 0;
+
+  
+} 
+
+header .inner ul{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+header ul li a{
+  font-size: 13px;
+  padding: 11px 40px;
+  display: block;
+  color: #333;
+  font-family:'SCDream4';
+}
+
+  header ul li a:hover{
+  color: #42B883;
+}
+
+/*Mobile */
+
+.mobile-icon .material-icons{
+  font-size: 30px;
+}
+
+.mobile-icon{
+  display:none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+ 
+}
+#mobile{
+  font-size: 30px;
+  position: absolute;
+  right:15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  width: 100%;
+  display: none;
+  height: 250px;
+  background-color:#fbfbfb;
+  border:0.1px solid #e1d9d9;
+  z-index: 500;
+  position: fixed;
+  animation:fade-in 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mobile-menu ul{
+ 
+ margin-top: 30px;
+ font-size: 18px;
+ font-family:'SCDream5';
+ text-align: center;
+
+
+}
+.mobile-menu li{
+  margin : 35px;
+  cursor: pointer;
+ 
+}
+
+
+
+.mobile-menu a{
+ text-decoration: none;
+ color: #333;
+}
+
+.mobile-menu a:hover{
+  color: #42d392;
+}
+
+/*Mobile */
+
+.mobile-icon .material-icons{
+  font-size: 30px;
+}
+
+.mobile-icon{
+  display:none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+ 
+}
+#mobile{
+  font-size: 30px;
+  position: absolute;
+  right:15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  width: 100%;
+  display: none;
+  height: 250px;
+  background-color:#fbfbfb;
+  border:0.1px solid #e1d9d9;
+  z-index: 500;
+  position: fixed;
+  animation:fade-in 0.7s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mobile-menu ul{
+ 
+ margin-top: 30px;
+ font-size: 18px;
+ font-family:'SCDream5';
+ text-align: center;
+
+
+}
+.mobile-menu li{
+  margin : 35px;
+  cursor: pointer;
+ 
+}
+
+
+
+.mobile-menu a{
+ text-decoration: none;
+ color: #333;
+}
+
+.mobile-menu a:hover{
+  color: #42d392;
+}
+
+
+/* body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+
+.Complete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.Complete .inner {
+    width: 400px; /* 팝업의 너비 */
+    height: 280px; /* 팝업의 높이 */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.top{
+   font-size: 14px;
+   height: 20px;
+   border-bottom: solid 0.1px #f1f1f1;
+   text-align: left;
+    
+}
+.menu{
+ 
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.Hmessage {
+
+font-size: 25px;
+font-weight: 700;
+padding-top: 40px;
+
+}
+.Hmessage2{
+
+font-size: 18px;
+padding-top: 20px;
+
+
+}
+
+.Hmessage3{
+padding-top: 10px;
+border-bottom:solid 0.1px #f1f1f1 ;
+padding-bottom: 50px;
+}
+.Complete .btn{
+   
+   border-bottom:solid 0.1px #f1f1f1 ;
+}
+button{
+    width: 90%;
+    background-color: #f1f1f1;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+   
+    margin-top: 20px;
+  
+   
+}
