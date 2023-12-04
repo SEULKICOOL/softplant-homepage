@@ -112,11 +112,9 @@ if (value !== null) {
       uniqueId = Math.random().toString(36).substr(2, 9);
       localStorage.setItem('uniqueId', uniqueId);
     }
-
     return uniqueId;
   }
- 
-
+  
   function sendMenuInfo(menu) {
   
     const uniqueId = getUniqueId(); // localStorage에서 uniqueId를 가져오거나 새로 생성합니다.
@@ -131,31 +129,39 @@ if (value !== null) {
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      // 이동하고자 하는 페이지의 URL로 변경
-      window.location.href = href;
-    
+      
+      // 서버 응답이 성공적인지 확인하고 페이지 이동
+      if (data.success === true) {
+        const href = getMenuHref(menu);
+        window.location.href = href;
+      } else {
+        alert('에러가 발생했습니다: ' + data.message);
+      }
     })
     .catch((error) => {
-      console.error('Error:', error);
+      // console.error('Error:', error);
+      alert('에러가 발생했습니다: ' + error.message);
     });
   }
-
+  
+  // 각각의 a 태그에 대하여 클릭 이벤트 리스너를 추가하는 함수
   function setupClickListeners() {
     // 'item' 클래스를 가진 모든 a 태그를 선택합니다.
     const items = document.querySelectorAll('.item');
-
+  
     // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
     items.forEach(item => {
       item.addEventListener('click', function(event) {
-        const menu = this.getAttribute('data-menu');
-        const href = this.getAttribute('href');
-        sendMenuInfoAndNavigate(menu, href);
+        event.preventDefault(); // 기본 이벤트를 중단합니다.
+        const menu = this.getAttribute('data-menu'); // data-menu 속성의 값을 가져옵니다.
+        sendMenuInfo(menu); // sendMenuInfo 함수를 호출합니다.
       });
     });
   }
   
   // 문서 로딩이 완료되면 클릭 리스너를 설정합니다.
   document.addEventListener('DOMContentLoaded', setupClickListeners);
+  
 
 //swiper
 
