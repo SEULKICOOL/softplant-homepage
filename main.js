@@ -134,6 +134,7 @@ if (value !== null) {
       if (data.success === true) {
         const href = getMenuHref(menu);
         window.location.href = href;
+        // alert('성공: ' + data.success);
       } else {
         alert('에러가 발생했습니다: ' + data.message);
       }
@@ -143,6 +144,20 @@ if (value !== null) {
       alert('에러가 발생했습니다: ' + error.message);
     });
   }
+
+  function getMenuHref(menu) {
+    // 각 메뉴에 대한 URL 매핑을 정의하거나 계산하는 로직을 추가
+    switch (menu) {
+      case 'excel1':
+        return './excel1.html';
+      case 'excel2':
+        return './excel2.html';
+      // 다른 메뉴에 대한 처리 추가
+      default:
+        return './default.html';
+    }
+  }
+  
   
   // 각각의 a 태그에 대하여 클릭 이벤트 리스너를 추가하는 함수
   function setupClickListeners() {
