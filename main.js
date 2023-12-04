@@ -168,9 +168,10 @@ if (value !== null) {
         return './tino5.html';
       case 'wedding':
         return './wedding.html';
+      case 'carebom':
+        return './carebom.html';
      
-      default:
-        return './default.html';
+     
     }
   }
   
