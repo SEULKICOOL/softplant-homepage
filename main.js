@@ -154,7 +154,7 @@ if (value !== null) {
         return './excel2.html';
       case 'excel3':
         return './excel3.html';
-      case 'kyungdong':
+      case 'erp':
         return './kyungdong.html';
       case 'ballet':
           return './ballet.html';
@@ -164,14 +164,15 @@ if (value !== null) {
         return './bio.html';
       case 'swing':
         return './swing.html';
-      case 'tino5':
+      case 'tino':
         return './tino5.html';
       case 'wedding':
         return './wedding.html';
       case 'carebom':
         return './carebom.html';
      
-     
+      default:
+        return '/';
     }
   }
   
