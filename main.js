@@ -152,7 +152,23 @@ if (value !== null) {
         return './excel1.html';
       case 'excel2':
         return './excel2.html';
-      // 다른 메뉴에 대한 처리 추가
+      case 'excel3':
+        return './excel3.html';
+      case 'kyungdong':
+        return './kyungdong.html';
+      case 'ballet':
+          return './ballet.html';
+      case 'sabbun':
+        return './sabbun.html';
+      case 'bio':
+        return './bio.html';
+      case 'swing':
+        return './swing.html';
+      case 'tino5':
+        return './tino5.html';
+      case 'wedding':
+        return './wedding.html';
+     
       default:
         return './default.html';
     }
