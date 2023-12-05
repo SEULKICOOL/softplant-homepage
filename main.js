@@ -112,41 +112,40 @@ if (value !== null) {
       uniqueId = Math.random().toString(36).substr(2, 9);
       localStorage.setItem('uniqueId', uniqueId);
     }
+  
     return uniqueId;
+
+    
   }
   
   function sendMenuInfo(menu) {
   
     const uniqueId = getUniqueId(); // localStorage에서 uniqueId를 가져오거나 새로 생성합니다.
-  
+
     fetch('https://softplant.shop/api/v1/softplant/click/menu', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ menu: menu, uniqueId: uniqueId }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      
+      body: JSON.stringify({ in_menu: menu, in_reg_id: uniqueId }),
+    }).then(response => response.json()).then(data => {
+
+    
       // 서버 응답이 성공적인지 확인하고 페이지 이동
       if (data.success === true) {
         const href = getMenuHref(menu);
         window.location.href = href;
-        // alert('성공: ' + data.success);
+        // alert('성공: ' + JSON.stringify(data));
       } else {
-        alert('에러가 발생했습니다: ' + data.message);
+        // alert('에러가 발생했습니다: ' + data.message);
       }
-    })
-    .catch((error) => {
-      // console.error('Error:', error);
-      alert('에러가 발생했습니다: ' + error.message);
+    }).catch((error) => {
+      console.error('Error:', error);
+      // alert('에러가 발생했습니다: ' + error.message);
     });
   }
 
   function getMenuHref(menu) {
-    // 각 메뉴에 대한 URL 매핑을 정의하거나 계산하는 로직을 추가
     switch (menu) {
       case 'excel1':
         return './excel1.html';
@@ -186,8 +185,16 @@ if (value !== null) {
     items.forEach(item => {
       item.addEventListener('click', function(event) {
         event.preventDefault(); // 기본 이벤트를 중단합니다.
-        const menu = this.getAttribute('data-menu'); // data-menu 속성의 값을 가져옵니다.
-        sendMenuInfo(menu); // sendMenuInfo 함수를 호출합니다.
+        const menu = this.getAttribute('data-menu'); 
+        
+        if (menu) {
+          sendMenuInfo(menu);
+        } else {
+          // alert(menu)
+        
+        }
+
+     
       });
     });
   }
