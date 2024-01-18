@@ -9,17 +9,82 @@
 
 <url>
   <loc>https://softplant.co.kr/</loc>
-  <lastmod>2023-06-20T02:40:16+00:00</lastmod>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://softplant.co.kr/project1</loc>
-  <lastmod>2023-06-20T02:40:16+00:00</lastmod>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://softplant.co.kr/index.html</loc>
-  <lastmod>2023-06-20T02:40:16+00:00</lastmod>
+  <loc>https://softplant.co.kr/excel1</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/excel2</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/excel3</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/sabbun</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/bio</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/kyungdong</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/wedding</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/tino5</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/ballet</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/carebom</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/swing</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/?value=know-how</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/?value=project</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://softplant.co.kr/?value=teams</loc>
+  <lastmod>2024-01-18T10:26:02+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
