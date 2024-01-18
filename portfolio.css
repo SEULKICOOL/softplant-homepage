@@ -6,6 +6,10 @@ a{
   color: #333;
 }
 
+body{
+  font-family: 'AppleSDGothicNeoL';
+}
+
 
 @font-face {
   font-family: 'Material Icons';
@@ -20,44 +24,46 @@ a{
 }
 
 /* font */
+
 @font-face {
-  font-family: 'SCDream2';
-  font-weight: 300;
-  src:url(./font/SCDream2.otf) format(opentype);
+  font-family: 'AppleSDGothicNeoL';
+  font-weight: 400;
+  src:url(./font/AppleSDGothicNeoL.ttf) format(opentype);
 }
 
 @font-face {
-  font-family: 'SCDream3';
-  font-weight: 400;
-  src:url(./font/SCDream3.otf) format(opentype);}
+  font-family: 'AppleSDGothicNeoM';
+  font-weight: 500;
+  src:url(./font/AppleSDGothicNeoM.otf) format(opentype);}
 
 @font-face {
-  font-family: 'SCDream4';
-  font-weight: 500;
-  src:url(./font/SCDream4.otf) format(opentype);
+  font-family: 'AppleSDGothicNeoR';
+  font-weight: 600;
+  src:url(./font/AppleSDGothicNeoR.otf) format(opentype);
 
   
 }
 @font-face {
-  font-family: 'SCDream5';
-  font-weight: 600;
-  src:url(./font/SCDream5.otf) format(opentype);
+  font-family: 'AppleSDGothicNeoT';
+  font-weight: 300;
+  src:url(./font/AppleSDGothicNeoT.otf) format(opentype);
 }
 @font-face {
-  font-family: 'SCDream6';
+  font-family: 'AppleSDGothicNeoSB';
   font-weight: 700;
-  src:url(./font/SCDream6.otf) format(opentype);
+  src:url(./font/AppleSDGothicNeoSB.otf) format(opentype);
 }
 @font-face {
-  font-family: 'SCDream8';
-  font-weight: 800;
-  src:url(./font/SCDream8.otf) format(opentype);
-}
-@font-face {
-  font-family: 'SCDream9';
+  font-family: 'AppleSDGothicNeoH';
   font-weight: 900;
-  src:url(./font/SCDream9.otf) format(opentype);
+  src:url(./font/AppleSDGothicNeoB.otf) format(opentype);
 }
+@font-face {
+  font-family: 'AppleSDGothicNeoEB';
+  font-weight: 800;
+  src:url(./font/AppleSDGothicNeoEB.otf) format(opentype);
+} 
+
 
 
 header{
@@ -96,11 +102,11 @@ header{
   }
   
   header ul li a{
-    font-size: 13px;
+    font-size: 15px;
     padding: 11px 40px;
     display: block;
     color: #333;
-    font-family:'SCDream4';
+   
     cursor: pointer;
   }
   
@@ -141,7 +147,7 @@ header{
   .title h1{
 
     font-size: 40px;
-    font-family:'SCDream6';
+    font-weight: 700;
     color: #333;
     margin-top: 180px;
     margin-bottom: 40px;
@@ -153,7 +159,7 @@ header{
   .about p{
 
     font-size: 18px;
-    font-family:'SCDream3';
+   
     color: #333;
     line-height: 1.7;
    
@@ -171,7 +177,7 @@ header{
   .scope .plan{
    
     font-size: 15px;
-    font-family:'SCDream4';
+ 
     color: #fff;
     background-color: #333;
     width: 80px;
@@ -186,7 +192,7 @@ header{
 
   .scope .design{
     font-size: 15px;
-    font-family:'SCDream4';
+
     color: #fff;
     background-color: #333;
     width: 100px;
@@ -199,7 +205,7 @@ header{
   }
   .scope .infra{
     font-size: 15px;
-    font-family:'SCDream4';
+    
     color: #fff;
     background-color: #333;
     width: 120px;
@@ -212,7 +218,7 @@ header{
   }
   .scope .db{
     font-size: 15px;
-    font-family:'SCDream4';
+  
     color: #fff;
     background-color: #333;
     width: 90px;
@@ -225,7 +231,7 @@ header{
   }
   .scope2 .front{
     font-size: 15px;
-    font-family:'SCDream4';
+    
     color: #fff;
     background-color: #333;
     width: 110px;
@@ -241,7 +247,7 @@ header{
 
   .scope2 .back{
     font-size: 15px;
-    font-family:'SCDream4';
+    
     color: #fff;
     background-color: #333;
     width: 110px;
@@ -255,7 +261,7 @@ header{
   }
   .scope2 .fix{
     font-size: 15px;
-    font-family:'SCDream4';
+    
     color: #fff;
     background-color: #333;
       color: #fff;
@@ -270,7 +276,7 @@ header{
   .scope .plan1{
    
     font-size: 15px;
-    font-family:'SCDream4';
+
     color: #E0E0E0;
     background-color: #f9f9f9;
     width: 80px;
@@ -287,7 +293,7 @@ header{
   .scope .design1{
    
     font-size: 15px;
-    font-family:'SCDream4';
+   
     color: #E0E0E0;
     background-color: #f9f9f9;
     width: 100px;
@@ -302,7 +308,7 @@ header{
   }
   .scope .infra1{
     font-size: 15px;
-    font-family:'SCDream4';
+
     color: #E0E0E0;
     background-color: #f9f9f9;
     width: 110px;
@@ -315,7 +321,7 @@ header{
   }
   .scope .db1{
     font-size: 15px;
-    font-family:'SCDream4';
+  
     color: #E0E0E0;
     background-color: #f9f9f9;
     width: 110px;
@@ -330,7 +336,7 @@ header{
 
   .scope2 .back1{
     font-size: 15px;
-    font-family:'SCDream4';
+
     color: #E0E0E0;
     background-color: #f9f9f9;
     width: 110px;
@@ -355,7 +361,7 @@ header{
   .functions h4{
 
     font-size: 20px;
-    font-family:'SCDream5';
+    font-weight: 700;
     margin-top: 15px;
     color: #333;
     line-height: 1.8;
@@ -364,7 +370,7 @@ header{
 
   .functions p{
     font-size: 18px;
-    font-family:'SCDream3';
+  
     
     line-height: 1.5;
    
@@ -402,14 +408,14 @@ header{
 
 .right-line h4{
     font-size: 20px;
-    font-family:'SCDream5';
+    font-weight: 700;
     margin-top: 20px;
     color: #333;
 }
 
 .right-line p{
     font-size: 18px;
-    font-family:'SCDream3';
+    
     margin-top: 10px;
     color: #333;
     line-height: 1.5;
@@ -420,7 +426,7 @@ header{
 
 .img h1{
     font-size: 20px;
-    font-family:'SCDream5';
+
     
 }
 
@@ -466,7 +472,7 @@ header{
   right: 100px; 
   z-index: 99; 
   font-size: 16px; 
-  font-family:'SCDream4';
+
   outline: none; 
   color:#42B883; 
   cursor: pointer; 
@@ -497,7 +503,7 @@ header{
 
   }
   .navi p{
-    font-family:'SCDream4';
+   
     font-size: 15px;
     color: #42B883;
 
@@ -535,7 +541,7 @@ header{
   .title h1{
 
     font-size: 20px;
-    font-family:'SCDream6';
+   
     color: #333;
 
     margin-top: 150px;
@@ -550,7 +556,7 @@ header{
   .about p{
     font-size: 16px;
   
-    font-family:'SCDream3';
+    
     color: #333;
     margin-top: 30px;
     line-height: 1.5;
@@ -584,7 +590,7 @@ header{
 .mobile-functions h4{
 
   font-size: 20px;
-  font-family:'SCDream5';
+  font-weight: 700;
   margin-top: 15px;
   color: #333;
 
@@ -593,7 +599,7 @@ header{
  
   margin-top: 10px;
   font-size: 16px;
-  font-family:'SCDream3';
+
   line-height: 1.56;
 }
 .mobile-right{
@@ -604,7 +610,7 @@ header{
 .industy h4{
 
   font-size: 20px;
-  font-family:'SCDream5';
+  
   margin-top: 20px;
   color: #333;
 }
@@ -619,7 +625,7 @@ header{
 .industy p{
 
   font-size: 16px;
-  font-family:'SCDream3';
+ 
   margin-top: 10px;
   color: #333;
   line-height: 1.5;
@@ -632,7 +638,7 @@ header{
 .technology h4{
 
   font-size: 20px;
-  font-family:'SCDream5';
+ 
   margin-top: 20px;
  
 }
@@ -643,7 +649,7 @@ header{
 .technology p{
 
 font-size: 18px;
-font-family:'SCDream3';
+
 margin-top: 10px;
 color: #333;
 line-height: 1.5;
@@ -673,7 +679,7 @@ line-height: 1.5;
 .mobile-scope1 .plan{
  
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 70px;
@@ -688,7 +694,7 @@ line-height: 1.5;
 
 .mobile-scope1 .design{
   font-size: 12px;
-  font-family:'SCDream4';
+  
   color: #fff;
   background-color: #3b4447;
   width: 70px;
@@ -701,7 +707,7 @@ line-height: 1.5;
 }
 .mobile-scope1 .infra{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 80px;
@@ -716,7 +722,7 @@ line-height: 1.5;
 }
 .mobile-scope2 .db{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 70px;
@@ -730,7 +736,7 @@ line-height: 1.5;
 }
 .mobile-scope2 .front{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 80px;
@@ -746,7 +752,7 @@ line-height: 1.5;
 
 .mobile-scope3 .back{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 80px;
@@ -759,7 +765,7 @@ line-height: 1.5;
 }
 .mobile-scope3 .fix{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #fff;
   background-color: #3b4447;
   width: 80px;
@@ -773,7 +779,7 @@ line-height: 1.5;
 .mobile-scope1 .plan1{
    
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #e1d9d9;
   background-color: #f9f9f9;
   width: 70px;
@@ -790,7 +796,7 @@ line-height: 1.5;
 .mobile-scope1 .design1{
  
   font-size: 12px;
-  font-family:'SCDream4';
+ 
   color: #e1d9d9;
   background-color: #f9f9f9;
   width: 80px;
@@ -806,7 +812,7 @@ line-height: 1.5;
 
 .mobile-scope3 .back1{
   font-size: 12px;
-  font-family:'SCDream4';
+ 
   color: #e1d9d9;
   background-color: #f9f9f9;
   width: 80px;
@@ -820,7 +826,7 @@ line-height: 1.5;
 }
 .mobile-scope2 .db1{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #e1d9d9;
   background-color: #f9f9f9;
   width: 80px;
@@ -835,7 +841,7 @@ line-height: 1.5;
 }
 .mobile-scope1 .infra1{
   font-size: 12px;
-  font-family:'SCDream4';
+
   color: #e1d9d9;
   background-color: #f9f9f9;
   width: 80px;

@@ -6,6 +6,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "softplant"
+		"liveServer.settings.multiRootWorkspaceName": "softplant",
+		"liveServer.settings.port": 5501
 	}
 }

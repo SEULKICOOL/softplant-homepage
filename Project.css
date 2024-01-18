@@ -1,42 +1,43 @@
 /* font */
+
 @font-face {
-    font-family: 'SCDream2';
-    font-weight: 300;
-    src:url(./font/SCDream2.otf) format(opentype);
-  }
+  font-family: 'AppleSDGothicNeoL';
+  font-weight: 400;
+  src:url(./font/AppleSDGothicNeoL.ttf) format(opentype);
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoM';
+  font-weight: 500;
+  src:url(./font/AppleSDGothicNeoM.otf) format(opentype);}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoR';
+  font-weight: 600;
+  src:url(./font/AppleSDGothicNeoR.otf) format(opentype);
+
   
-  @font-face {
-    font-family: 'SCDream3';
-    font-weight: 400;
-    src:url(./font/SCDream3.otf) format(opentype);}
-  
-  @font-face {
-    font-family: 'SCDream4';
-    font-weight: 500;
-    src:url(./font/SCDream4.otf) format(opentype);
-  
-    
-  }
-  @font-face {
-    font-family: 'SCDream5';
-    font-weight: 600;
-    src:url(./font/SCDream5.otf) format(opentype);
-  }
-  @font-face {
-    font-family: 'SCDream6';
-    font-weight: 700;
-    src:url(./font/SCDream6.otf) format(opentype);
-  }
-  @font-face {
-    font-family: 'SCDream8';
-    font-weight: 800;
-    src:url(./font/SCDream8.otf) format(opentype);
-  }
-  @font-face {
-    font-family: 'SCDream9';
-    font-weight: 900;
-    src:url(./font/SCDream9.otf) format(opentype);
-  }
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoT';
+  font-weight: 300;
+  src:url(./font/AppleSDGothicNeoT.otf) format(opentype);
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoSB';
+  font-weight: 700;
+  src:url(./font/AppleSDGothicNeoSB.otf) format(opentype);
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoH';
+  font-weight: 900;
+  src:url(./font/AppleSDGothicNeoB.otf) format(opentype);
+}
+@font-face {
+  font-family: 'AppleSDGothicNeoEB';
+  font-weight: 800;
+  src:url(./font/AppleSDGothicNeoEB.otf) format(opentype);
+} 
 
  body{
     background-color: #FAFAFB;
@@ -83,11 +84,11 @@ header .inner ul{
 }
 
 header ul li a{
-  font-size: 13px;
+  font-size: 15px;
   padding: 11px 40px;
   display: block;
   color: #333;
-  font-family:'SCDream4';
+  
 }
 
   header ul li a:hover{
@@ -139,7 +140,7 @@ header ul li a{
  
  margin-top: 30px;
  font-size: 18px;
- font-family:'SCDream5';
+
  text-align: center;
 
 
@@ -206,7 +207,7 @@ header ul li a{
  
  margin-top: 30px;
  font-size: 18px;
- font-family:'SCDream5';
+ 
  text-align: center;
 
 
@@ -248,7 +249,7 @@ header ul li a{
   }
   .inner h1{
     font-size: 30px;
-    font-family: 'SCDream6';
+    font-weight: 800;
     margin-top: 100px;
   
    
@@ -281,7 +282,7 @@ header ul li a{
 
   .basic h2{
     font-size: 20px;
-    font-family: 'SCDream5';
+   
     margin-top: 30px;
     margin-left: 60px;
     margin-bottom: 30px;
@@ -295,7 +296,7 @@ header ul li a{
 
 .basic h3{
     font-size: 16px;
-    font-family: 'SCDream4';
+ 
     margin-top: 30px;
     margin-left: 50px;
     margin-bottom: 10px;
@@ -312,9 +313,9 @@ header ul li a{
   }
 
 ::placeholder{
-    font-size: 12px;
+    font-size: 13px;
     color: #999;
-    font-family: 'SCDream2';
+   
  
 }
 
@@ -333,7 +334,7 @@ header ul li a{
 }
 .inner label {
     font-size: 15px;
-    font-family: 'SCDream3';
+   
     vertical-align:text-top;
 }
 
@@ -358,7 +359,7 @@ form input {
 .thankyou_message{
 
   font-size: 15px;
-  font-family: 'SCDream4';
+
   padding-top: 20px;
   color: #999;
   text-align: center;
@@ -377,7 +378,7 @@ form input {
     border: 1px solid #999;
     border-radius: 10px;
     font-size: 15px;
-    font-family: 'SCDream4';
+  
     text-decoration: none;
     
 
@@ -392,7 +393,7 @@ button{
   width: 120px;
   height: 50px;
   font-size: 15px;
-  font-family: 'SCDream4';
+
   justify-content: center;
   align-items:center;
 
@@ -410,7 +411,7 @@ select{
     border: 0.5px solid #999;
     margin-left: 50px;
     margin-top: 10px;
-    font-family: 'SCDream2';
+   
 }
 
 textarea{
@@ -456,7 +457,7 @@ textarea{
   align-items: center;
 }
 .check p{
-  font-family: 'SCDream2';
+
   font-size: 14px;
   padding-left: 10px;
 }
@@ -495,7 +496,7 @@ button:hover h1 {
 }
 button h1{
   font-size: 18px;
-  font-family:'SCDream5';
+  
   line-height: 55px;
   text-align: center;
   padding-left: 60px;
@@ -526,7 +527,7 @@ right: 123px;
   vertical-align: middle;
   width: 400px;
   color: #999999;
-  font-family:'SCDream3';
+
   font-size: 14px;
   line-height: 40px;
  
@@ -542,7 +543,7 @@ right: 123px;
   margin-left: 50px;
   border-radius: 5px;
   line-height: 20px;
-  font-family:'SCDream3';
+  
   font-size: 13px;
 }
 #submitButton{
@@ -554,7 +555,7 @@ right: 123px;
   width:100px;
   color: #fff;
   cursor: pointer;
-  font-family:'SCDream5';
+ 
 }
 
 input#file{
@@ -752,7 +753,7 @@ button#contact{
  }
  button h1{
    font-size: 13px;
-   font-family:'SCDream5';
+  
    line-height: 40px;
    padding-left: 16px;
  

@@ -136,11 +136,11 @@
 
 
 <div class="navi" id="navibtn"> 
-    <div class="prev">
-    <button onclick="projectBefore()"  title="Go to "> <p>Prev</p><div class="material-icons">navigate_before</div></button>
+    <div class="prev" data-menu="swing">
+    <button onclick="projectNext()" title="Go to "> <p>Prev</p><div class="material-icons">navigate_before</div></button>
     </div>
-    <div class="next">
-    <button onclick="projectNext()"  title="Go to "><p>Next</p>  <div class="material-icons">navigate_next</div></button>
+    <div class="next" data-menu="excel2">
+    <button  onclick="projectBefore()" title="Go to "><p>Next</p>  <div class="material-icons">navigate_next</div></button>
     </div>
 </div>
     
@@ -149,22 +149,27 @@
 
 <script>
 //Navi
-    window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function() {
   const element = document.getElementById('navibtn'); 
   const windowHeight = window.pageYOffset;
     if (300< windowHeight) {
       element.style.display = 'block';
     } else {
       element.style.display = 'none'; 
+      
     }
 });
-//Click Event
-function projectNext(){
-    window.location.href = "./excel2.html";
-  }
-function projectBefore(){
-    window.location.href = "./swing.html";
-  }
+
+
+    function projectNext(){
+
+
+        window.location.href = "./excel2.html";
+    }
+    function projectBefore(){
+  
+        window.location.href = "./swing.html";
+    }
 
 </script>
 </html>
