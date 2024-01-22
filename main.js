@@ -26,7 +26,7 @@ AOS.init();
     window.location.href = "./Project1.html";
   }
   function DownloadPDF(){
-  window.location.href = "./소프트플랜트회사소개서.pdf"
+  window.location.href = "./소프트플랜트_회사소개서.pdf"
   }
   function quickGo(){
     window.location.href = "./contact.html";
