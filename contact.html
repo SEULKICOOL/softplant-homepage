@@ -556,6 +556,10 @@
 //         })();
 
 function sendMail(){ 
+            if(document.getElementById("yourname").value == ""){
+                alert('담당자명은 필수입니다.')
+                return false;
+            }
             if(document.getElementById("phone").value == ""){
                 alert('연락정보는 필수입니다.')
                 return false;
