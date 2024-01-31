@@ -556,6 +556,16 @@
 //         })();
 
 function sendMail(){ 
+            if(document.getElementById("phone").value == ""){
+                alert('연락정보는 필수입니다.')
+                return false;
+            }
+
+            if(document.getElementById("myCheckbox").checked == false){
+                alert('개인정보 취급방침에 동의해주셔야 합니다.')
+                return false;
+            }
+           
             emailjs.init("fast"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
 
             const emailConfig = {
