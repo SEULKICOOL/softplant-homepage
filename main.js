@@ -251,6 +251,14 @@ if (value !== null) {
 
   gtag('config', 'G-BVZ7B4QJF9');
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11263531305');
+
+  
+
 //코드앤 버터 
 
 (function (co,de,n,but,t,e,r){!n[co]&&(n[co]=function(){
@@ -259,3 +267,7 @@ e.async=true;e.src=de;r=t.getElementsByTagName(but)[0];
 r.parentNode.insertBefore(e, r);
 })("CodenButter", "https://buttr.dev/butter.js", window, "script", document);
 window.CodenButter("boot", { siteId: "tthgejhamm", auto: true });
+
+
+
+
