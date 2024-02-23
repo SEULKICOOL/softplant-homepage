@@ -102,9 +102,93 @@ a{
 
 html, body {
   max-width: 100%;
- 
   
   }
+
+
+/* topButton */
+#topButton {
+  width: 150px;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 99; 
+  font-size: 16px; 
+  border: 0.5px solid #42B883; 
+  font-family:'SCDream4';
+  outline: none; 
+  background-color: #fff; 
+  color:#42B883; 
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 20px; 
+
+}
+    
+#topButton:hover {
+  background-color: #42B883;
+  color: #fff;
+  transition: all 0.5s;
+  animation: anitext3 1.5s ease 1.2s;
+    }
+
+/* Contact button */
+
+button#contact{
+  width: 250px;
+  background: none;
+  border: none;
+  position:fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 60px;
+
+}
+.nemo{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  background: #F9F9F9;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #999;
+  top: 20px;
+  right: 0;
+ 
+}
+button:hover .nemo {
+  border: 1px solid #42B883;
+  box-shadow: none;
+ 
+ 
+  
+}
+button:hover h1 {
+  color: #42B883;
+ 
+}
+button h1{
+  font-size: 18px;
+  font-family:'SCDream5';
+  line-height: 50px;
+  text-align: center;
+  padding-left: 40px;
+  color: #222;
+
+
+}
+#contact .material-icons{
+  position: relative;
+ font-size: 45px;
+ color: #fff;
+ width: 80px;
+ height: 80px;
+ border-radius: 100px;
+ background-color: #42B883;
+ z-index: 5;
+}
+
+
 
 /* Button */
 
@@ -285,701 +369,353 @@ header ul li a{
   color: #42d392;
 }
 
-
-/* VISUAL */
+/* VISUAL  */
 .visual{
- height: 580px;
- overflow: hidden;
-
+    height: 700px;
+    background-color: #f9f9f9;
 }
 
 .visual .inner {
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display:flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    overflow: hidden;
+}
+
+.visual .inner .mainsec{
+    display:flex;
+    height: 50%;
+}
+
+.visual .inner .mainsec .mainText{
 
  
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-top: 100px;
+    margin-right: 100px;
+   
+}
+.phoneImg .title-img{ 
+    margin-left: 50px;
+
 }
 
-.visual p{
-  /* top: 500px; */
+.visual .inner .headtag{
+    font-size: 60px;
+    font-family: 'SCDream9';    
+    color: #696969;
+
+}
+  
+.visual .inner .subtag{
+    font-size: 20px;
+    font-family: 'SCDream4';    
+    color:  rgb(107 114 128);
+    margin-top: 40px;
+
+}
+.visual .inner .subtag1{
+    font-size: 20px;
+    font-family: 'SCDream4';    
+    color:  rgb(107 114 128);
+    margin-top: 12px;
+}
+
+.btn{
+ width: 160px;
+ height: 40px;
+ border: #999 solid 0.5px;
+ color: #696969;
+ margin-top: 30px;
+ margin-left: 0;
+ cursor: pointer;
+ 
+}
+.btn:hover{
+    background-color: #696969;
+    transition: all 0.5s;
+    animation: anitext3 1.5s ease 1.2s;
+  
+   }
+
+.btn .subbtnnm{
+  font-size: 14px;
+  color: #696969;
+}
+
+
+.btn:hover .subbtnnm{
+
+    color: #fff;
+}
+
+.wisper{
+    height: 1190px;
+    background-color:#171717;
+
+}
+
+.visual .img-inner {
+  position: fixed; /* 자식 요소를 고정 위치로 설정 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .wisper .inner{ */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* position: relative; */
+/* } */
+
+.wisper-title{
+
+  width: 100%;
+  height: 100%;
+  justify-content: left;
   display: flex;
-  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  margin-left: 15%;
+ 
+}
+.text-line{
+
+  display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
+.wisper-title h1{
+ 
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+  padding-top: 20px;
+  font-family:'SCDream6';
 
-.visual .inner .accent{
-  letter-spacing: -2px;
-  font-size: 64px;
-  margin-bottom: 25px;
-  background: -webkit-linear-gradient(285deg,#42d392 15%,#647eff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family:'SCDream9';
-  margin-top: 50px;
 }
-  
-.visual .inner .visual-text{
-  font-size: 64px;
-  line-height: 1.25;
-  word-spacing: -5px;
-  font-family:'SCDream9';
-  max-width: 960px;
-  margin: 0 auto;
-  
-}
-.visual .inner h5{
-  max-width: 960px;
+.wisper-title p{
+  padding-top: 15px;
   line-height: 1.5;
-  margin: 24px auto 40px;
-  font-size: 20px;
-  color: #999;
-  font-family:'SCDream3';
-  letter-spacing: 1px;
-  word-spacing: 2px;
-
-}
-
-
-/* solution */
-
-.know-how{
-  height: 60px;
+  font-size: 18px;
+  color: #a3a3a3;
   width: 100%;
-  background-color: #fff;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid #e4e7eb;
-
-}
-.know-how p{
-  font-family:'SCDream3';
-  font-size: 14px;
-}
-.know-how strong{
-  font-size: 20px;
-  color: #f02265;
-  font-family:'SCDream5';
-}
-
-.Service{
-  width: 100%;
-  height: 300px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.Service h1{
-  margin-left: 50px;
-  font-size: 20px;
-  font-family:'SCDream5';
-  text-align:left;
-  color: #213547;
-  margin-bottom: 25px;
-
-
-}
-.Service p{
-  font-size: 14px;
   font-family:'SCDream4';
-  margin-top: 15px;
-  text-align:left;
-  line-height: 1.8;
-  margin-left: 50px;
-  color: #3c3c3cb3;
-}
-.Service strong{
-  
-  font-family:'SCDream4';
+   
 }
 
 
-
-
-.mesage-mobile{
-  display: none;
-}
-
-/* topButton */
-#topButton {
-  width: 150px;
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 20px; 
-  z-index: 99; 
-  font-size: 16px; 
-  border: 0.5px solid #42B883; 
-  font-family:'SCDream4';
-  outline: none; 
-  background-color: #fff; 
-  color:#42B883; 
-  cursor: pointer; 
-  padding: 10px; 
-  border-radius: 20px; 
-
-  }
-    
-#topButton:hover {
-  background-color: #42B883;
-  color: #fff;
-  transition: all 0.5s;
-  animation: anitext3 1.5s ease 1.2s;
-    }
-
-/* Contact button */
-
-button#contact{
-  width: 250px;
-  background: none;
-  border: none;
-  position:fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 60px;
-
-}
-.nemo{
-  width: 200px;
-  height: 50px;
+#spinner {
   position: absolute;
-  background: #F9F9F9;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px #999;
-  top: 20px;
-  right: 0;
- 
-}
-button:hover .nemo {
-  border: 1px solid #42B883;
-  box-shadow: none;
- 
- 
-  
-}
-button:hover h1 {
-  color: #42B883;
- 
-}
-button h1{
-  font-size: 18px;
-  font-family:'SCDream5';
-  line-height: 50px;
-  text-align: center;
-  padding-left: 40px;
-  color: #222;
-
-
-}
-#contact .material-icons{
-  position: relative;
- font-size: 45px;
- color: #fff;
- width: 80px;
- height: 80px;
- border-radius: 100px;
- background-color: #42B883;
- z-index: 5;
-}
-
-
-/* Project */
-
-.projects{
-  height: 2800px;
-  overflow: hidden;
-}
-
-.inner{
+  left: 17%;
+  top: 70%; /* 변경된 부분: 기존은 50%이었으나 60%로 조정 */
   margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgba(163, 151, 198, 0.2);
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
 }
-.line{
-  width: 100%;
-  border: 1px solid #f9f9f9;
-  margin-top: 100px;
-  text-align: center;
-}
-.projects h1{
-  font-size: 40px;
-  font-family:'SCDream6';
-  align-items: center;
-  text-align: center;
-  padding-top: 10px;
-  margin-top: 30px;
-  color:#213547;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-
-}
-.projects h3{
-  font-size: 18px;
-  font-family:'SCDream4';
-
-  text-align: center;
-  margin: 20px auto 40px;
-  color: #999;
-  font-family:'SCDream3';
-  letter-spacing: 1px;
-  word-spacing: 1px;
+.spinner-container{
+  position: relative; 
 
 
 }
-
-
-.flex{
-
-  margin: 0px auto;
-  overflow: hidden;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+#spinner1{
  
-}
-.projects .item{
-  position: relative;
-}
-
-.projects h4{
-  font-size: 18px;
-  font-family:'SCDream4';
-  margin-left: 60px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #333;
- 
-}
-.projects p{
-  font-size: 14px;
-  font-family:'SCDream3';
-  color: #999;
-  margin-left: 120px;
-  margin-top: 10px;
-}
-
-.projects h5 {
-  font-size: 14px;
-  font-family:'SCDream3';
-  color: #999;
-  margin-left: 180px;
-  margin-top: 10px;
-}
-
-
-.projects .items img{
-  border-radius: 5px;
-  transition: all 0.2s linear;
-  margin-top: 70px;
-  margin-left: 40px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-
-  
-}
-.scope{
-  display: flex;
-  margin-top: 10px;
-  margin-left: 60px;
- 
-}
-
-
-.scope .plan{
- 
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 70px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  
-
-
-}
-
-.scope .design{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 70px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
-
-
-}
-.scope .infra{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
-
-
-}
-.scope .db{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 70px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
-
-}
-.scope2 .front{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
-
-}
-.scope2{
-  display: flex;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-
-.scope2 .back{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
- 
-}
-.scope2 .fix{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #fff;
-  background-color: #3b4447;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 8px;
-}
-.scope .plan1{
-   
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #e1d9d9;
-  background-color: #f9f9f9;
-  width: 70px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 20px;
-
-
-
-}
-
-
-.scope .design1{
- 
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #e1d9d9;
-  background-color: #f9f9f9;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 7px;
-
-
-}
-
-
-.scope2 .back1{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #e1d9d9;
-  background-color: #f9f9f9;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  text-align: center;
-  line-height: 20px;
- 
-}
-.scope .infra1{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #e1d9d9;
-  background-color: #f9f9f9;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 7px;
- 
-}
-.scope .db1{
-  font-size: 12px;
-  font-family:'SCDream4';
-  color: #e1d9d9;
-  background-color: #f9f9f9;
-  width: 80px;
-  height: 20px;
-  border-radius: 20px;
-  text-align: center;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 7px;
- 
-}
-
-.Teams{
-  display: none;
-}
-.projects .items .item:hover .back-img{
-  transform: scale(0.9);
- 
-}
-
-.projects .items .item:hover .text-box{
-  opacity: 1;
-}
-.projects .items .item:hover{
-  
-}
-
-.scope{
-  display: flex;
-}
-
-/* Teams */
-.Teams{
-  height: 900px;
-}
-
-.Teams .inner{
   margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid rgba(163, 151, 198, 0.2);
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+}
+.spinner-container1{
+  position: relative; 
+
+
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wisper .inner .imgBox {
+  position: relative;
+
+}
+
+
+.img-inner{
+ width: 100%;
+ padding-left: 5%;
+}
+.box-inner {
+  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
+  right: 0; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
+  width: 50%;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 600px;
+  
 }
-.CEO{
-  display: flex;
- 
+
+.img-inner .title-img{
+  left: 25%;
+  position: absolute;
+  
+  z-index: 30;
 }
-.ceo-name h1{
-  font-size: 20px;
-  font-family:'SCDream6';
-  color:#333;
-  margin-top: 50px;
+
+
+.img-inner .box1{
+
+
+  margin-bottom: 35px;
+  width: 560px;
+  height:250px;
+  background-color:#262626;
+  border-radius: 20px;
 }
-.ceo-name h5{
-  font-size: 12px;
-  font-family:'SCDream4';
-  margin-bottom: 10px;
-  margin-left: 1px;
-  margin-top: 2px;
- 
-}
-.ceo-career{
-  font-size: 15px;
-  font-family:'SCDream3';
-  line-height: 1.4;
+.box1 h1{
   text-align: left;
-  margin-left: 50px;
-
-}
-
-
-.automation{
- margin-left: 70px;
-}
-.ERP{
-  margin-left: 70px;
-}
-
-.head h1{
-  font-size: 40px;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
   font-family:'SCDream6';
-  align-items: center;
-  text-align: center;
-  margin-top: 70px;
-  color:#213547;
-  letter-spacing: 3px;
-
 }
-.head h5{
+.box1 p{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 30px;
   font-size: 18px;
-  font-family:'SCDream3';
-  align-items: center;
-  text-align: center;
-  color:#999;
-  word-spacing: 2px;
-  letter-spacing: 2px;
-  margin-top: 15px;
-  margin-bottom: 70px;
-}
-.member{
-  display: flex;
-}
-
-.teams-img{
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  background-color: #f7f7f7;
-  margin-left: 50px;
-  margin-top: 70px;
-  box-shadow: 1px 1px 1px 1px #999;
-  margin-bottom: 10px;
-}
-
-.name h1{
-  font-size: 20px;
-  font-family:'SCDream6';
-  margin-top: 30px;
-}
-
-.position h5{
-  font-size: 12px;
+  color: #fff;
+  line-height: 1.8;
   font-family:'SCDream4';
-  margin-top: 10px;
 }
 
-.career p{
-  font-size: 15px;
-  font-family:'SCDream3';
-  line-height: 1.4;
-  margin-top: 10px;
+.img-inner .box2{
+  position: absolute;
 
- 
+  width: 560px;
+  height: 180px;
+  border-radius: 20px;
 }
 
-
-/* SWIPER */
-
-   
-
-.Client{
-  background-color: #F9F9F9;
-
+.infra{
+  height: 1200px;
+  background-color: #f9f9f9;
 }
 
-
-
-.inner-swiper h1{
-  font-size: 40px;
-  font-family:'SCDream6';
+.infra .inner{
+  
+  height: 100%;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 40px;
-  color:#213547;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  margin-bottom: 50px;
-}
-
-
-
-/* .sample-container {
-  width: 70%;
-}
-.sample-container img {
-  width: 100%;
-}
-
-.swiper-container .swiper-wrapper {
-  transition-timing-function: linear;
-}
-
-.tablet__swiper-img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mobile__swiper-img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-
-.marquee-container {
-  width: 100%;
-  height: 100%;
-  
-}
-
-.marquee {
-  white-space: nowrap;
-  display: inline-block;
-  animation: flow 25s linear infinite;
-  
-}
-
-.marquee span {
-  display: inline-block;
-  margin-right: 20px;
-  -webkit-transform: translate3d(0,0,0);
-  -webkit-backface-visibility : hidden;
  
+
 }
 
+.infra h1{
+  font-size: 35px;
+  padding-top: 120px;
+  text-align: center;
+  font-family:'SCDream6';
+  line-height: 1.5;
+}
 
-@keyframes flow {
-  0% {
-      transform: translateX(0%);
-  }
-  100% {
-      transform: translateX(-50%);
-  }
-} */ */
+.infra .inner .box-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.infra .inner .box-container1 .box{
+ width: 300px;
+ border-radius: 20px;
+ height: 300px;
+ border: #999 solid 0.5px;
+ margin-top: 100px;
+ margin-right: 1%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ font-family:'SCDream6';
 
+}
+.infra .inner .box-container2{
+  margin-top: 50px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.infra .inner .box-container2 .box{
+ width: 300px;
+ margin-right: 1%;
+ border-radius: 20px;
+ height: 300px;
+ border: #999 solid 0.5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ font-family:'SCDream6';
+}
+
+.AI-iq{
+  height: 450px;
+  background-color:#171717;
+  overflow: hidden;
+}
+.AI-iq .inner{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AI-iq .inner h1{
+  color: #fff;
+  font-size: 30px;
+text-align: center;
+font-family:'SCDream6';
+
+}
+.AI-iq .inner p{
+  color: #fff;
+  padding-top: 50px;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 17px;
+  font-family:'SCDream3';
+
+}
+.AI-iq .inner .AI-text{
+
+position: absolute;
+}
 
 /* Footer */
 footer{
@@ -1055,7 +791,7 @@ footer strong{
       height: 100vh;
       width:100%;
       overflow-x:hidden;
-      
+      position: relative; /* 부모 요소를 상대 위치로 설정 */
     }
     .visual .inner .accent{
       font-size: 48px;
@@ -1254,53 +990,6 @@ footer strong{
     }
     /* Contact button */
 
-button#contact{
- width: 250px;
-  right: 0;
-  bottom: 50px;
-}
-.nemo{
-  width: 110px;
-  height: 40px;
-  top: 5px;
-  right: 30px;
-
-  
-}
-button:hover .nemo {
-  border: 1px solid #42B883;
-  
-}
-button:hover h1 {
-  color: #42B883;
-}
-button h1{
-  font-size: 13px;
-  font-family:'SCDream5';
-  line-height: 40px;
-  padding-left: 16px;
-
-
-
-}
-#contact .material-icons{
- 
- left: 75px;
- font-size: 25px;
- width: 50px;
- height: 50px;
-
-}
-
-#topButton {
-  width: 120px;
-  height: 40px;
-  bottom: 7px; 
-  right: 27px; 
- 
-  }
-
-  }
 
 
 
