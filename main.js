@@ -40,7 +40,7 @@ const Service1 = document.querySelectorAll(".ClkService");
 const PORTFOLIO1 = document.querySelectorAll(".ClkPortforio");
 const Teams = document.querySelectorAll(".ClkTeams");
 const sec1 = document.querySelector(".know-how").offsetTop;
-const sec2 = document.querySelector(".Teams").offsetTop;
+// const sec2 = document.querySelector("").offsetTop;
 const sec3 = document.querySelector(".projects").offsetTop;
 
 
