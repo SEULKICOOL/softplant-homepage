@@ -400,14 +400,18 @@ header ul li a{
    
 }
 .phoneImg .title-img{ 
-    margin-left: 50px;
+ height: 400px;
+ border-radius: 40px;
+ filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
 
 }
 
 .visual .inner .headtag{
     font-size: 60px;
     font-family: 'SCDream9';    
-    color: #696969;
+    color: #333;
+    
 
 }
   
@@ -514,11 +518,11 @@ header ul li a{
 
 #spinner {
   position: absolute;
-  left: 17%;
-  top: 70%; /* 변경된 부분: 기존은 50%이었으나 60%로 조정 */
+  left: 1%;
+  
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   border: 2px solid rgba(163, 151, 198, 0.2);
   border-top: 2px solid #fff;
   border-radius: 50%;
@@ -575,11 +579,14 @@ header ul li a{
   
 }
 
-.img-inner .title-img{
-  left: 25%;
+.img-inner .sub-img{
+  left: 10%;
+  top: 20px;
   position: absolute;
-  
-  z-index: 30;
+  height: 450px;
+  border-radius: 40px;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  z-index: 100;
 }
 
 
@@ -587,8 +594,8 @@ header ul li a{
 
 
   margin-bottom: 35px;
-  width: 560px;
-  height:250px;
+  width: 500px;
+  height:270px;
   background-color:#262626;
   border-radius: 20px;
 }
@@ -603,11 +610,11 @@ header ul li a{
 }
 .box1 p{
   text-align: left;
-  padding-top: 20px;
+  padding-top: 14px;
   padding-left: 30px;
   font-size: 18px;
   color: #fff;
-  line-height: 1.8;
+  line-height: 1.6;
   font-family:'SCDream4';
 }
 
@@ -620,7 +627,7 @@ header ul li a{
 }
 
 .infra{
-  height: 1200px;
+  height: 1100px;
   background-color: #f9f9f9;
 }
 
@@ -633,12 +640,30 @@ header ul li a{
  
 
 }
+.infra .hmsg {
+ display: flex;
+ justify-content: center;
+ font-size: 35px;
+ padding-top: 150px;
+ font-family:'SCDream6';
+ text-align: center;
+ line-height: 1.5;
+}
 
 .infra h1{
-  font-size: 35px;
-  padding-top: 120px;
-  text-align: center;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: left;
   font-family:'SCDream6';
+  line-height: 1.5;
+}
+.infra p{
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 20px;
+  text-align: left;
+  font-family:'SCDream3';
   line-height: 1.5;
 }
 
@@ -652,20 +677,43 @@ header ul li a{
 .infra .inner .box-container1 .box{
  width: 300px;
  border-radius: 20px;
- height: 300px;
- border: #999 solid 0.5px;
+ height: 250px;
+
  margin-top: 100px;
  margin-right: 1%;
- display: flex;
- justify-content: center;
+text-align:left;
+ justify-content: left;
  align-items: center;
  font-size: 20px;
  font-family:'SCDream6';
 
 }
+
+ .box .circle{
+  width: 50px;
+  height: 50px;
+  background-color: #42B883;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.box .process{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.box .line{
+  width: 60%;
+  height: 0.5px;
+  display: flex;
+
+  border: #42B883 solid 0.2px;
+  border-radius: 10px;
+}
 .infra .inner .box-container2{
-  margin-top: 50px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -673,16 +721,17 @@ header ul li a{
 }
 
 .infra .inner .box-container2 .box{
- width: 300px;
- margin-right: 1%;
- border-radius: 20px;
- height: 300px;
- border: #999 solid 0.5px;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 20px;
- font-family:'SCDream6';
+  width: 300px;
+  border-radius: 20px;
+  height: 250px;
+ 
+  margin-top: 100px;
+  margin-right: 1%;
+ text-align:left;
+  justify-content: left;
+  align-items: center;
+  font-size: 20px;
+  font-family:'SCDream6';
 }
 
 .AI-iq{
@@ -764,7 +813,7 @@ footer strong{
     }
     
     .mobile-icon{
-      display: block;
+      display:flex;
       
     }
     
@@ -780,215 +829,429 @@ footer strong{
     .btn{
 
         width: 160px;
-      }
-
-    .btn-main{
-       width: 160px;
+      
     }
-    
-    
+
+      /* VISUAL  */
     .visual{
-      height: 100vh;
-      width:100%;
-      overflow-x:hidden;
-      position: relative; /* 부모 요소를 상대 위치로 설정 */
+        height: 1000px;
+        background-color: #f9f9f9;
     }
-    .visual .inner .accent{
-      font-size: 48px;
-      letter-spacing: -.5px;
-  
+
+    .visual .inner {
+        height: 100%;
+        text-align: center;
+        display: block;
+        overflow: hidden;
     }
-    .visual .inner .visual-text{
-      font-size: 48px;
-      line-height: 1.25;
-     
+
+    .visual .inner .mainsec{
+        display: block;
+        height: 50%;
+    }
+
+    .visual .inner .mainsec .mainText{
+
+    
+        width: 100%;
+        height: 60%;
+        text-align: left;
+      margin-top: 180px;
+        margin-right: 20px;
       
     }
-    .visual .inner h5{
-      font-size: 16px;
-      margin: 18px 0 30px;
-    
-    
-    }
-   
-    .know-how{
-      height: 80px;
-      border: #fff;
+    .phoneImg .title-img{ 
+      height: 300px;
+      border-radius: 40px;
+      filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
 
     }
-    .know-how p{
-      font-size: 12px;
-    }
 
-    .Service{
-      height: 800px;
-      display:block;
-      text-align: center;
-      width:100%;
-      overflow-x:hidden;
-    }
-    
-    .Service h1{
-      margin-left: 0;
-      margin-top: 30px;
-      font-size: 18px;  
-      text-align:center;
+    .visual .inner .headtag{
+        font-size: 45px;
+        font-family: 'SCDream9';    
+        color: #333;
+        margin-left: 20px;
       
+
+    }
+      
+    .visual .inner .subtag{
+        font-size: 16px;
+        font-family: 'SCDream4';    
+        color:  rgb(107 114 128);
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .visual .inner .subtag1{
+        font-size: 16px;
+        font-family: 'SCDream4';    
+        color:  rgb(107 114 128);
+        margin-top: 12px;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+
+    .btn{
+    width: 160px;
+    height: 40px;
+    border: #999 solid 0.5px;
+    color: #696969;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
     
     }
-    .Service p{
-      margin-left: 0;
+    .btn:hover{
+        background-color: #696969;
+        transition: all 0.5s;
+        animation: anitext3 1.5s ease 1.2s;
+      
+      }
+
+    .btn .subbtnnm{
       font-size: 14px;
-      margin-top: 30px;
-      text-align:center;
-      line-height: 1.8;
-   
-    
-    } 
-
-    /* SWIPER */
-
-    /* .marquee{
-      animation: linear 30s linear infinite;
+      color: #696969;
     }
 
-    @keyframes linear {
-      0% {
-          transform: translateX(-0%) ;
-      }
-      40% {
-        transform: translateX(-50%);
-      }
-      100% {
-          transform: translateX(-100%);
-      }
-    } */
-    
 
-    /* Project */
-    .projects{
-      height: 5800px;
-      display: block;
-      overflow-x:hidden;
-    }
-    .flex{      
-      display:block;
-    }
-    .projects .item{
-      display: block;
-    }
-    .projects .items .item:hover .back-img{
-      transform: scale(0.9);
-     
-    }
-    .projects h1{
-      margin-left: 0;
-      font-size: 30px;
-  
-    }
-    .projects h3{
-      margin-left: 0;
-      font-size: 14px;
-      letter-spacing:2px;
-      font-family:'SCDream3';
-    }
-  
-    img.back-img{
-      width: 320px;
-      display: block;
-      margin: 0 auto;
-      overflow: hidden;
+    .btn:hover .subbtnnm{
 
+        color: #fff;
     }
-    .projects .items img{
-     
-      margin-top: 70px;
-      margin-left: 20px;
-    }
-    .scope{
-      margin-left: 20px;
-    
-    }
-    .scope2{
-      margin-left: 10px;
-    
-    }
-    .projects h4{
-      margin-left: 32px;
-    }
-    /* Teams */
-    .Teams{
-      height: 1800px;
-    }
-   .head h5{
-      letter-spacing:2px;
-      word-spacing: 1px;
-      font-family:'SCDream3';
 
+    .wisper{
+        height: 1600px;
+        background-color:#171717;
+        padding-right: 10px;
     }
-    
-    .CEO{
-      display: block;
-    }
-   
-    .teams-img{
-      margin: 0 auto;
-      margin-top: 30px;
-     
-    }
-    
-    .ceo-name h1 {
-      text-align: center;
-      overflow-x: hidden;
-      margin-right: 0px;
-    }
-    .ceo-name h5{
-    
-      margin-bottom: 10px;
-      text-align: center;
-      margin-top: 2px;
-      margin-right: 0px;
-     
-    }
-    .ceo-career{
-      text-align: center;
-      margin-right: 50px;
-    }
-    
-    .automation{
-      margin-left: 0;
-     }
-     .ERP{
-       margin-left: 0;
-     }
-     .name h1{
-      margin-top: 50px;
-     }
 
-     /* SWIPER */
-     .client{
-      height: 100%;
-   
-     }
-     .inner-swiper h1{
-      font-size: 30px;
-     }
+    .visual .img-inner {
+      position:absolute;/* 자식 요소를 고정 위치로 설정 */
+      display: flex;
+      transform: translate(-50%, -50%);
+    }
 
-     .marquee-container {
+
+    .wisper-title{
+
       width: 100%;
+      height: 50%;
+      justify-content: left;
+      display: block;
+      padding-top: 100px;
+      padding-bottom: 50px;
+      margin-left:20px;
+    
+    }
+    .text-line{
+
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wisper-title h1{
+    
+      font-size: 30px;
+      margin-right: 10px;
+      padding-right: 10px;
+      color: #fff;
+      font-weight: 500;
+      padding-top: 20px;
+      font-family:'SCDream6';
+
+    }
+    .wisper-title p{
+      padding-top: 14px;
+      line-height: 1.5;
+      font-size: 18px;
+      color: #a3a3a3;
+      padding-right: 10px;
+      margin-right: 10px;
+      width: 100%;
+      font-family:'SCDream4';
+      
+    }
+
+
+    #spinner {
+      left: 0;
+    
+      bottom: -15px;
+      margin: 0 auto;
+      width: 350px;
+      height: 350px;
+      border: 2px solid rgba(163, 151, 198, 0.2);
+      border-top: 2px solid #fff;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+    }
+    .spinner-container{
+      position: relative; 
+
+
+    }
+    #spinner1{
+    
+      margin: 0 auto;
+      width: 400px;
+      height: 400px;
+      border: 2px solid rgba(163, 151, 198, 0.2);
+      border-top: 2px solid #fff;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+    }
+    .spinner-container1{
+      position: relative; 
+
+
+    }
+
+
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .wisper .inner .imgBox {
+      position: relative;
+
+    }
+
+
+    .img-inner{
+    width: 50%;
+    padding-left: 5%;
+      display: block;
+  }
+    .box-inner {
+      display: block;
+      position: absolute;
+      left: 15px;
+      top: 400px;
+  
+    }
+
+    .img-inner .sub-img{
+    
+     position: relative;
+      height: 300px;
+      border-radius: 40px;
+      filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+      z-index: 100;
+    }
+
+
+    .img-inner .box1{
+
+      margin-left: 5px;
+      margin-bottom: 35px;
+      width: 340px;
+      height:270px;
+      background-color:#262626;
+      border-radius: 20px;
+    }
+    .box1 h1{
+      text-align: left;
+      padding-top: 50px;
+      padding-left: 20px;
+      font-size: 25px;
+      font-weight: 600;
+      color: #fff;
+      font-family:'SCDream6';
+    }
+    .box1 p{
+      text-align: left;
+      padding-top: 14px;
+      padding-left: 20px;
+      font-size: 15px;
+      color: #fff;
+      margin-right: 5px;
+      line-height: 1.6;
+      font-family:'SCDream4';
+    }
+    .box2 h1{
+      text-align: left;
+      padding-top: 50px;
+      padding-left: 20px;
+      font-size: 25px;
+      font-weight: 600;
+      color: #fff;
+      font-family:'SCDream6';
+    }
+    .box2 p{
+      text-align: left;
+      padding-top: 14px;
+      padding-left: 20px;
+      font-size: 15px;
+      color: #fff;
+      margin-right: 5px;
+      line-height: 1.6;
+      font-family:'SCDream4';
+    }
+
+
+    .img-inner .box2{
+     
+      margin-left: 5px;
+      margin-bottom: 35px;
+      width: 340px;
+      height:270px;
+      background-color:#262626;
+      border-radius: 20px;
+    }
+
+    .infra{
+      height: 1200px;
+      background-color: #f9f9f9;
+    }
+
+    .infra .inner{
+      
       height: 100%;
-     }
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     
 
-    
-    .marquee span  {
-      overflow: visible;
-      isolation: isolate;
-      display: inline-block;
-      z-index: 0;
- 
     }
-    /* Contact button */
+    .infra .hmsg {
+    display: block;
+    justify-content: center;
+    font-size: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 150px;
+    font-family:'SCDream6';
+    text-align: center;
+    line-height: 1.3;
+    }
+
+    .infra h1{
+      font-size: 15px;
+      padding-left: 10px;
+      padding-top: 20px;
+      text-align: left;
+      font-family:'SCDream6';
+      line-height: 1.5;
+    }
+    .infra p{
+      font-size: 12px;
+      padding-left: 10px;
+      padding-top: 20px;
+      text-align: left;
+      font-family:'SCDream3';
+      line-height: 1.5;
+    }
+
+    .infra .inner .box-container1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .infra .inner .box-container1 .box{
+    width: 200px;
+    border-radius: 20px;
+    height: 250px;
+
+    margin-top: 100px;
+    margin-right: 1%;
+    text-align:left;
+    justify-content: left;
+    align-items: center;
+
+    font-family:'SCDream6';
+
+    }
+
+    .box .circle{
+      width: 35px;
+      height: 35px;
+      background-color: #42B883;
+      color: #fff;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .box .process{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .box .line{
+      width: 40%;
+      height: 0.5px;
+      display: flex;
+
+      border: #42B883 solid 0.2px;
+      border-radius: 10px;
+    }
+    .infra .inner .box-container2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .infra .inner .box-container2 .box{
+      width: 300px;
+      border-radius: 20px;
+      height: 250px;
+    
+      margin-top: 100px;
+      margin-right: 1%;
+    text-align:left;
+      justify-content: left;
+      align-items: center;
+      font-size: 20px;
+      font-family:'SCDream6';
+    }
+
+    .AI-iq{
+      height: 400px;
+      background-color:#171717;
+      overflow: hidden;
+    }
+    .AI-iq .inner{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .AI-iq .inner h1{
+      color: #fff;
+      font-size: 22px;
+      padding-top: 40px;
+    text-align: center;
+    font-family:'SCDream6';
+
+    }
+    .AI-iq .inner p{
+      color: #fff;
+      padding-top: 50px;
+      text-align: center;
+      line-height: 1.6;
+      font-size: 14px;
+      font-family:'SCDream3';
+
+    }
+    .AI-iq .inner .AI-text{
+
+    position: absolute;
+    }
+
+    }
 
 
 
