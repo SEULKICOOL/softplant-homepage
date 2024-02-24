@@ -1270,77 +1270,148 @@ footer strong{
     display: block;
     
   }
-  
-    .monitor{
-      display:none;
-    }
+}
+   /* iPad Pro */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .client{
     
-      height: 1400px;
-    }
-    .nemo-box{
-      display: none;
-    }
-    .client{
-      height: 700px;
-   
-    }
-    .Service{
-      height: 400px;
-    }
-    .projects{
-      height: 5400px;
-      display: block;
-      overflow-x:hidden;
-    }
+/* header */
+header{
+  width: 100%;
+  height: 60px;
+  background-color:#fff;
+  box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
+  border-collapse: collapse;
+  position: fixed;
+  z-index: 99;
+  
  
-    .projects .flex{
-      display: block;
-    }
-    img.back-img{
-      width: 600px;
-      display: block;
-      margin: 0 auto;
-      overflow: hidden;
 
-    }
-    .projects h3{
-      white-space:normal;
-      margin: 20px;
-    }
-    
-    .info {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+header .inner{
+  width: 1200px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header img{
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
 
-
-    body{
-      width:100%;
-      overflow:hidden;
-    }
-
-    ul .menu{
-      display: none;
-    }
-    
-    
-    .mobile-icon{
-      display: block;
-      
-    }
   
+} 
+
+header .inner ul{
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+header ul li a{
+  font-size: 13px;
+  padding: 11px 40px;
+  display: block;
+  color: #333;
+  font-family:'SCDream4';
+  cursor: pointer;
+}
+
+  header ul li a:hover{
+  color: #42B883;
+}
+
+.mobile-icon{
+  display:block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+ 
+}
+.box-inner {
+  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
+  right: 0; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  
+}
+.img-inner .sub-img{
+  left: 5%;
+  top: 20px;
+  position: absolute;
+  height: 450px;
+  border-radius: 40px;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  z-index: 100;
+}
+#spinner {
+  position: absolute;
+  left: 0;
+
+  
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  border: 2px solid rgba(163, 151, 198, 0.2);
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+}
+
+.box-inner {
+  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
+  left: 630px; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  
+}
+.img-inner .box1{
+
+
+  margin-bottom: 35px;
+  width: 350px;
+  height:270px;
+  background-color:#262626;
+  border-radius: 20px;
+}
+.box1 h1{
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  font-family:'SCDream6';
+}
+.box1 p{
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.6;
+  font-family:'SCDream4';
+}
+
+.img-inner .box2{
+  position: absolute;
+
+  width: 560px;
+  height: 180px;
+  border-radius: 20px;
+}
 
 
   }
 
-
-  @media screen and (max-width:1500px){
-
-    .monitor{
-     width: 150px;
-      top: 120px;
-
-  }}
