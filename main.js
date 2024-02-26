@@ -257,8 +257,24 @@ if (value !== null) {
 
   gtag('config', 'AW-11263531305');
 
+  function openModal() {
+   
+    document.getElementById('videoModal').style.display = 'block';
+  }
   
-
+  function closeModal() {
+  3
+    document.getElementById('videoModal').style.display = 'none';
+  }
+  function openModal2() {
+   
+    document.getElementById('videoModal2').style.display = 'block';
+  }
+  
+  function closeModal2() {
+  3
+    document.getElementById('videoModal2').style.display = 'none';
+  }
 //코드앤 버터 
 
 (function (co,de,n,but,t,e,r){!n[co]&&(n[co]=function(){

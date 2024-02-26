@@ -45,6 +45,7 @@
 <!-- swiper style -->
 
 <body>
+  
 
  <!-- HEADER -->
   <header>
@@ -64,6 +65,22 @@
         </div>
   </header>
 
+  <div class="modal" id="videoModal">
+    <video preload="auto" controls width="700px">
+      
+      <source src="./video//ai_서비스_홈페이지_게재영상_챗봇.mp4" type="video/mp4" />
+      
+    </video>
+    <button onclick="closeModal()">X</button>
+  </div>
+  <div class="modal2" id="videoModal2">
+    <video preload="auto" controls width="700px">
+      
+      <source src="./video/ai_서비스_홈페이지_게재영상_음성인식.mp4" type="video/mp4" />
+      
+    </video>
+    <button onclick="closeModal2()">X</button>
+  </div>
    <!--Mobile MENU -->
 
    <div class="mobile-menu">
@@ -76,9 +93,9 @@
       <li><a href="./Project1.html">프로젝트 의뢰</a></li>
     </ul>
   </div>
-
     <!-- VISUAL -->
   <div class="visual">
+    
     <div class="inner">
       <div class='mainsec'>
         <div class='mainText'>
@@ -90,7 +107,7 @@
           <p class="subtag1">귀사의 제품과 기술을 정확히 알고 있는 AI가 </p>
           <p class="subtag1">전문적인 기술상담을 대신해드립니다.</p> 
             <div className=''>
-              <Button class="btn" >
+              <Button class="btn" onclick="openModal()">
                 <span class="material-icons-outlined"></span>
                 <span class='subbtnnm'>Watch the video</span>
               </Button>
@@ -102,9 +119,11 @@
             <AppDemo />
             </PhoneFrame>
         </div>
+        
       </div>
+      
     </div>
-  </div>
+    </div>
 
   </div>
 
@@ -116,6 +135,9 @@
           <h1>Vector DB와 LLM 기술을 통한 분석 정확도 향상 </h1>
           <p>Vector DB와 LLM 기술을 연결시킴으로써, <br>복잡한 문서의 의미를 이해하는 폭이 혁신적으로 넓어졌습니다</p>
           <p>상담내용 및 답변 내용이 쌓일수록 <br>귀사에 특화된 내용으로 분석결과를 도출할 수 있습니다.</p>
+          <Button class="btn" onclick="openModal2()">
+            <span class='subbtnnm'>Watch the video</span>
+          </Button>
         </div>
       </div>
       <div class="imgBox">
