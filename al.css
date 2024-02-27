@@ -683,7 +683,7 @@ header ul li a{
   padding-top: 30px;
   padding-left: 30px;
   font-size: 18px;
-  font-weight: 600;
+
   color: #fff;
   font-family:'SCDream6';
 }
@@ -696,6 +696,25 @@ header ul li a{
   line-height: 1.5;
   font-family:'SCDream4';
 }
+.box2 h1{
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+
+  color: #fff;
+  font-family:'SCDream6';
+}
+.box2 p{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.5;
+  font-family:'SCDream4';
+}
+
 
 
 
@@ -1082,7 +1101,7 @@ color: #333;
   margin-top: 40px;
 
 }
-.visual .inner .subtag1{
+.visual .inner .subtag{
   font-size: 18px;
   font-family: 'SCDream4';    
   color:  rgb(107 114 128);
@@ -1764,7 +1783,7 @@ color: #333;
 
 }
 .visual .inner .subtag1{
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'SCDream4';    
   color:  rgb(107 114 128);
   margin-top: 12px;
@@ -1826,7 +1845,7 @@ color: #333;
   padding-left: 30px;
   font-size: 13px;
   color: #fff;
-  line-height: 1.5;
+  line-height: 1.7;
   font-family:'SCDream4';
   margin-right: 10px;
 }
