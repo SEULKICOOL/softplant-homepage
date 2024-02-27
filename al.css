@@ -2140,12 +2140,11 @@ line-height: 1.6;
   z-index: 1000;
 }
 #videoModal2 video{
-  width: 1000px;
+  width: 800px;
   height: 500px;
   position: absolute;
   left:15%;
   top: 20%;
-  border-radius: 20px;
 }
 #videoModal2 button{
   position: absolute;
