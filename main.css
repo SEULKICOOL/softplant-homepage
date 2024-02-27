@@ -106,6 +106,9 @@ html, body {
   
   }
 
+  body{
+    overflow-x: hidden;
+  }
 /* Button */
 
 .btn {
@@ -1447,5 +1450,20 @@ button h1{
       font-size: 30px;
      
     }
+    
+    .projects{
+      height: 2700px;
+      display: block;
+
+    }
+    img.back-img{
+
+      margin: 0 auto;
+
+    }
+    .inner{
+   
+    }
+
   }
 

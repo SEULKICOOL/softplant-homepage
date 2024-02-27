@@ -683,7 +683,7 @@ form input::file-selector-button {
     width: 100px;
     height: 40px;
     font-size: 12px;
-    margin-top: 150px; 
+    margin-top: 170px; 
     align-items: center;
   }
 
@@ -786,10 +786,10 @@ button#contact{
 }
 
  label#fileButton {
- margin-left: 7px;
+ margin-left: 2px;
  width: 30px;
  height: 20px;
- line-height: 13px; 
+ line-height: 12px; 
 
 }
 #submitButton{
@@ -798,6 +798,11 @@ button#contact{
   width:60px;
   
 }
+
+.check{
+  margin-bottom: 30px;
+}
+
 
 input#file{
   margin-left: 5px;
