@@ -671,7 +671,7 @@ header ul li a{
 
 
   margin-bottom: 35px;
-  width: 40%;
+  width: 50%;
   height:35%;
   background-color:#262626;
   border-radius: 20px;
@@ -1590,7 +1590,7 @@ position: absolute;
   width: 400px;
   position: absolute;
   left:0;
-  top: 25%;
+  top: 5%;
   border-radius: 20px;
 }
 #videoModal button{
@@ -1617,7 +1617,7 @@ position: absolute;
   width: 400px;
   position: absolute;
   left:0;
-  top: 25%;
+  top: 5%;
   border-radius: 20px;
 }
 #videoModal2 button{
@@ -1827,7 +1827,15 @@ color: #333;
   height: 700px;
   
 }
+.img-inner .box1{
 
+
+  margin-bottom: 35px;
+  width: 70%;
+  height:200px;
+  background-color:#262626;
+  border-radius: 20px;
+}
 
 
 
@@ -2085,24 +2093,7 @@ line-height: 1.6;
 
 }
 
-#videoModal{
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color:  rgba(0, 0, 0, 0.9);
-  z-index: 1000;
-}
-
-
-
-
-}
-
-/* 13인치 맥북 에어 화면 크기일 때의 스타일 */
-@media screen and (max-width: 1600px) and (max-height: 1600px) {
- 
-#videoModal{
+ #videoModal{ 
   display: none;
   position: fixed;
   width: 100%;
@@ -2157,23 +2148,4 @@ line-height: 1.6;
   border: #fff solid 1px ;
   color: #fff;
 }
-.img-inner .sub-img{
-  left: 20%;
-  top: 20px;
-  height: 500px;
-  position: absolute;
-  z-index: 100;
 }
-.img-inner .box1{
-
-
-  margin-bottom: 35px;
-  width: 70%;
-  height:30%;
-  background-color:#262626;
-  border-radius: 20px;
-  padding-right: 20px;
-}
-
-
-  }
