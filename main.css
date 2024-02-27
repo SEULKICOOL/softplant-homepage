@@ -1011,11 +1011,143 @@ footer strong{
   margin-left: 15px;
 }
 
+ /* softWork/ */
 
-/* CONTACT */
+.softWork{
+  height: 1000px;
+  
+
+}
+.softWork .workHead1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.softWork .workHead2{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.softWork .workHead1 h1{
+  font-size: 30px;
+  font-family:'SCDream5';
+  color: #213547;
+  padding-left: 5px;
+
+}
+.softWork .workHead1 p{
+  padding-left: 5px;
+  font-size: 25px;
+  padding-top: 5px;
+  color: #213547;
+  font-family:'SCDream3';
+}
+.softWork .workHead2 h1{
+  font-size: 30px;
+  font-family:'SCDream5';
+  padding-left: 5px;
+  color: #213547;
+
+}
+.softWork .workHead2 p{
+  padding-left: 5px;
+  font-size: 25px;
+  padding-top: 5px;
+  font-family:'SCDream3';
+  color: #213547;
+}
+
+.softWork-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+}
+.softWork-container .box{
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 20px;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: all 0.5s;
+
+}
+
+.softWork-container .box h1{
+  font-size: 18px;
+  font-family:'SCDream4';
+  padding-top: 10px;
+  color: #213547;
+  line-height: 1.6;
+}
+.softWork-container .box strong{
+  font-family:'SCDream5';
+  color: #42B883;
+}
 
 
+.softWork-container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 
+}
+.softWork-container2 .box{
+  width: 250px;
+  margin: 0 20px;
+  margin-right: 5%;
+}
+.softWork .material-icons{
+  font-size: 20px;
+  color: #42B883;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  margin-top: 30px;
+
+}
+.softWork-container2 .box .text-line{
+  display: flex;
+  
+ 
+}
+.softWork-container2 .box .text-line1{
+height: 50px;
+ 
+}
+.softWork-container2 .box .text-line p{
+font-size: 16px;
+color: #213547;
+font-family:'SCDream3';
+margin-top: 30px;
+line-height: 1.4;
+  
+ 
+}
+.softWork-container2 .box .text-line strong{
+  font-size: 16px;
+  color: #42B883;
+  font-family:'SCDream4';
+  margin-top: 30px;
+  line-height: 1.4;
+    
+   
+  }
+
+.border{
+  border: 1px solid #f1f1f1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
 
 /* MOBILE */
   
@@ -1303,7 +1435,7 @@ button h1{
  
   }
 
-  }
+  /* softWork */
 
 
 
@@ -1466,4 +1598,3 @@ button h1{
     }
 
   }
-
