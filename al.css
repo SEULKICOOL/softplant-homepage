@@ -659,7 +659,7 @@ header ul li a{
 }
 
 .img-inner .sub-img{
-  left: 20%;
+  left: 18%;
   top: 20px;
   height: 500px;
   position: absolute;
@@ -671,10 +671,11 @@ header ul li a{
 
 
   margin-bottom: 35px;
-  width: 435px;
-  height:210px;
+  width: 40%;
+  height:35%;
   background-color:#262626;
   border-radius: 20px;
+  padding-right: 20px;
 }
 
 .box1 h1{
@@ -696,13 +697,7 @@ header ul li a{
   font-family:'SCDream4';
 }
 
-.img-inner .box2{
-  position: absolute;
 
-  width: 560px;
-  height: 180px;
-  border-radius: 20px;
-}
 
 .infra{
   height: 900px;
@@ -1813,15 +1808,8 @@ color: #333;
   
 }
 
-.img-inner .box1{
 
 
-  margin-bottom: 35px;
-  width: 400px;
-  height:200px;
-  background-color:#262626;
-  border-radius: 20px;
-}
 
 .box1 h1{
   text-align: left;
@@ -1843,13 +1831,6 @@ color: #333;
   margin-right: 10px;
 }
 
-.img-inner .box2{
-  position: absolute;
-
-  width: 560px;
-  height: 180px;
-  border-radius: 20px;
-}
 
 .infra{
   height: 900px;
@@ -2121,6 +2102,7 @@ line-height: 1.6;
 }
 
 
+
 }
 
 /* 13인치 맥북 에어 화면 크기일 때의 스타일 */
@@ -2182,5 +2164,23 @@ line-height: 1.6;
   border: #fff solid 1px ;
   color: #fff;
 }
-  }
+.img-inner .sub-img{
+  left: 20%;
+  top: 20px;
+  height: 500px;
+  position: absolute;
+  z-index: 100;
 }
+.img-inner .box1{
+
+
+  margin-bottom: 35px;
+  width: 70%;
+  height:30%;
+  background-color:#262626;
+  border-radius: 20px;
+  padding-right: 20px;
+}
+
+
+  }
