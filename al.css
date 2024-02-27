@@ -2071,54 +2071,7 @@ line-height: 1.6;
   background-color:  rgba(0, 0, 0, 0.9);
   z-index: 1000;
 }
-#videoModal video{
-  width: 1000px;
-  height: 500px;
-  position: absolute;
-  left:10px;
-  top: 25%;
- 
-  border-radius: 20px;
-}
-#videoModal button{
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  background-color: #000;
-  border: #fff solid 1px ;
-  color: #fff;
-}
 
-#videoModal2{
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color:  rgba(0, 0, 0, 0.9);
-  z-index: 1000;
-}
-#videoModal2 video{
-  width: 1000px;
-  height: 500px;
-  position: absolute;
-  left:10px;
-  top: 25%;
-  border-radius: 20px;
-}
-#videoModal2 button{
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  background-color: #000;
-  border: #fff solid 1px ;
-  color: #fff;
-}
 
 
 
@@ -2136,7 +2089,7 @@ line-height: 1.6;
   z-index: 1000;
 }
 #videoModal video{
-  width: 1000px;
+  width: 800px;
   height: 500px;
   position: absolute;
   left:15%;
