@@ -363,6 +363,7 @@ header ul li a{
 
 .mobile-icon .material-icons{
   font-size: 30px;
+ 
 }
 
 .mobile-icon{
@@ -378,14 +379,14 @@ header ul li a{
   font-size: 30px;
   position: absolute;
   right:15px;
-  top: 5px;
+  top: 65px;
   cursor: pointer;
 }
 
 .mobile-menu{
   width: 100%;
   display: none;
-  height: 250px;
+  height: 300px;
   background-color:#fbfbfb;
   border:0.1px solid #e1d9d9;
   z-index: 500;
@@ -402,7 +403,7 @@ header ul li a{
 }
 .mobile-menu ul{
  
- margin-top: 30px;
+ margin-top: 85px;
  font-size: 18px;
  font-family:'SCDream5';
  text-align: center;
