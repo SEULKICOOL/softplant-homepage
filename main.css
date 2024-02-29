@@ -959,7 +959,7 @@ button h1{
 
 .Client{
   background-color: #F9F9F9;
-
+  
 }
 
 
@@ -1412,6 +1412,7 @@ line-height: 1.4;
      /* SWIPER */
      .client{
       height: 100%;
+      overflow-x: hidden;
    
      }
      .inner-swiper h1{
