@@ -1585,7 +1585,7 @@ button h1{
     
     }
     header .inner{
-      width: 1200px;
+      width: 1000px;
       background-color: #fff;
       position: relative;
       margin: 0 auto;
@@ -1602,7 +1602,7 @@ button h1{
     } 
     
     header .inner ul{
-      display: none;
+      display: flex;
       position: absolute;
       top: 10px;
       right: 0;
@@ -1622,7 +1622,7 @@ button h1{
     }
     
     .mobile-icon{
-      display:block;
+      display:none;
       cursor: pointer;
       position: absolute;
       top: 10px;
@@ -1632,17 +1632,18 @@ button h1{
     }
     
     .projects{
-      height: 2700px;
+      height: 3500px;
       display: block;
 
     }
-    img.back-img{
+      
 
-      margin: 0 auto;
+    .projects .back-img{
+
+
+      display: block;
+ 
 
     }
-    .inner{
    
-    }
-
   }
