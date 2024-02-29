@@ -317,7 +317,7 @@ header{
   box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
   border-collapse: collapse;
   position: fixed;
-  z-index: 99;
+  z-index: 2500;
   
  
 
@@ -1004,9 +1004,7 @@ footer strong{
       overflow-x:hidden;
     }
 
-    .inner{
-      overflow-x:hidden;
-    }
+
        /* Contact button */
 
 button#contact{
@@ -1246,9 +1244,9 @@ color: #333;
  padding-right: 20%;
 }
 .wisper{
-  height: 1100px;
+  height: 1700px;
   background-color:#171717;
-
+  overflow: hidden;
 }
 .wisper-title{
 
@@ -1304,9 +1302,9 @@ color: #333;
   margin-top: 12px;
 }
 .box-inner {
-  position: relative; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
+  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
   left: 0; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
-  width: 50%;
+  top:600px;
   justify-content: center;
   align-items: center;
   height: 200px;
@@ -1332,24 +1330,16 @@ color: #333;
   animation: spin 4s linear infinite;
 }
 
-.box-inner {
-  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
-  left: 580px; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
-  
-}
 
 .img-inner .box1{
 
 
   margin-bottom: 35px;
-  width: 400px;
+  width: 350px;
   height:200px;
   background-color:#262626;
   border-radius: 20px;
+ 
 }
 
 .box1 h1{
@@ -1718,7 +1708,7 @@ header{
   box-shadow: 0.5px 0.5px 0.5px #f1ebeb; 
   border-collapse: collapse;
   position: fixed;
-  z-index: 99;
+  z-index: 2500;
   
  
 
@@ -1844,15 +1834,7 @@ color: #333;
   color:  rgb(107 114 128);
   margin-top: 12px;
 }
-.box-inner {
-  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
-  right: 0; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  
-}
+
 .img-inner .sub-img{
   left: 20%;
   top: 20px;
@@ -1874,8 +1856,8 @@ color: #333;
 }
 
 .box-inner {
-  position: absolute; /* 변경된 부분: img-inner의 자식으로서 위치 조정 */
-  left: 580px; /* 추가된 부분: img-inner의 오른쪽에 배치되도록 설정 */
+  position: absolute; 
+  left: 580px;
   width: 50%;
   justify-content: center;
   align-items: center;
