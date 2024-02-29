@@ -553,7 +553,7 @@ button h1{
 /* Project */
 
 .projects{
-  height: 2800px;
+  height: 3500px;
   overflow: hidden;
 }
 
@@ -1311,7 +1311,7 @@ line-height: 1.4;
 
     /* Project */
     .projects{
-      height: 5800px;
+      height: 5900px;
       display: block;
       overflow-x:hidden;
     }

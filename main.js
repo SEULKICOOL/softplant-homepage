@@ -169,6 +169,8 @@ if (value !== null) {
         return './wedding.html';
       case 'carebom':
         return './carebom.html';
+        case 'snu':
+          return './snu.html';
      
       default:
         return '/';
