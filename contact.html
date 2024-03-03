@@ -571,7 +571,12 @@ function sendMail(){
                 // alert('파일 업로드 버튼을 누르지 않으셨습니다.')
                 // return false;
             // }
-        //   
+        //  
+
+            if(document.getElementById("file").value !== ""){
+                alert('업로드 버튼을 누르지 않았습니다 업로드 버튼을 눌러 첨부파일을 전달해주세요.')
+                return false;
+            }
       
             if(document.getElementById("yourname").value == ""){
                 alert('담당자명은 필수입니다.')
@@ -586,6 +591,7 @@ function sendMail(){
                 alert('개인정보 취급방침에 동의해주셔야 합니다.')
                 return false;
             }
+            
            
             emailjs.init("fast"); // YOUR_USER_ID를 실제 User ID로 바꿔주세요
 
