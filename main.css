@@ -644,6 +644,7 @@ button h1{
 
   
 }
+
 .scope{
   display: flex;
   margin-top: 10px;
@@ -1633,17 +1634,31 @@ button h1{
     
     .projects{
       height: 3500px;
-      display: block;
+     
 
     }
-      
+    .projects .items img{
+      margin-left: 20px;
+       
+     }
 
-    .projects .back-img{
-
-
-      display: block;
- 
-
-    }
+     .projects .items img:first-child{
+     
+       
+     }
    
+    .projects .items .back-img{
+     width: 300px;
+    display: block;
+    margin-left: 20px;
+
+      
+    } 
+  
+    .projects .items .back-img1{
+      
+      width: 630px;
+    
+      
+    } 
   }
