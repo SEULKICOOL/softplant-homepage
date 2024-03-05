@@ -838,6 +838,10 @@ button h1{
   transform: scale(0.9);
  
 }
+.projects .items .item:hover .back-img1{
+  transform: scale(0.9);
+ 
+}
 
 .projects .items .item:hover .text-box{
   opacity: 1;
@@ -1325,6 +1329,10 @@ line-height: 1.4;
     .projects .items .item:hover .back-img{
       transform: scale(0.9);
      
+    }  
+    .projects .items .item:hover .back-img1{
+      transform: scale(0.9);
+     
     }
     .projects h1{
       margin-left: 0;
@@ -1339,6 +1347,13 @@ line-height: 1.4;
     }
   
     img.back-img{
+      width: 320px;
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+
+    }
+    img.back-img1{
       width: 320px;
       display: block;
       margin: 0 auto;
