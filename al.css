@@ -1641,7 +1641,7 @@ position: absolute;
 }
 #videoModal button{
   position: absolute;
-  top: 12%;
+  top: 15%;
   right: 5%;
   width: 35px;
   height: 35px;
@@ -1668,7 +1668,7 @@ position: absolute;
 }
 #videoModal2 button{
   position: absolute;
-  top: 5%;
+  top: 15%;
   right: 5%;
   width: 35px;
   height: 35px;
